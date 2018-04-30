@@ -22,7 +22,7 @@ install_dir = /opt/tools/
 echo
 echo "Enter an installation directory for the Ocean Navigator. Press [Enter] for default (/opt/tools/): "
 read user_install_dir
-if [$user_install_dir != ''] then
+if [$user_install_dir != '']; then
     $install_dir = $user_install_dir
 fi
 
