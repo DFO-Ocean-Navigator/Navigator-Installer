@@ -31,7 +31,7 @@ apt update
 
 echo
 echo "Installing pre-requisites..."
-apt -y install git software-properties-common curl
+apt -y install git software-properties-common curl libgdal1-dev
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt -y install nodejs
 npm install -g bower
@@ -43,9 +43,9 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 echo
 echo "Installing Miniconda..."
 if [ -d "/opt/tools/miniconda3" ]; then
-    bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
-else
     bash Miniconda3-latest-Linux-x86_64.sh -b -u -p /opt/tools/miniconda3
+else
+    bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
 fi
 export PATH="/opt/tools/miniconda3/bin:$PATH"
 
@@ -53,9 +53,10 @@ echo
 echo "Installing Python packages..."
 conda install -y gdal
 conda install -y -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
-conda install -y -c cachetools netcdf4 basemap cmocean pint pillow shapely pykml
+conda install -y -c conda-forge cachetools netcdf4 basemap cmocean pint pillow shapely pykml
 conda install -y lxml libiconv
 conda install -y -c conda-forge thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
+conda update --all
 
 echo
 echo "Grabbing Ocean Navigator..."
@@ -73,5 +74,5 @@ npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run bu
 # Cleanup
 echo
 echo "Cleaning up..."
-apt autoremove
+apt -y autoremove
 
