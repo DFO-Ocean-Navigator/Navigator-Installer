@@ -59,6 +59,6 @@ git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $ins
 
 echo
 echo "Building frontend files..."
-npm install $install_dir/oceannavigator/frontend/
-npm run build $install_dir/oceannavigator/frontend/
+npm install $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/
+npm run build $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/
 
