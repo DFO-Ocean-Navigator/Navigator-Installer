@@ -32,7 +32,7 @@ apt update
 echo
 echo "Installing pre-requisites..."
 apt -y install git software-properties-common curl
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt -y install nodejs
 npm install -g bower
 
