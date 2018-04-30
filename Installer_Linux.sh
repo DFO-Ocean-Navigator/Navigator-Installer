@@ -16,6 +16,12 @@ else
     exit 1
 fi
 
+if [ -d "/opt/tools/" ]; then
+echo "Test"
+fi
+
+exit 1
+
 # Default installation directory
 install_dir=/opt/tools
 
@@ -42,16 +48,20 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 echo
 echo "Installing Miniconda..."
-bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
+if [ -d "/opt/tools/miniconda3" ]; then
+    bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
+else
+    bash Miniconda3-latest-Linux-x86_64.sh -b -u -p /opt/tools/miniconda3
+fi
 export PATH="/opt/tools/miniconda3/bin:$PATH"
 
 echo
 echo "Installing Python packages..."
-conda install -y -q gdal
-conda install -y -q -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
-conda install -y -q -c cachetools netcdf4 basemap cmocean pint pillow shapely pykml
-conda install -y -q lxml libiconv
-conda install -y -q -c conda-forge thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
+conda install -y gdal
+conda install -y -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
+conda install -y -c cachetools netcdf4 basemap cmocean pint pillow shapely pykml
+conda install -y lxml libiconv
+conda install -y -c conda-forge thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
 
 echo
 echo "Grabbing Ocean Navigator..."
@@ -65,4 +75,9 @@ echo
 echo "Building frontend files..."
 npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
 npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
+
+# Cleanup
+echo
+echo "Cleaning up..."
+apt autoremove
 
