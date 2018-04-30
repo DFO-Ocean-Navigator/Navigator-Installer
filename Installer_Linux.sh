@@ -17,7 +17,7 @@ else
 fi
 
 # Default installation directory
-install_dir=/opt/tools/
+install_dir=/opt/tools
 
 echo
 read -p "Enter an installation directory for the Ocean Navigator. Press [Enter] for default (/opt/tools/): " user_install_dir
@@ -51,14 +51,18 @@ conda install -y -q gdal
 conda install -y -q -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
 conda install -y -q -c cachetools netcdf4 basemap cmocean pint pillow shapely pykml
 conda install -y -q lxml libiconv
-conda install -y -q thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
+conda install -y -q -c conda-forge thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
 
 echo
-echo "Cloning Ocean Navigator..."
-git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+echo "Grabbing Ocean Navigator..."
+if [ -d "$install_dir" ]; then
+    git -C $install_dir/Ocean-Data-Map-Project/ pull
+else
+    git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+fi
 
 echo
 echo "Building frontend files..."
-npm install $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/
-npm run build $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/
+npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
+npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
 
