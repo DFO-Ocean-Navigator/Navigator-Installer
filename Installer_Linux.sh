@@ -16,12 +16,6 @@ else
     exit 1
 fi
 
-if [ -d "/opt/tools/" ]; then
-echo "Test"
-fi
-
-exit 1
-
 # Default installation directory
 install_dir=/opt/tools
 
