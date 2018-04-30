@@ -17,13 +17,12 @@ else
 fi
 
 # Default installation directory
-install_dir = /opt/tools/
+install_dir=/opt/tools/
 
 echo
-echo "Enter an installation directory for the Ocean Navigator. Press [Enter] for default (/opt/tools/): "
-read user_install_dir
-if [$user_install_dir != '']; then
-    $install_dir = $user_install_dir
+read -p "Enter an installation directory for the Ocean Navigator. Press [Enter] for default (/opt/tools/): " user_install_dir
+if [ -n "$user_install_dir" ]; then # If the variable is set...
+    install_dir=$user_install_dir
 fi
 
 echo
@@ -43,14 +42,23 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 echo
 echo "Installing Miniconda..."
-bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
+export PATH="/opt/tools/miniconda3/bin:$PATH"
 
 echo
 echo "Installing Python packages..."
-conda install gdal
+conda install -y -q gdal
 conda install -y -q -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
-conda install -y -q -c cachetools netcdf4 basemap cmocean pint pillow shapely
+conda install -y -q -c cachetools netcdf4 basemap cmocean pint pillow shapely pykml
+conda install -y -q lxml libiconv
+conda install -y -q thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
 
 echo
 echo "Cloning Ocean Navigator..."
 git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+
+echo
+echo "Building frontend files..."
+npm install $install_dir/oceannavigator/frontend/
+npm run build $install_dir/oceannavigator/frontend/
+
