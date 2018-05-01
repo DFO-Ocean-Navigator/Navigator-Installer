@@ -38,8 +38,8 @@ npm install -g bower
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
-wget http://navigator.oceansdata.ca/cdn/minconda-distro.tar.gz
-tar -xjC /opt/tools/ -f minconda-distro.tar.gz 
+wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
+tar -xjC /opt/tools/ -f miniconda-distro.tar.gz 
 
 
 echo
