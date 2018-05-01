@@ -38,25 +38,9 @@ npm install -g bower
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget http://navigator.oceansdata.ca/cdn/minconda-distro.tar.gz
+tar -xjC /opt/tools/ -f minconda-distro.tar.gz 
 
-echo
-echo "Installing Miniconda..."
-if [ -d "/opt/tools/miniconda3" ]; then
-    bash Miniconda3-latest-Linux-x86_64.sh -b -u -p /opt/tools/miniconda3
-else
-    bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/tools/miniconda3
-fi
-export PATH="/opt/tools/miniconda3/bin:$PATH"
-
-echo
-echo "Installing Python packages..."
-conda install -y gdal
-conda install -y -c conda-forge flask-compress flask-babel pykdtree geopy pyresample matplotlib
-conda install -y -c conda-forge cachetools netcdf4 basemap cmocean pint pillow shapely pykml
-conda install -y lxml libiconv
-conda install -y -c conda-forge thredds_crawler seawater scikit-image bottleneck xarray basemap-data-hires
-conda update --all
 
 echo
 echo "Grabbing Ocean Navigator..."
