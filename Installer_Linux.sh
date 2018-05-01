@@ -44,11 +44,7 @@ tar -xjC /opt/tools/ -f minconda-distro.tar.gz
 
 echo
 echo "Grabbing Ocean Navigator..."
-if [ -d "$install_dir" ]; then
-    git -C $install_dir/Ocean-Data-Map-Project/ pull
-else
-    git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
-fi
+git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
 
 echo
 echo "Building frontend files..."
