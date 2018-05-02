@@ -16,6 +16,7 @@ install_dir=/opt/tools
 # Create directory if it doesn't exist
 if [ ! -d "$install_dir" ]; then 
     sudo mkdir $install_dir
+    sudo mkdir $install_dir/Ocean-Data-Map-Project/
 fi
 
 echo
@@ -31,7 +32,7 @@ npm install -g bower
 
 echo
 echo "Grabbing Ocean Navigator..."
-sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir/Ocean-Data-Map-Project/
 # Set permissions of git folder to be of current user
 sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Data-Map-Project/
 
