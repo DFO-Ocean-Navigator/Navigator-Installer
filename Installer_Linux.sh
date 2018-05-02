@@ -30,13 +30,6 @@ sudo apt -y install nodejs
 npm install -g bower
 
 echo
-echo "Acquiring Python 3 distribution (Miniconda)..."
-wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
-sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
-export PATH=$install_dir/miniconda3/bin/:$PATH
-
-
-echo
 echo "Grabbing Ocean Navigator..."
 sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
 # Set permissions of git folder to be of current user
@@ -46,6 +39,13 @@ echo
 echo "Building frontend files..."
 npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
 npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
+
+echo
+echo "Acquiring Python 3 distribution (Miniconda)..."
+wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
+sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
+sudo rm miniconda-distro.tar.gz
+export PATH=$install_dir/miniconda3/bin/:$PATH
 
 # Cleanup
 echo
