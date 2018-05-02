@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Check if we're root
-if [ "$EUID" -ne 0 ]; then
-  echo "Please run as root or using sudo."
-  exit 1
-fi
-
 # Check for network connection
 # https://stackoverflow.com/a/26820300/2231969
 echo -e "GET http://google.ca HTTP/1.0\n\n" | nc google.ca 80 > /dev/null 2>&1
@@ -19,32 +13,34 @@ fi
 # Default installation directory
 install_dir=/opt/tools
 
-echo
-read -p "Enter an installation directory for the Ocean Navigator. Press [Enter] for default (/opt/tools/): " user_install_dir
-if [ -n "$user_install_dir" ]; then # If the variable is set...
-    install_dir=$user_install_dir
+# Create directory if it doesn't exist
+if [ ! -d "$install_dir" ]; then 
+    sudo mkdir $install_dir
 fi
 
 echo
 echo "Updating package list..."
-apt update
+sudo apt update
 
 echo
 echo "Installing pre-requisites..."
-apt -y install git software-properties-common curl libgdal1-dev
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-apt -y install nodejs
+sudo apt -y install git software-properties-common curl libgdal1-dev
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt -y install nodejs
 npm install -g bower
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
 wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
-tar -xjC /opt/tools/ -f miniconda-distro.tar.gz 
+sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
+export PATH=$install_dir/miniconda3/bin/:$PATH
 
 
 echo
 echo "Grabbing Ocean Navigator..."
-git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir
+# Set permissions of git folder to be of current user
+sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Data-Map-Project/
 
 echo
 echo "Building frontend files..."
@@ -54,5 +50,5 @@ npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run bu
 # Cleanup
 echo
 echo "Cleaning up..."
-apt -y autoremove
+sudo apt -y autoremove
 
