@@ -46,10 +46,13 @@ echo "Acquiring Python 3 distribution (Miniconda)..."
 wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
 sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
 sudo rm miniconda-distro.tar.gz
-export PATH=$install_dir/miniconda3/bin/:$PATH
+
+echo
+echo "Setting PATH"
+echo 'export PATH=$install_dir/miniconda3/bin/:$PATH' >> ~/.bashrc
+source ~/.bashrc
 
 # Cleanup
 echo
 echo "Cleaning up..."
 sudo apt -y autoremove
-
