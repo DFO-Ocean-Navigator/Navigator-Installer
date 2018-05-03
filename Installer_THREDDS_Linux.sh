@@ -43,37 +43,38 @@ echo "Installing THREDDS..."
 wget ftp://ftp.unidata.ucar.edu/pub/thredds/4.6/current/thredds.war -P /opt/tomcat9/webapps/
 
 echo
-echo "Installing Tomcat service..."
-echo "[Unit]
-Description=Tomcat9
-After=network.target
-
-[Service]
-Type=forking
-User=tomcat9
-Group=tomcat9
-
-Environment=CATALINA_PID=/opt/tomcat9/tomcat9.pid
-Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-Environment=CATALINA_HOME=/opt/tomcat9
-Environment=CATALINA_BASE=/opt/tomcat9
-Environment="CATALINA_OPTS=-Xms4096m -Xmx4096m"
-Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Dnet.sf.ehcache.skipUpdateCheck=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+UseParNewGC"
-
-ExecStart=/opt/tomcat9/bin/startup.sh
-ExecStop=/opt/tomcat9/bin/shutdown.sh
-
-[Install]
-WantedBy=multi-user.target" > /etc/systemd/system/tomcat.service
-
-echo
 echo "Configuring Environment Variables..."
 echo "export CATALINA_HOME="/opt/tomcat9"" >> /etc/environment
+echo "export CATALINA_BASE="/opt/tomcat9"" >> /etc/environment
 echo "export JAVA_HOME="/usr/lib/jvm/java-10-oracle"" >> /etc/environment
 echo "export JRE_HOME="/usr/lib/jvm/java-10-oracle/jre"" >> /etc/environment
 source /etc/environment
 source ~/.bashrc
 
-systemctl daemon-reload
-systemctl start tomcat
-systemctl enable tomcat
+echo "#!/bin/sh
+
+# TDS specific ENVARS
+#
+# Define where the TDS content directory will live
+#   THIS IS CRITICAL and there is NO DEFAULT - the
+#   TDS will not start without this.
+#
+CONTENT_ROOT=-Dtds.content.root.path=/usr/local/tomcat/content
+
+# set java prefs related variables (used by the wms service, for example)
+JAVA_PREFS_ROOTS="-Djava.util.prefs.systemRoot=$CATALINA_HOME/content/thredds/javaUtilPrefs \
+                  -Djava.util.prefs.userRoot=$CATALINA_HOME/content/thredds/javaUtilPrefs"
+
+#
+# Some commonly used JAVA_OPTS settings:
+#
+NORMAL="-d64 -Xmx4096m -Xms512m -server -ea"
+HEAP_DUMP="-XX:+HeapDumpOnOutOfMemoryError"
+HEADLESS="-Djava.awt.headless=true"
+
+#
+# Standard setup.
+#
+JAVA_OPTS="$CONTENT_ROOT $NORMAL $MAX_PERM_GEN $HEAP_DUMP $HEADLESS $JAVA_PREFS_ROOTS"
+
+export JAVA_OPTS" > /opt/tomcat9/bin/setenv.sh
