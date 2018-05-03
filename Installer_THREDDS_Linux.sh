@@ -54,7 +54,7 @@ export JRE_HOME="/usr/lib/jvm/java-10-oracle"
 #   THIS IS CRITICAL and there is NO DEFAULT - the
 #   TDS will not start without this.
 #
-CONTENT_ROOT=-Dtds.content.root.path=/opt/thredds/
+CONTENT_ROOT=-Dtds.content.root.path=/usr/local/tomcat/content
 
 # set java prefs related variables (used by the wms service, for example)
 JAVA_PREFS_ROOTS="-Djava.util.prefs.systemRoot=$CATALINA_HOME/content/thredds/javaUtilPrefs \
