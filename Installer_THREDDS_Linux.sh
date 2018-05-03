@@ -72,7 +72,7 @@ source /etc/environment
 source ~/.bashrc
 
 systemctl daemon-reload
-systelctl start tomcat
+systemctl start tomcat
 systemctl enable tomcat
 
 su $user
