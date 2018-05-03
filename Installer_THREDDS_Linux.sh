@@ -47,7 +47,7 @@ echo "Configuring Environment Variables..."
 echo "export CATALINA_HOME="/opt/tomcat9"" >> /etc/environment
 echo "export CATALINA_BASE="/opt/tomcat9"" >> /etc/environment
 echo "export JAVA_HOME="/usr/lib/jvm/java-10-oracle"" >> /etc/environment
-echo "export JRE_HOME="/usr/lib/jvm/java-10-oracle/jre"" >> /etc/environment
+echo "export JRE_HOME="/usr/lib/jvm/java-10-oracle/bin"" >> /etc/environment
 source /etc/environment
 source ~/.bashrc
 
