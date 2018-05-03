@@ -28,6 +28,7 @@ sudo useradd -r tomcat --shell /bin/false
 cd /opt
 sudo wget http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz
 sudo tar -xzf apache-tomcat-9.0.7.tar.gz
+sudo rm apache-tomcat-9.0.7.tar.gz
 sudo mv apache-tomcat-9.0.7 tomcat9
 sudo chown -hR tomcat: tomcat9
 
@@ -35,9 +36,12 @@ echo
 echo "Installing THREDDS..."
 sudo wget ftp://ftp.unidata.ucar.edu/pub/thredds/4.6/current/thredds.war -P /opt/tomcat9/webapps/
 
+user=$(whoami)
+sudo su root
+
 echo
 echo "Installing Tomcat service..."
-sudo echo "[Unit]
+echo "[Unit]
 Description=Tomcat9
 After=network.target
 
@@ -61,9 +65,6 @@ WantedBy=multi-user.target" > /etc/systemd/system/tomcat.service
 
 echo
 echo "Configuring Environment Variables..."
-
-user=$(whoami)
-sudo su root
 echo "export CATALINA_HOME="/opt/tomcat9"" >> /etc/environment
 echo "export JAVA_HOME="/usr/lib/jvm/java-10-oracle"" >> /etc/environment
 echo "export JRE_HOME="/usr/lib/jvm/java-10-oracle/jre"" >> /etc/environment
