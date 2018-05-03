@@ -36,6 +36,13 @@ echo
 echo "Installing THREDDS..."
 sudo wget ftp://ftp.unidata.ucar.edu/pub/thredds/4.6/current/thredds.war -P /opt/tomcat9/webapps/
 sudo chown tomcat /opt/tomcat9/webapps/thredds.war
+sudo chgrp tomcat /opt/tomcat9/webapps/thredds.war
+
+sudo mkdir /usr/local/tomcat
+sudo mkdir /usr/local/tomcat/content
+
+sudo chown -R tomcat /usr/local/tomcat
+sudo chgrp -R tomcat /usr/local/tomcat
 
 echo "#!/bin/sh
 
