@@ -45,7 +45,7 @@ echo "#!/bin/sh
 export CATALINA_HOME="/opt/tomcat9"
 export CATALINA_BASE="/opt/tomcat9"
 export JAVA_HOME="/usr/lib/jvm/java-10-oracle"
-export JRE_HOME="/usr/lib/jvm/java-10-oracle/bin"
+export JRE_HOME="/usr/lib/jvm/java-10-oracle"
 
 
 # TDS specific ENVARS
