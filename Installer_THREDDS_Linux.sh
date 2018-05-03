@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check if we're root
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root."
+  exit 1
+fi
+
 # Check for network connection
 # https://stackoverflow.com/a/26820300/2231969
 echo -e "GET http://google.ca HTTP/1.0\n\n" | nc google.ca 80 > /dev/null 2>&1
@@ -12,11 +18,11 @@ fi
 
 echo
 echo "Installing Java 10..."
-sudo add-apt-repository ppa:linuxuprising/java -y
-sudo apt update
-sudo echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo apt -y install oracle-java10-installer
-sudo apt -y install oracle-java10-set-default
+add-apt-repository ppa:linuxuprising/java -y
+apt update
+echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+apt -y install oracle-java10-installer
+apt -y install oracle-java10-set-default
 
 echo javac -version
 
@@ -24,20 +30,17 @@ echo
 echo "Installing Tomcat 9..."
 # https://askubuntu.com/questions/777342/how-to-install-tomcat-9
 # https://www.rosehosting.com/blog/install-tomcat-9-on-an-ubuntu-16-04-vps/
-sudo useradd -r tomcat --shell /bin/false
+useradd -r tomcat --shell /bin/false
 cd /opt
-sudo wget http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz
-sudo tar -xzf apache-tomcat-9.0.7.tar.gz
-sudo rm apache-tomcat-9.0.7.tar.gz
-sudo mv apache-tomcat-9.0.7 tomcat9
-sudo chown -hR tomcat: tomcat9
+wget http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.7/bin/apache-tomcat-9.0.7.tar.gz
+tar -xzf apache-tomcat-9.0.7.tar.gz
+rm apache-tomcat-9.0.7.tar.gz
+mv apache-tomcat-9.0.7 tomcat9
+chown -hR tomcat: tomcat9
 
 echo
 echo "Installing THREDDS..."
-sudo wget ftp://ftp.unidata.ucar.edu/pub/thredds/4.6/current/thredds.war -P /opt/tomcat9/webapps/
-
-user=$(whoami)
-sudo su root
+wget ftp://ftp.unidata.ucar.edu/pub/thredds/4.6/current/thredds.war -P /opt/tomcat9/webapps/
 
 echo
 echo "Installing Tomcat service..."
@@ -74,5 +77,3 @@ source ~/.bashrc
 systemctl daemon-reload
 systemctl start tomcat
 systemctl enable tomcat
-
-su $user
