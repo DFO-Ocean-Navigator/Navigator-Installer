@@ -22,7 +22,7 @@ echo
 echo "Acquiring Tomcat 9 + THREDDS..."
 sudo useradd -r tomcat --shell /bin/false
 cd /opt
-if [ -d "/opt/tomcat9/" ]: then
+if [ -d "/opt/tomcat9/" ]; then
     sudo rm -r /opt/tomcat9
 fi
 sudo wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
