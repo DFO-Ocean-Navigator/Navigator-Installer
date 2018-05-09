@@ -17,6 +17,7 @@ install_dir=/opt/tools
 if [ ! -d "$install_dir" ]; then 
     sudo mkdir $install_dir
     sudo mkdir $install_dir/Ocean-Data-Map-Project/
+    sudo mkdir $install_dir/Ocean-Navigator-Config-Tool/
 fi
 
 echo
@@ -25,7 +26,7 @@ sudo apt update
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git software-properties-common curl libgdal1-dev
+sudo apt -y install git software-properties-common curl libgdal1-dev git-lfs
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt -y install nodejs
 npm install -g bower
@@ -35,6 +36,7 @@ echo "Grabbing Ocean Navigator..."
 sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir/Ocean-Data-Map-Project/
 # Set permissions of git folder to be of current user
 sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Data-Map-Project/
+sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Navigator-Config-Tool/
 
 echo
 echo "Building frontend files..."
@@ -51,6 +53,17 @@ echo
 echo "Setting PATH"
 echo 'export PATH=$install_dir/miniconda3/bin/:$PATH' >> ~/.bashrc
 source ~/.bashrc
+
+echo
+echo "Grabbing lastest version of Config Tool..."
+curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Ocean-Navigator-Config-Tool/releases/latest \
+| grep "browser_download_url.*tar.gz" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+tar -xvvf Config_Tool.tar.gz $install_dir/Ocean-Navigator-Config-Tool/
+rm Config_Tool.tar.gz
+echo "The config tool is found in: $install_dir/Ocean-Navigator-Config-Tool/"
 
 # Cleanup
 echo
