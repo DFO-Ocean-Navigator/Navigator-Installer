@@ -20,26 +20,29 @@ sudo apt -y install oracle-java10-set-default
 
 echo
 echo "Acquiring Tomcat 9 + THREDDS..."
-sudo useradd -r tomcat --shell /bin/false
-cd /opt
+#sudo useradd -r tomcat --shell /bin/false
 if [ -d "/opt/tomcat9/" ]; then
     sudo rm -r /opt/tomcat9
 fi
-sudo wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
-sudo tar -xjC /opt/ -f tomcat9-thredds.tar.gz
+wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
+tar -xjC /home/$USER/ -f tomcat9-thredds.tar.gz
+rm tomcat9-thredds.tar.gz
 
-sudo chown -R tomcat /opt/tomcat9/
-sudo chgrp -R tomcat /opt/tomcat9/
+sudo mv /home/$USER/tomcat9 /opt/
 
-sudo mkdir /usr/local/tomcat
-sudo mkdir /usr/local/tomcat/content
+#sudo chown -R tomcat /opt/tomcat9/
+#sudo chgrp -R tomcat /opt/tomcat9/
 
-sudo chown -R tomcat /usr/local/tomcat
-sudo chgrp -R tomcat /usr/local/tomcat
+sudo mkdir /opt/thredds_content/
+
+sudo chown -R $USER:$USER /opt/thredds_content/
+
+#sudo chown -R tomcat /usr/local/tomcat
+#sudo chgrp -R tomcat /usr/local/tomcat
 
 echo
 echo "Starting server..."
-sudo bash /opt/tomcat9/bin/startup.sh
+bash /opt/tomcat9/bin/startup.sh
 
 echo
 echo "Install complete! Visit localhost:8080/thredds/"
