@@ -11,7 +11,7 @@ else
 fi
 
 # Default installation directory
-install_dir=/opt/tools
+install_dir=/opt
 
 # Create directory if it doesn't exist
 if [ ! -d "$install_dir" ]; then 
@@ -26,7 +26,7 @@ sudo apt update
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git software-properties-common curl libgdal1-dev git-lfs
+sudo apt -y install git software-properties-common curl libgdal1-dev
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt -y install nodejs
 npm install -g bower
