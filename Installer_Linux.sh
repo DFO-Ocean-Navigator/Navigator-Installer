@@ -27,7 +27,7 @@ sudo apt update
 echo
 echo "Installing pre-requisites..."
 sudo apt -y install git software-properties-common curl libgdal1-dev
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt -y install nodejs
 npm install -g bower
 
@@ -45,7 +45,7 @@ npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run bu
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
-if [ ! -d $install_dir/miniconda3 ]; then
+if [ ! -d $install_dir/tools/miniconda3 ]; then
     wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
     sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
     sudo rm miniconda-distro.tar.gz
@@ -53,7 +53,7 @@ fi
 
 echo
 echo "Setting PATH"
-echo 'export PATH=/opt/miniconda3/bin/:$PATH' >> ~/.bashrc
+echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 echo
