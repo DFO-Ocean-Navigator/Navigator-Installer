@@ -27,9 +27,9 @@ sudo apt update
 echo
 echo "Installing pre-requisites..."
 sudo apt -y install git software-properties-common curl libgdal1-dev
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt -y install nodejs
-npm install -g bower
+sudo npm install -g bower
 
 echo
 echo "Grabbing Ocean Navigator..."
