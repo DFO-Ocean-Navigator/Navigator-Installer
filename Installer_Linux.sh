@@ -53,8 +53,8 @@ if [ ! -d $install_dir/tools/miniconda3 ]; then
 fi
 
 echo
-echo "Setting PATH"
-echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
+echo "Setting PATH if needed..."
+[[ ":$PATH:" != *":/opt/tools/miniconda3/bin:"* ]] && echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 echo
