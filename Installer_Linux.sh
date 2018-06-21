@@ -45,7 +45,7 @@ npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run bu
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
-if [! -d $install_dir/miniconda3 ]; then
+if [ ! -d $install_dir/miniconda3 ]; then
     wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
     sudo tar -xjC $install_dir -f miniconda-distro.tar.gz 
     sudo rm miniconda-distro.tar.gz
@@ -53,7 +53,7 @@ fi
 
 echo
 echo "Setting PATH"
-echo 'export PATH=${install_dir}/miniconda3/bin/:$PATH' >> ~/.bashrc
+echo 'export PATH=/opt/miniconda3/bin/:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 echo
