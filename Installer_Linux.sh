@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check for network connection
 # https://stackoverflow.com/a/26820300/2231969
@@ -26,7 +26,8 @@ sudo apt update
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git software-properties-common curl libgdal1-dev
+sudo apt -y install git software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4
+sudo ldconfig
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt -y install nodejs
 sudo npm install -g bower
