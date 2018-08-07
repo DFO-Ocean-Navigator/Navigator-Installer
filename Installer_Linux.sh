@@ -17,7 +17,7 @@ install_dir=/opt
 if [ ! -d "$install_dir" ]; then 
     sudo mkdir $install_dir
     sudo mkdir $install_dir/Ocean-Data-Map-Project/
-    sudo mkdir $install_dir/Ocean-Navigator-Config-Tool/
+    sudo mkdir $install_dir/Navigator2Go/
 fi
 
 echo
@@ -37,7 +37,7 @@ echo "Grabbing Ocean Navigator..."
 sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git $install_dir/Ocean-Data-Map-Project/
 # Set permissions of git folder to be of current user
 sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Data-Map-Project/
-sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Navigator-Config-Tool/
+sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Navigator2Go/
 
 echo
 echo "Building frontend files..."
