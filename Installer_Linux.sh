@@ -26,7 +26,7 @@ sudo apt update
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4
+sudo apt -y install git software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd
 sudo ldconfig
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt -y install nodejs
