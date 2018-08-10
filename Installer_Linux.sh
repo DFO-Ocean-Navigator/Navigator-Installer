@@ -108,6 +108,7 @@ curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Navigator2Go/releases/l
 | wget -qi -
 tar -xvvf Navigator2Go.tar.gz $install_dir/Navigator2Go/
 rm Navigator2Go.tar.gz
+chmod +x $install_dir/Navigator2Go/Navigator2Go
 echo "Navigator2Go executable is found in: $install_dir/Navigator2Go/"
 
 # Cleanup
