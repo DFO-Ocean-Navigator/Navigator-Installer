@@ -15,9 +15,8 @@ install_dir=/opt
 
 # Create directory if it doesn't exist
 if [ ! -d "$install_dir" ]; then 
-    sudo mkdir $install_dir
-    sudo mkdir $install_dir/Ocean-Data-Map-Project/
-    sudo mkdir $install_dir/Navigator2Go/
+    sudo mkdir -c $install_dir/Ocean-Data-Map-Project/
+    sudo mkdir -c $install_dir/Navigator2Go/
 fi
 
 echo
@@ -30,7 +29,7 @@ sudo apt -y install git software-properties-common curl libgdal1-dev libnetcdf-c
 sudo ldconfig
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt -y install nodejs
-sudo npm install -g bower
+npm install -g bower
 
 echo
 echo "Grabbing Ocean Navigator..."
