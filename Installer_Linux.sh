@@ -79,7 +79,7 @@ if [ ! -d $THREDDS_CONTENT_DIR ]; then
     sudo chown -R $USER:$USER $THREDDS_CONTENT_DIR
 fi
 
-sed -i "s@TDS_CONTENT@$THREDDS_CONTENT_DIR" /opt/tomcat9/bin/setenv.sh
+sed -i "s@TDS_CONTENT@$THREDDS_CONTENT_DIR@" /opt/tomcat9/bin/setenv.sh
 
 echo
 echo "Starting server..."
