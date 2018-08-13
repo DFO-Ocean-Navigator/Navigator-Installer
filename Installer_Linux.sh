@@ -15,8 +15,8 @@ install_dir=/opt
 
 # Create directory if it doesn't exist
 if [ ! -d "$install_dir" ]; then 
-    sudo mkdir -c $install_dir/Ocean-Data-Map-Project/
-    sudo mkdir -c $install_dir/Navigator2Go/
+    sudo mkdir -p $install_dir/Ocean-Data-Map-Project/
+    sudo mkdir -p $install_dir/Navigator2Go/
 fi
 
 echo
