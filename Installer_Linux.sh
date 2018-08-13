@@ -13,11 +13,8 @@ fi
 # Default installation directory
 install_dir=/opt
 
-# Create directory if it doesn't exist
-if [ ! -d "$install_dir" ]; then 
-    sudo mkdir -p $install_dir/Ocean-Data-Map-Project/
-    sudo mkdir -p $install_dir/Navigator2Go/
-fi
+sudo mkdir -p $install_dir/Ocean-Data-Map-Project/
+sudo mkdir -p $install_dir/Navigator2Go/
 
 echo
 echo "Updating package list..."
