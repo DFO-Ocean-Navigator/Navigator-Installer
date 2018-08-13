@@ -54,13 +54,6 @@ echo "Setting PATH if needed..."
 [[ ":$PATH:" != *":/opt/tools/miniconda3/bin:"* ]] && echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
-echo "Enter directory where local datasets should be stored [/opt/thredds_content/]:"
-read THREDDS_CONTENT_DIR
-if [ -z "${THREDDS_CONTENT_DIR// }" ]; then # Expand user input and spaces with nothing
-    # Empty string given by user
-    THREDDS_CONTENT_DIR=/opt/thredds_content
-fi
-
 echo
 echo "Installing Java 10..."
 sudo add-apt-repository ppa:linuxuprising/java -y
@@ -80,6 +73,7 @@ sudo mv /home/$USER/tomcat9 /opt/
 sudo chown -R $USER:$USER /opt/tomcat9/
 rm tomcat9-thredds.tar.gz
 
+THREDDS_CONTENT_DIR=/opt/thredds_content
 if [ ! -d $THREDDS_CONTENT_DIR ]; then
     sudo mkdir -pv $THREDDS_CONTENT_DIR
     sudo chown -R $USER:$USER $THREDDS_CONTENT_DIR
@@ -102,7 +96,7 @@ curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Navigator2Go/releases/l
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
-tar -xvvf Navigator2Go.tar.gz $install_dir/Navigator2Go/
+tar -xvzf Navigator2Go.tar.gz -C $install_dir/Navigator2Go/
 rm Navigator2Go.tar.gz
 chmod +x $install_dir/Navigator2Go/Navigator2Go
 echo "Navigator2Go executable is found in: $install_dir/Navigator2Go/"
