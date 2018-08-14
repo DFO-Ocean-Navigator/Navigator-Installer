@@ -35,6 +35,9 @@ sudo git clone https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git
 sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Ocean-Data-Map-Project/
 sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Navigator2Go/
 
+sudo chown -R $USER:$(id -gn $USER) /home/$USER/.config
+sudo chown -R $USER:$(id -gn $USER) /home/$USER/.npm
+
 echo
 echo "Building frontend files..."
 npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
