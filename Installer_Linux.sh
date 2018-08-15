@@ -17,7 +17,7 @@ install_dir=/opt
 if [ -d $install_dir/Ocean-Data-Map-Project/ ]; then
     sudo rm -r $install_dir/Ocean-Data-Map-Project/
 fi
-if [ -d $install_dir/Navigator2Go/]; then
+if [ -d $install_dir/Navigator2Go/ ]; then
     sudo rm -r $install_dir/Navigator2Go/
 fi
 
