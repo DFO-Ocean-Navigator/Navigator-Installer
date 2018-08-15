@@ -73,7 +73,7 @@ echo "Acquiring bathymetry and topography files..."
 if [ ! -d /data/hdd/misc ]; then
     sudo mkdir -p /data/hdd/misc
     wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.gz
-    sudo pigz -dc bathymetry_topography.tar.gz | tar xvf - -C /data/hdd/misc
+    sudo pigz -dc bathymetry_topography.tar.gz | sudo tar xvf - -C /data/hdd/misc
     sudo rm bathymetry_topography.tar.gz
     sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER /data/hdd/misc
 fi
