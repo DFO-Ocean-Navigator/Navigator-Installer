@@ -32,7 +32,7 @@ sudo apt upgrade
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git pigz software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
+sudo apt -y install git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
 sudo ldconfig
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
 sudo apt -y install nodejs
