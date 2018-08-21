@@ -106,14 +106,6 @@ fi
 sed -i "s@TDS_CONTENT@$THREDDS_CONTENT_DIR@" /opt/tomcat9/bin/setenv.sh
 
 echo
-echo "Starting server..."
-bash /opt/tomcat9/bin/startup.sh
-echo "To shutdown: bash /opt/tomcat9/bin/shutdown.sh"
-
-echo
-echo "THREDDS Install complete! Visit localhost:8080/thredds/"
-
-echo
 echo "Grabbing lastest version of Navigator2Go..."
 curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Navigator2Go/releases/latest \
 | grep "browser_download_url.*tar.gz" \
