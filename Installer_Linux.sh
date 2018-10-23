@@ -58,9 +58,9 @@ echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
 if [ ! -d $install_dir/tools/miniconda3 ]; then
     sudo mkdir -p $install_dir/tools
-    wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.gz
-    sudo tar -xjC $install_dir/tools/ -f miniconda-distro.tar.gz 
-    sudo rm miniconda-distro.tar.gz
+    wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.bz2
+    sudo tar -xjC $install_dir/tools/ -f miniconda-distro.tar.bz2 
+    sudo rm miniconda-distro.tar.bz2
 fi
 
 echo
