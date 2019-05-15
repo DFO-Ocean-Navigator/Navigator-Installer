@@ -80,10 +80,10 @@ fi
 
 echo
 echo "Acquiring shape files..."
-if [ ! -d /data/hdd/misc/shapes]; then
+if [ ! -d /data/hdd/misc/shapes ]; then
     wget http://navigator.oceansdata.ca/cdn/shapes.tar.bz2
-    sudo tar -xjC /data/hdd/misc -f shapes.tar.bz2
-    sudo rm shapes.tar.bz2
+    tar -xjC /data/hdd/misc -f shapes.tar.bz2
+    rm shapes.tar.bz2
 fi
 
 echo
