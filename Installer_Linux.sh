@@ -64,9 +64,13 @@ if [ ! -d $install_dir/tools/miniconda3 ]; then
 fi
 
 echo
-echo "Setting PATH if needed..."
-[[ ":$PATH:" != *":/opt/tools/miniconda3/bin:"* ]] && echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
-source ~/.bashrc
+echo "Adjusting PATH globally, if needed..."
+PROFILE_SCRIPT=/etc/profile.d/ocean-navigator.sh
+if [ ! -f  $PROFILE_SCRIPT ]; then
+sudo printf "export PATH=/opt/tools/miniconda3/bin/:$PATH\n" > $PROFILE_SCRIPT # https://unix.stackexchange.com/questions/65803/why-is-printf-better-than-echo
+source /etc/profile # Apply changes
+source ~/.bashrc # Apply user's changes after system
+fi
 
 echo
 echo "Acquiring bathymetry and topography files..."
