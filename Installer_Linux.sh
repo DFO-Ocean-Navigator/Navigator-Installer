@@ -79,6 +79,14 @@ if [ ! -d /data/hdd/misc ]; then
 fi
 
 echo
+echo "Acquiring shape files..."
+if [ ! -d /data/hdd/misc/shapes ]; then
+    wget http://navigator.oceansdata.ca/cdn/shapes.tar.bz2
+    tar -xjC /data/hdd/misc -f shapes.tar.bz2
+    rm shapes.tar.bz2
+fi
+
+echo
 echo "Installing Java 10..."
 sudo add-apt-repository ppa:linuxuprising/java -y
 sudo apt update
