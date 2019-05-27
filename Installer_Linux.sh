@@ -69,6 +69,7 @@ PROFILE_SCRIPT=/etc/profile.d/ocean-navigator.sh
 if [ ! -f  $PROFILE_SCRIPT ]; then
 sudo printf "export PATH=/opt/tools/miniconda3/bin/:$PATH\n" > $PROFILE_SCRIPT # https://unix.stackexchange.com/questions/65803/why-is-printf-better-than-echo
 source /etc/profile # Apply changes
+conda init # Fix some environment issues related to PROJ4
 source ~/.bashrc # Apply user's changes after system
 fi
 
