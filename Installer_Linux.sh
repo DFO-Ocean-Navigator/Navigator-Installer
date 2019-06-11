@@ -73,10 +73,10 @@ echo
 echo "Acquiring bathymetry and topography files..."
 if [ ! -d /data/hdd/misc ]; then
     sudo mkdir -p /data/hdd/misc
-    wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.gz
-    sudo pigz -dc bathymetry_topography.tar.gz | sudo tar xvf - -C /data/hdd/misc
-    sudo rm bathymetry_topography.tar.gz
     sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER /data/hdd/misc
+    wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.bz2
+    tar -xjC - -C /data/hdd/misc -f bathymetry_topography.tar.bz2
+    rm bathymetry_topography.tar.bz2
 fi
 
 echo
@@ -100,11 +100,11 @@ echo "Acquiring Tomcat 9 + THREDDS..."
 if [ -d /opt/tomcat9/ ]; then
     sudo rm -r /opt/tomcat9
 fi
-wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
-tar -xjC /home/$USER/ -f tomcat9-thredds.tar.gz
+wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.bz2
+tar -xjC /home/$USER/ -f tomcat9-thredds.tar.bz2
 sudo mv /home/$USER/tomcat9 /opt/
 sudo chown -R $USER:$USER /opt/tomcat9/
-rm tomcat9-thredds.tar.gz
+rm tomcat9-thredds.tar.bz2
 
 THREDDS_CONTENT_DIR=/opt/thredds_content
 if [ ! -d $THREDDS_CONTENT_DIR ]; then
