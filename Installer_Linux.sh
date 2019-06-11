@@ -26,17 +26,18 @@ sudo mkdir -p $install_dir/Ocean-Data-Map-Project/
 sudo mkdir -p $install_dir/Navigator2Go/
 
 echo
-echo "Updating package list..."
+echo "Updating and Appending package list..."
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - # Yarn stable
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
 sudo apt update
 sudo apt upgrade
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
+sudo apt -y install yarn nodejs git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
 sudo ldconfig
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
-sudo apt -y install nodejs
-sudo npm install -g bower
+sudo yarn install -g bower
 
 echo
 echo "Grabbing Ocean Navigator..."
@@ -47,12 +48,12 @@ sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Navigator2Go/
 
 # Fix Bower permissions issues
 sudo chown -R $USER:$(id -gn $USER) /home/$USER/.config
-sudo chown -R $USER:$(id -gn $USER) /home/$USER/.npm
+sudo chown -R $USER:$(id -gn $USER) /home/$USER/.yarn
 
 echo
 echo "Building frontend files..."
-npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
-npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
+yarn --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
+yarn --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
