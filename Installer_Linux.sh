@@ -11,7 +11,8 @@ else
 fi
 
 # Default installation directory
-install_dir=/opt
+install_dir="/opt"
+sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir
 
 # Remove old installation
 if [ -d $install_dir/Ocean-Data-Map-Project/ ]; then
