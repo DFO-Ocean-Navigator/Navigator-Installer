@@ -27,6 +27,7 @@ sudo mkdir -p $install_dir/Navigator2Go/
 
 echo
 echo "Updating and Appending package list..."
+sudo apt install curl
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - # Yarn stable
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
