@@ -58,10 +58,13 @@ yarn --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run b
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
 if [ ! -d $install_dir/tools/miniconda3 ]; then
+    if [ -f ./Miniconda-lastest-Linux-x86_64.sh ]; then
+        rm Miniconda-lastest-Linux-x86_64.sh
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod +x ./Miniconda-lastest-Linux-x86_64.sh
     ./Miniconda-lastest-Linux-x86_64.sh -bp $install_dir/tools/miniconda3
-    conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
+    $install_dir/tools/miniconda3/bin/conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
+    rm Miniconda-lastest-Linux-x86_64.sh
 fi
 
 echo
