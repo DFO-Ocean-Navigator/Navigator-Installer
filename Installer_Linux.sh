@@ -54,8 +54,8 @@ sudo chown -R $USER:$(id -gn $USER) /home/$USER/.yarn
 
 echo
 echo "Building frontend files..."
-yarn --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
-yarn --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
+yarn --cwd $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
+yarn --cwd $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
