@@ -11,7 +11,8 @@ else
 fi
 
 # Default installation directory
-install_dir=/opt
+install_dir="/opt"
+sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir
 
 # Remove old installation
 if [ -d $install_dir/Ocean-Data-Map-Project/ ]; then
@@ -26,17 +27,19 @@ sudo mkdir -p $install_dir/Ocean-Data-Map-Project/
 sudo mkdir -p $install_dir/Navigator2Go/
 
 echo
-echo "Updating package list..."
+echo "Updating and Appending package list..."
+sudo apt install curl
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - # Yarn stable
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
 sudo apt update
 sudo apt upgrade
 
 echo
 echo "Installing pre-requisites..."
-sudo apt -y install git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
+sudo apt -y install yarn nodejs git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
 sudo ldconfig
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - # Node 8
-sudo apt -y install nodejs
-sudo npm install -g bower
+sudo yarn global add bower
 
 echo
 echo "Grabbing Ocean Navigator..."
@@ -47,20 +50,24 @@ sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER $install_dir/Navigator2Go/
 
 # Fix Bower permissions issues
 sudo chown -R $USER:$(id -gn $USER) /home/$USER/.config
-sudo chown -R $USER:$(id -gn $USER) /home/$USER/.npm
+sudo chown -R $USER:$(id -gn $USER) /home/$USER/.yarn
 
 echo
 echo "Building frontend files..."
-npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
-npm --prefix $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
+yarn --cwd $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ install
+yarn --cwd $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run build
 
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
 if [ ! -d $install_dir/tools/miniconda3 ]; then
-    sudo mkdir -p $install_dir/tools
-    wget http://navigator.oceansdata.ca/cdn/miniconda-distro.tar.bz2
-    sudo tar -xjC $install_dir/tools/ -f miniconda-distro.tar.bz2 
-    sudo rm miniconda-distro.tar.bz2
+    if [ -f Miniconda3-latest-Linux-x86_64.sh ]; then
+        rm Miniconda3-latest-Linux-x86_64.sh
+    fi
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    chmod +x Miniconda3-latest-Linux-x86_64.sh
+    ./Miniconda3-latest-Linux-x86_64.sh -bp $install_dir/tools/miniconda3
+    $install_dir/tools/miniconda3/bin/conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
+    rm Miniconda3-latest-Linux-x86_64.sh
 fi
 
 echo
@@ -69,13 +76,17 @@ echo "Setting PATH if needed..."
 source ~/.bashrc
 
 echo
+echo "Initializing conda..."
+conda init bash
+
+echo
 echo "Acquiring bathymetry and topography files..."
 if [ ! -d /data/hdd/misc ]; then
     sudo mkdir -p /data/hdd/misc
-    wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.gz
-    sudo pigz -dc bathymetry_topography.tar.gz | sudo tar xvf - -C /data/hdd/misc
-    sudo rm bathymetry_topography.tar.gz
     sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER /data/hdd/misc
+    wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.bz2
+    tar -xjC - -C /data/hdd/misc -f bathymetry_topography.tar.bz2
+    rm bathymetry_topography.tar.bz2
 fi
 
 echo
@@ -87,23 +98,23 @@ if [ ! -d /data/hdd/misc/shapes ]; then
 fi
 
 echo
-echo "Installing Java 10..."
+echo "Installing Java 12..."
 sudo add-apt-repository ppa:linuxuprising/java -y
 sudo apt update
-sudo echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo apt -y install oracle-java10-installer
-sudo apt -y install oracle-java10-set-default
+sudo echo oracle-java12-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt -y install oracle-java12-installer
+sudo apt -y install oracle-java12-set-default
 
 echo
 echo "Acquiring Tomcat 9 + THREDDS..."
 if [ -d /opt/tomcat9/ ]; then
     sudo rm -r /opt/tomcat9
 fi
-wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
-tar -xjC /home/$USER/ -f tomcat9-thredds.tar.gz
+wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.bz2
+tar -xjC /home/$USER/ -f tomcat9-thredds.tar.bz2
 sudo mv /home/$USER/tomcat9 /opt/
 sudo chown -R $USER:$USER /opt/tomcat9/
-rm tomcat9-thredds.tar.gz
+rm tomcat9-thredds.tar.bz2
 
 THREDDS_CONTENT_DIR=/opt/thredds_content
 if [ ! -d $THREDDS_CONTENT_DIR ]; then
@@ -114,7 +125,7 @@ fi
 sed -i "s@TDS_CONTENT@$THREDDS_CONTENT_DIR@" /opt/tomcat9/bin/setenv.sh
 
 echo
-echo "Grabbing lastest version of Navigator2Go..."
+echo "Grabbing latest version of Navigator2Go..."
 curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Navigator2Go/releases/latest \
 | grep "browser_download_url.*tar.gz" \
 | cut -d : -f 2,3 \
