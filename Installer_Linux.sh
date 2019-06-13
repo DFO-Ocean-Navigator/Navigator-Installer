@@ -60,12 +60,12 @@ yarn --cwd $install_dir/Ocean-Data-Map-Project/oceannavigator/frontend/ run buil
 echo
 echo "Acquiring Python 3 distribution (Miniconda)..."
 if [ ! -d $install_dir/tools/miniconda3 ]; then
-    if [ -f ./Miniconda-lastest-Linux-x86_64.sh ]; then
+    if [ -f Miniconda-lastest-Linux-x86_64.sh ]; then
         rm Miniconda-lastest-Linux-x86_64.sh
     fi
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    chmod +x ./Miniconda-lastest-Linux-x86_64.sh
-    ./Miniconda-lastest-Linux-x86_64.sh -bp $install_dir/tools/miniconda3
+    chmod +x Miniconda-lastest-Linux-x86_64.sh
+    Miniconda-lastest-Linux-x86_64.sh -bp $install_dir/tools/miniconda3
     $install_dir/tools/miniconda3/bin/conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
     rm Miniconda-lastest-Linux-x86_64.sh
 fi
@@ -94,12 +94,12 @@ if [ ! -d /data/hdd/misc/shapes ]; then
 fi
 
 echo
-echo "Installing Java 10..."
+echo "Installing Java 12..."
 sudo add-apt-repository ppa:linuxuprising/java -y
 sudo apt update
-sudo echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo apt -y install oracle-java10-installer
-sudo apt -y install oracle-java10-set-default
+sudo echo oracle-java12-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt -y install oracle-java12-installer
+sudo apt -y install oracle-java12-set-default
 
 echo
 echo "Acquiring Tomcat 9 + THREDDS..."
