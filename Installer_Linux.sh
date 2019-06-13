@@ -76,6 +76,10 @@ echo "Setting PATH if needed..."
 source ~/.bashrc
 
 echo
+echo "Initializing conda..."
+conda init bash
+
+echo
 echo "Acquiring bathymetry and topography files..."
 if [ ! -d /data/hdd/misc ]; then
     sudo mkdir -p /data/hdd/misc
@@ -121,7 +125,7 @@ fi
 sed -i "s@TDS_CONTENT@$THREDDS_CONTENT_DIR@" /opt/tomcat9/bin/setenv.sh
 
 echo
-echo "Grabbing lastest version of Navigator2Go..."
+echo "Grabbing latest version of Navigator2Go..."
 curl -s https://api.github.com/repos/DFO-Ocean-Navigator/Navigator2Go/releases/latest \
 | grep "browser_download_url.*tar.gz" \
 | cut -d : -f 2,3 \

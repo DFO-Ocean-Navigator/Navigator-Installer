@@ -11,12 +11,12 @@ else
 fi
 
 echo
-echo "Installing Java 10..."
+echo "Installing Java 12..."
 sudo add-apt-repository ppa:linuxuprising/java -y
 sudo apt update
 sudo echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo apt -y install oracle-java10-installer
-sudo apt -y install oracle-java10-set-default
+sudo apt -y install oracle-java12-installer
+sudo apt -y install oracle-java12-set-default
 
 echo
 echo "Acquiring Tomcat 9 + THREDDS..."
@@ -24,9 +24,9 @@ echo "Acquiring Tomcat 9 + THREDDS..."
 if [ -d "/opt/tomcat9/" ]; then
     sudo rm -r /opt/tomcat9
 fi
-wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.gz
-tar -xjC /home/$USER/ -f tomcat9-thredds.tar.gz
-rm tomcat9-thredds.tar.gz
+wget http://navigator.oceansdata.ca/cdn/tomcat9-thredds.tar.bz2
+tar -xjC /home/$USER/ -f tomcat9-thredds.tar.bz2
+rm tomcat9-thredds.tar.bz2
 
 sudo mv /home/$USER/tomcat9 /opt/
 
