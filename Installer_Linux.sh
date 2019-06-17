@@ -81,19 +81,19 @@ conda init bash
 
 echo
 echo "Acquiring bathymetry and topography files..."
-if [ ! -d /data/hdd/misc ]; then
-    sudo mkdir -p /data/hdd/misc
-    sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER /data/hdd/misc
+if [ ! -d /data/misc ]; then
+    sudo mkdir -p /data/misc
+    sudo chown -R ${USER:=$(/usr/bin/id -run)}:$USER /data/misc
     wget http://navigator.oceansdata.ca/cdn/bathymetry_topography.tar.bz2
-    tar -xjC - -C /data/hdd/misc -f bathymetry_topography.tar.bz2
+    tar -xjC - -C /data/misc -f bathymetry_topography.tar.bz2
     rm bathymetry_topography.tar.bz2
 fi
 
 echo
 echo "Acquiring shape files..."
-if [ ! -d /data/hdd/misc/shapes ]; then
+if [ ! -d /data/misc/shapes ]; then
     wget http://navigator.oceansdata.ca/cdn/shapes.tar.bz2
-    tar -xjC /data/hdd/misc -f shapes.tar.bz2
+    tar -xjC /data/misc -f shapes.tar.bz2
     rm shapes.tar.bz2
 fi
 
