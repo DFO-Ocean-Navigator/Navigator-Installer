@@ -66,18 +66,11 @@ if [ ! -d $install_dir/tools/miniconda3 ]; then
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     chmod +x Miniconda3-latest-Linux-x86_64.sh
     ./Miniconda3-latest-Linux-x86_64.sh -bp $install_dir/tools/miniconda3
-    $install_dir/tools/miniconda3/bin/conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
+    $install_dir/tools/miniconda3/bin/conda init bash
+    source ~/.bashrc
+    conda env create -f $install_dir/Ocean-Data-Map-Project/config/conda/environment.yml
     rm Miniconda3-latest-Linux-x86_64.sh
 fi
-
-echo
-echo "Setting PATH if needed..."
-[[ ":$PATH:" != *":/opt/tools/miniconda3/bin:"* ]] && echo 'export PATH=/opt/tools/miniconda3/bin/:$PATH' >> ~/.bashrc
-source ~/.bashrc
-
-echo
-echo "Initializing conda..."
-conda init bash
 
 echo
 echo "Acquiring bathymetry and topography files..."
