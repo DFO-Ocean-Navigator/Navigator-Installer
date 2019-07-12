@@ -39,7 +39,7 @@ echo
 echo "Installing pre-requisites..."
 sudo apt -y install yarn nodejs git pigz libdw-dev binutils-dev software-properties-common curl libgdal1-dev libnetcdf-c++4-dev libnetcdf-c++4 notify-osd build-essential
 sudo ldconfig
-sudo yarn global add bower
+yarn global add bower
 
 echo
 echo "Grabbing Ocean Navigator..."
