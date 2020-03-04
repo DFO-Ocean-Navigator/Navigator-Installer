@@ -1,0 +1,327 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "matplotlib",
+    "python"
+  ],
+  "extracted_package_dir": "/home/buildadm/miniconda/3/amd64/pkgs/cmocean-2.0-py_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/LICENSE.txt",
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/METADATA",
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/RECORD",
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/WHEEL",
+    "lib/python3.6/site-packages/cmocean-2.0.dist-info/top_level.txt",
+    "lib/python3.6/site-packages/cmocean/__init__.py",
+    "lib/python3.6/site-packages/cmocean/cm.py",
+    "lib/python3.6/site-packages/cmocean/data.py",
+    "lib/python3.6/site-packages/cmocean/plots.py",
+    "lib/python3.6/site-packages/cmocean/rgb/algae-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/amp-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/balance-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/curl-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/deep-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/delta-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/dense-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/diff-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/gray-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/haline-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/ice-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/matter-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/oxy-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/phase-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/rain-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/solar-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/speed-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/tarn-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/tempo-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/thermal-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/topo-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/rgb/turbid-rgb.txt",
+    "lib/python3.6/site-packages/cmocean/tools.py",
+    "lib/python3.6/site-packages/cmocean/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/cmocean/__pycache__/cm.cpython-36.pyc",
+    "lib/python3.6/site-packages/cmocean/__pycache__/data.cpython-36.pyc",
+    "lib/python3.6/site-packages/cmocean/__pycache__/plots.cpython-36.pyc",
+    "lib/python3.6/site-packages/cmocean/__pycache__/tools.cpython-36.pyc"
+  ],
+  "fn": "cmocean-2.0-py_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/buildadm/miniconda/3/amd64/pkgs/cmocean-2.0-py_0",
+    "type": 1
+  },
+  "md5": "daa2328b287a3c2a3aad25fb9a3097d2",
+  "name": "cmocean",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/buildadm/miniconda/3/amd64/pkgs/cmocean-2.0-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "ca2993ffcd19156051e2ff594e934976bffc4d71b56a59dfc998e236eb0ce7f7",
+        "sha256_in_prefix": "ca2993ffcd19156051e2ff594e934976bffc4d71b56a59dfc998e236eb0ce7f7",
+        "size_in_bytes": 1082
+      },
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "f5c75b91a4aa54befb4e5f72fe3a00ba33977dc72a6ff4c26feeeaf008552264",
+        "sha256_in_prefix": "f5c75b91a4aa54befb4e5f72fe3a00ba33977dc72a6ff4c26feeeaf008552264",
+        "size_in_bytes": 2541
+      },
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "b4e964a9bd4e45ddee8631a2c8b62d626c68a6e5f75fc2c66c192d164cb6d25b",
+        "sha256_in_prefix": "b4e964a9bd4e45ddee8631a2c8b62d626c68a6e5f75fc2c66c192d164cb6d25b",
+        "size_in_bytes": 2784
+      },
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "e52a4c9ea634a1c869ce3cb33e98d61027b294b1d4fd1182e8311948ffb78711",
+        "sha256_in_prefix": "e52a4c9ea634a1c869ce3cb33e98d61027b294b1d4fd1182e8311948ffb78711",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "site-packages/cmocean-2.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "268553745904cde247a26b21099e732d819797c83a21ee499d39c911d5dbb8da",
+        "sha256_in_prefix": "268553745904cde247a26b21099e732d819797c83a21ee499d39c911d5dbb8da",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/cmocean/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e7b47e789a9307b1a22b5881fc676617dfbc2f6382f854b1106acda5dbcb56ef",
+        "sha256_in_prefix": "e7b47e789a9307b1a22b5881fc676617dfbc2f6382f854b1106acda5dbcb56ef",
+        "size_in_bytes": 398
+      },
+      {
+        "_path": "site-packages/cmocean/cm.py",
+        "path_type": "hardlink",
+        "sha256": "ece4ab4d3d3b90256bd2bac34e4c463fe6d263a130f071efc4815b328ea355db",
+        "sha256_in_prefix": "ece4ab4d3d3b90256bd2bac34e4c463fe6d263a130f071efc4815b328ea355db",
+        "size_in_bytes": 1572
+      },
+      {
+        "_path": "site-packages/cmocean/data.py",
+        "path_type": "hardlink",
+        "sha256": "c63ca8f473ab23842a9844cd0663d82df2c26e94d43439c6ba1d2191049fb78d",
+        "sha256_in_prefix": "c63ca8f473ab23842a9844cd0663d82df2c26e94d43439c6ba1d2191049fb78d",
+        "size_in_bytes": 4165
+      },
+      {
+        "_path": "site-packages/cmocean/plots.py",
+        "path_type": "hardlink",
+        "sha256": "4cde0937b214c17a43832462d75ba192f3341ba384e0deba956b40d102ffa95c",
+        "sha256_in_prefix": "4cde0937b214c17a43832462d75ba192f3341ba384e0deba956b40d102ffa95c",
+        "size_in_bytes": 5295
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/algae-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "33ec7351770c82c4560b82cc7a2f864117740479fae0332268c0ea73b5724286",
+        "sha256_in_prefix": "33ec7351770c82c4560b82cc7a2f864117740479fae0332268c0ea73b5724286",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/amp-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "7545759b98c0ea0cff60a97b7d97f92fae3f762cfef99ad41d1d2f160c31030d",
+        "sha256_in_prefix": "7545759b98c0ea0cff60a97b7d97f92fae3f762cfef99ad41d1d2f160c31030d",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/balance-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "8abbfe7ac4753be904b0c15534882da94ca22b63e25a468c0654637977b7c1cd",
+        "sha256_in_prefix": "8abbfe7ac4753be904b0c15534882da94ca22b63e25a468c0654637977b7c1cd",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/curl-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "6267de01c3995a94889a95d07c97d3d796ef25b1daa2db8a5d110f3224a9e770",
+        "sha256_in_prefix": "6267de01c3995a94889a95d07c97d3d796ef25b1daa2db8a5d110f3224a9e770",
+        "size_in_bytes": 38400
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/deep-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "040df9fb34f8aa0aef581d38bc5c39c5bd96810608e6a9cdfd9ecc3fda1160c3",
+        "sha256_in_prefix": "040df9fb34f8aa0aef581d38bc5c39c5bd96810608e6a9cdfd9ecc3fda1160c3",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/delta-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "16b48e1b078b0bf441e41ddbf5c622c99db1bad3b331971ef6764c390f113c1a",
+        "sha256_in_prefix": "16b48e1b078b0bf441e41ddbf5c622c99db1bad3b331971ef6764c390f113c1a",
+        "size_in_bytes": 38400
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/dense-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "d022c7cf7c3f5ba4823fe352868b92c16051a55b0c4cc0f18ab37507fb5d735b",
+        "sha256_in_prefix": "d022c7cf7c3f5ba4823fe352868b92c16051a55b0c4cc0f18ab37507fb5d735b",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/diff-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "3b7439c10d0bc383622e332576f55125ac54c9bd1220771a7eecb6c2ad5dca55",
+        "sha256_in_prefix": "3b7439c10d0bc383622e332576f55125ac54c9bd1220771a7eecb6c2ad5dca55",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/gray-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "bd354299f8746a2e4f8810c129396a2a531c2b36508c78aa6329093d9b04d549",
+        "sha256_in_prefix": "bd354299f8746a2e4f8810c129396a2a531c2b36508c78aa6329093d9b04d549",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/haline-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "8f54ed333074adf75a689d12d6a92ff75066f441013e1148361570f393389214",
+        "sha256_in_prefix": "8f54ed333074adf75a689d12d6a92ff75066f441013e1148361570f393389214",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/ice-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "84829748c86ec0d607fa12adbc809a283b5e1ed557d788f7a527a274313440d3",
+        "sha256_in_prefix": "84829748c86ec0d607fa12adbc809a283b5e1ed557d788f7a527a274313440d3",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/matter-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "861277311ea8f5410935d06cc1f27d49a90ad6802f9fa8e16f32b10dcc9c9dde",
+        "sha256_in_prefix": "861277311ea8f5410935d06cc1f27d49a90ad6802f9fa8e16f32b10dcc9c9dde",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/oxy-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "c146340ae819efbbd96187609e432a44361adfcf05f90854c63e0faf2bb61e11",
+        "sha256_in_prefix": "c146340ae819efbbd96187609e432a44361adfcf05f90854c63e0faf2bb61e11",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/phase-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "69779b9e6384b85731f99c9fc1b2adf5a05f274bc45c56b99eb6bf6a1e457ee3",
+        "sha256_in_prefix": "69779b9e6384b85731f99c9fc1b2adf5a05f274bc45c56b99eb6bf6a1e457ee3",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/rain-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "dff8aae4ffc93c91a99616b64c0a1b19c3706afaffead6ed5057569b5c3e081f",
+        "sha256_in_prefix": "dff8aae4ffc93c91a99616b64c0a1b19c3706afaffead6ed5057569b5c3e081f",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/solar-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "3e82eae54f9d8796ac70bf5c5c8e10533e3b70bda78c82d0fb9388f900555112",
+        "sha256_in_prefix": "3e82eae54f9d8796ac70bf5c5c8e10533e3b70bda78c82d0fb9388f900555112",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/speed-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "c262dddbdecc7166f07d0722bcdf1cdcc443ee160c9832f3d9df06875dedf287",
+        "sha256_in_prefix": "c262dddbdecc7166f07d0722bcdf1cdcc443ee160c9832f3d9df06875dedf287",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/tarn-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "6bbd41386fb7de91aeec1f9bef3871cf1842bc88dde837d3bdd152b724172f07",
+        "sha256_in_prefix": "6bbd41386fb7de91aeec1f9bef3871cf1842bc88dde837d3bdd152b724172f07",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/tempo-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "800235f3d45f945843f90994a885245435a2da1f293b85220e04c4389da9c744",
+        "sha256_in_prefix": "800235f3d45f945843f90994a885245435a2da1f293b85220e04c4389da9c744",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/thermal-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "98b285203ca06e1aadcead34cbf247957c24e480bee5f187a20c1aafe3c81f47",
+        "sha256_in_prefix": "98b285203ca06e1aadcead34cbf247957c24e480bee5f187a20c1aafe3c81f47",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/topo-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "49204eda2907175c198e1bcce036a4993f2d6b320f96996549e880b0d560852e",
+        "sha256_in_prefix": "49204eda2907175c198e1bcce036a4993f2d6b320f96996549e880b0d560852e",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/rgb/turbid-rgb.txt",
+        "path_type": "hardlink",
+        "sha256": "34830c4b7a3f9ab66ee4354defb162ccaefc0bb0a4e0dda65cca773ee927fba0",
+        "sha256_in_prefix": "34830c4b7a3f9ab66ee4354defb162ccaefc0bb0a4e0dda65cca773ee927fba0",
+        "size_in_bytes": 19200
+      },
+      {
+        "_path": "site-packages/cmocean/tools.py",
+        "path_type": "hardlink",
+        "sha256": "241ffc3d6c57abb1b3a694ab81e5ee5f0a0a2161da8419044d65976ada6ff9da",
+        "sha256_in_prefix": "241ffc3d6c57abb1b3a694ab81e5ee5f0a0a2161da8419044d65976ada6ff9da",
+        "size_in_bytes": 9267
+      },
+      {
+        "_path": "lib/python3.6/site-packages/cmocean/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/cmocean/__pycache__/cm.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/cmocean/__pycache__/data.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/cmocean/__pycache__/plots.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/cmocean/__pycache__/tools.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "cmocean[url=file:///home/buildadm/pkgs/cmocean-2.0-py_0.tar.bz2]",
+  "sha256": "3f2e8ca9c7bbdb4e9f07783824d55f098a2ad6dd213886f3212f7ac548d2215a",
+  "size": 181663,
+  "subdir": "noarch",
+  "timestamp": 1547247985518,
+  "track_features": "",
+  "url": "file:///home/buildadm/pkgs/cmocean-2.0-py_0.tar.bz2",
+  "version": "2.0"
+}

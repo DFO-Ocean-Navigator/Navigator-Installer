@@ -1,0 +1,11 @@
+prefix=/home/buildadm/miniconda/3/amd64/envs/navigator
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB XFixes
+Description: XCB XFixes Extension
+Version: 1.13
+Requires.private: xcb xcb-render xcb-shape
+Libs: -L${libdir} -lxcb-xfixes
+Cflags: -I${includedir}

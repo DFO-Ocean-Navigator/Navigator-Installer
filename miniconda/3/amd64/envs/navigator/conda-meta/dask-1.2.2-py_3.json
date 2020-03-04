@@ -1,0 +1,44 @@
+{
+  "build": "py_3",
+  "build_number": 3,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "bokeh >=0.13.0",
+    "cloudpickle >=0.2.1",
+    "cytoolz >=0.7.3",
+    "dask-core 1.2.2.*",
+    "distributed >=1.28.0",
+    "numpy >=1.13.0",
+    "pandas >=0.21.0",
+    "partd >=0.3.10",
+    "python",
+    "toolz >=0.7.3"
+  ],
+  "extracted_package_dir": "/home/buildadm/miniconda/3/amd64/pkgs/dask-1.2.2-py_3",
+  "features": "",
+  "files": [],
+  "fn": "dask-1.2.2-py_3.tar.bz2",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "/home/buildadm/miniconda/3/amd64/pkgs/dask-1.2.2-py_3",
+    "type": 1
+  },
+  "md5": "bb71db1cd7398e1bcb11850c08070742",
+  "name": "dask",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/buildadm/miniconda/3/amd64/pkgs/dask-1.2.2-py_3.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "dask[url=file:///home/buildadm/pkgs/dask-1.2.2-py_3.tar.bz2]",
+  "sha256": "30652038857779225e3542e16bd029582889dfdae5eaffbf2481732d3fe93156",
+  "size": 4109,
+  "subdir": "noarch",
+  "timestamp": 1559837959842,
+  "track_features": "",
+  "url": "file:///home/buildadm/pkgs/dask-1.2.2-py_3.tar.bz2",
+  "version": "1.2.2"
+}

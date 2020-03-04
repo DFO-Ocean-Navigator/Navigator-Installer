@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/buildadm/miniconda/3/amd64/envs/navigator/bin/python -m PyQt5.pyrcc_main ${1+"$@"}

@@ -1,0 +1,152 @@
+{
+  "arch": "x86_64",
+  "build": "py36h6bb024c_0",
+  "build_number": 0,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/home/buildadm/miniconda/3/amd64/pkgs/msgpack-python-0.6.1-py36h6bb024c_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/msgpack/__init__.py",
+    "lib/python3.6/site-packages/msgpack/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/msgpack/__pycache__/_version.cpython-36.pyc",
+    "lib/python3.6/site-packages/msgpack/__pycache__/exceptions.cpython-36.pyc",
+    "lib/python3.6/site-packages/msgpack/__pycache__/fallback.cpython-36.pyc",
+    "lib/python3.6/site-packages/msgpack/_cmsgpack.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.6/site-packages/msgpack/_version.py",
+    "lib/python3.6/site-packages/msgpack/exceptions.py",
+    "lib/python3.6/site-packages/msgpack/fallback.py"
+  ],
+  "fn": "msgpack-python-0.6.1-py36h6bb024c_0.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/buildadm/miniconda/3/amd64/pkgs/msgpack-python-0.6.1-py36h6bb024c_0",
+    "type": 1
+  },
+  "md5": "ebcdf32b44999ad940ab23ebe06d5240",
+  "name": "msgpack-python",
+  "package_tarball_full_path": "/home/buildadm/miniconda/3/amd64/pkgs/msgpack-python-0.6.1-py36h6bb024c_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "2d3bc6a968b552fcee61e1c5a3c69d79736357c5b70de2a75d39d8a1965f43ce",
+        "sha256_in_prefix": "2d3bc6a968b552fcee61e1c5a3c69d79736357c5b70de2a75d39d8a1965f43ce",
+        "size_in_bytes": 13532
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "2007f35225592a83b8bb630f75dba6d93b679ed659cbe9ab3f708d9f076573bb",
+        "sha256_in_prefix": "2007f35225592a83b8bb630f75dba6d93b679ed659cbe9ab3f708d9f076573bb",
+        "size_in_bytes": 586
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "d89939fb90a571bbc1303de0b1e11a7f082698a3ca3fb890948a135fa91b8a29",
+        "sha256_in_prefix": "d89939fb90a571bbc1303de0b1e11a7f082698a3ca3fb890948a135fa91b8a29",
+        "size_in_bytes": 393
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack-0.6.1-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "dadca4498d695dd880db16130d1ea33f0d2a239646c518a1ca17f84b9859c979",
+        "sha256_in_prefix": "dadca4498d695dd880db16130d1ea33f0d2a239646c518a1ca17f84b9859c979",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c8996cf694ea6dc0fc14816980ba47af4e3efa04956c750592913d5a6f45ffb9",
+        "sha256_in_prefix": "c8996cf694ea6dc0fc14816980ba47af4e3efa04956c750592913d5a6f45ffb9",
+        "size_in_bytes": 1570
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3a13cd4e286e4c6f95aee38ba0ad0320af5a01d726bae9049a72c66258da1459",
+        "sha256_in_prefix": "3a13cd4e286e4c6f95aee38ba0ad0320af5a01d726bae9049a72c66258da1459",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/__pycache__/_version.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f7ea003a75df3cc64efc90d2ef5dff94c073059410a1e403756d4116152de5e0",
+        "sha256_in_prefix": "f7ea003a75df3cc64efc90d2ef5dff94c073059410a1e403756d4116152de5e0",
+        "size_in_bytes": 172
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/__pycache__/exceptions.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "195cd48a7524ca0b0357638811073d4917af40875285db07adedecc9400dbf87",
+        "sha256_in_prefix": "195cd48a7524ca0b0357638811073d4917af40875285db07adedecc9400dbf87",
+        "size_in_bytes": 1805
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/__pycache__/fallback.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d9da8ac0c5d17b5085edfe12ca1ea6f219187f7e76f42a260570f86904219d39",
+        "sha256_in_prefix": "d9da8ac0c5d17b5085edfe12ca1ea6f219187f7e76f42a260570f86904219d39",
+        "size_in_bytes": 26437
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/_cmsgpack.cpython-36m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "6110d55d849a4c30784c701eaf9e8601e49026c45fef963c5fd7c3cefef7dc72",
+        "sha256_in_prefix": "6110d55d849a4c30784c701eaf9e8601e49026c45fef963c5fd7c3cefef7dc72",
+        "size_in_bytes": 185240
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/_version.py",
+        "path_type": "hardlink",
+        "sha256": "95dba5eed223fc81f1bd8c5b122117d5084496b850b00da291848cf7cee2c355",
+        "sha256_in_prefix": "95dba5eed223fc81f1bd8c5b122117d5084496b850b00da291848cf7cee2c355",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "7424d67a2f1da64accb100dc8d093be004e5f47b08047d326edf3338f36a3187",
+        "sha256_in_prefix": "7424d67a2f1da64accb100dc8d093be004e5f47b08047d326edf3338f36a3187",
+        "size_in_bytes": 1081
+      },
+      {
+        "_path": "lib/python3.6/site-packages/msgpack/fallback.py",
+        "path_type": "hardlink",
+        "sha256": "55ce6890cb101c1552b623cb9b7b39baa071457009b7f828a46b08496e3013ef",
+        "sha256_in_prefix": "55ce6890cb101c1552b623cb9b7b39baa071457009b7f828a46b08496e3013ef",
+        "size_in_bytes": 37467
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "msgpack-python[url=file:///home/buildadm/pkgs/msgpack-python-0.6.1-py36h6bb024c_0.tar.bz2]",
+  "sha256": "365ace5a27bb8b2be34faac4563228a357966c0a74b66618fe466c12e451e739",
+  "size": 90892,
+  "subdir": "linux-64",
+  "timestamp": 1548628410184,
+  "track_features": "",
+  "url": "file:///home/buildadm/pkgs/msgpack-python-0.6.1-py36h6bb024c_0.tar.bz2",
+  "version": "0.6.1"
+}
