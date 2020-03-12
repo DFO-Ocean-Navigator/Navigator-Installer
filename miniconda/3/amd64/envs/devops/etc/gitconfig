@@ -1,0 +1,4 @@
+[http]
+	sslVerify = true
+	sslCAPath = /home/buildadm/miniconda/3/amd64/envs/devops/ssl/cacert.pem
+	sslCAInfo = /home/buildadm/miniconda/3/amd64/envs/devops/ssl/cacert.pem

@@ -1,0 +1,38 @@
+	    SUMMARY OF THE HDF4 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF4 Version: 4.2.13
+		  Configured on: Sat Nov  4 22:56:20 UTC 2017
+		  Configured by: root@157433fb76b1
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux 157433fb76b1 4.4.0-53-generic #74~14.04.1-Ubuntu SMP Fri Dec 2 03:43:31 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+		      Libraries: 
+	     Installation point: /home/buildadm/miniconda/3/amd64/envs/navigator
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C compiler: /opt/rh/devtoolset-2/root/usr/bin/gcc ( gcc (GCC) 4.8.2 20140120 )
+                         CFLAGS:  -pipe -O2 -fPIC -I/home/buildadm/miniconda/3/amd64/envs/navigator/include -O3 -fomit-frame-pointer
+                       CPPFLAGS:  -DBIG_LONGS -DSWAP 
+               Shared Libraries: yes
+               Static Libraries: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/home/buildadm/miniconda/3/amd64/envs/navigator/lib 
+ 	 	Extra libraries: -ljpeg -lz 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+
+Languages:
+----------
+                        Fortran: no
+
+                           Java: no
+
+Features:
+---------
+               SZIP compression: disabled
+   Support for netCDF API 2.3.2: no

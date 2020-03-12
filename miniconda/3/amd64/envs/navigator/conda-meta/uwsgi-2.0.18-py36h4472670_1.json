@@ -1,0 +1,117 @@
+{
+  "arch": "x86_64",
+  "build": "py36h4472670_1",
+  "build_number": 1,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "jansson",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "libxml2 >=2.9.8,<2.10.0a0",
+    "openssl >=1.1.1a,<1.1.2a",
+    "pcre >=8.41,<9.0a0",
+    "python >=3.6,<3.7.0a0",
+    "yaml >=0.1.7,<0.2.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/home/buildadm/miniconda/3/amd64/pkgs/uwsgi-2.0.18-py36h4472670_1",
+  "features": "",
+  "files": [
+    "bin/uwsgi",
+    "lib/python3.6/site-packages/__pycache__/uwsgidecorators.cpython-36.pyc",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/INSTALLER",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/LICENSE",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/METADATA",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/RECORD",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/WHEEL",
+    "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/top_level.txt",
+    "lib/python3.6/site-packages/uwsgidecorators.py"
+  ],
+  "fn": "uwsgi-2.0.18-py36h4472670_1.tar.bz2",
+  "license": "GPL-2.0",
+  "link": {
+    "source": "/home/buildadm/miniconda/3/amd64/pkgs/uwsgi-2.0.18-py36h4472670_1",
+    "type": 1
+  },
+  "md5": "5e5e186ea432ddd02a261597d9719eed",
+  "name": "uwsgi",
+  "package_tarball_full_path": "/home/buildadm/miniconda/3/amd64/pkgs/uwsgi-2.0.18-py36h4472670_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/uwsgi",
+        "path_type": "hardlink",
+        "sha256": "a0d6f1a1b41d9d05a87ce87889724e4012853d1facf00202eee7cc397876a289",
+        "sha256_in_prefix": "a0d6f1a1b41d9d05a87ce87889724e4012853d1facf00202eee7cc397876a289",
+        "size_in_bytes": 5211000
+      },
+      {
+        "_path": "lib/python3.6/site-packages/__pycache__/uwsgidecorators.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "3bfff40f3962b14eb5f3653098b89aab351ceadc2a1c315cc7eb7f01b86fc871",
+        "sha256_in_prefix": "3bfff40f3962b14eb5f3653098b89aab351ceadc2a1c315cc7eb7f01b86fc871",
+        "size_in_bytes": 14603
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ca495399f5da3ce2724649b47eb118f7549344ba58c0cf350d94c3390e435897",
+        "sha256_in_prefix": "ca495399f5da3ce2724649b47eb118f7549344ba58c0cf350d94c3390e435897",
+        "size_in_bytes": 18628
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "46d645004c7fedff2d4dac04c243e63036856c2b2a51dfb3cb386c777d8fd79b",
+        "sha256_in_prefix": "46d645004c7fedff2d4dac04c243e63036856c2b2a51dfb3cb386c777d8fd79b",
+        "size_in_bytes": 751
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "9dc5a25833b4b152ad2bcd464e6683fc9044caf2931a5fc0fcb65ad1e97b28ea",
+        "sha256_in_prefix": "9dc5a25833b4b152ad2bcd464e6683fc9044caf2931a5fc0fcb65ad1e97b28ea",
+        "size_in_bytes": 676
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "0e0f0fb901f135b288cd8f7befd88091487ef41bda153246e5453ddc69d94f54",
+        "sha256_in_prefix": "0e0f0fb901f135b288cd8f7befd88091487ef41bda153246e5453ddc69d94f54",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uWSGI-2.0.18.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a6df22790a743a9240749acff158891776772a14bccf9bda86ca8463302c20e9",
+        "sha256_in_prefix": "a6df22790a743a9240749acff158891776772a14bccf9bda86ca8463302c20e9",
+        "size_in_bytes": 16
+      },
+      {
+        "_path": "lib/python3.6/site-packages/uwsgidecorators.py",
+        "path_type": "hardlink",
+        "sha256": "fe1f3f81b1580baa8ecbbc79ce9ea226bb72c67b3d466fe1d681c438b5fa7952",
+        "sha256_in_prefix": "fe1f3f81b1580baa8ecbbc79ce9ea226bb72c67b3d466fe1d681c438b5fa7952",
+        "size_in_bytes": 10392
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "uwsgi[url=file:///home/buildadm/pkgs/uwsgi-2.0.18-py36h4472670_1.tar.bz2]",
+  "sha256": "4c8e9f2195306d9fbafab86a5961aea3ad3871bedcd96f786b24223166a37fb3",
+  "size": 2102107,
+  "subdir": "linux-64",
+  "timestamp": 1551182032406,
+  "track_features": "",
+  "url": "file:///home/buildadm/pkgs/uwsgi-2.0.18-py36h4472670_1.tar.bz2",
+  "version": "2.0.18"
+}

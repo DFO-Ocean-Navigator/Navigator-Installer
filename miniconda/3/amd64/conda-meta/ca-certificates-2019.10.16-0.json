@@ -1,0 +1,34 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/buildadm/miniconda/3/amd64/pkgs/ca-certificates-2019.10.16-0",
+  "features": "",
+  "files": [
+    "ssl/cacert.pem",
+    "ssl/cert.pem"
+  ],
+  "fn": "ca-certificates-2019.10.16-0.tar.bz2",
+  "license": "MPL 2.0",
+  "link": {
+    "source": "/home/buildadm/miniconda/3/amd64/pkgs/ca-certificates-2019.10.16-0",
+    "type": 1
+  },
+  "md5": "4d10e309420efc0f1b4e157665baee70",
+  "name": "ca-certificates",
+  "package_tarball_full_path": "/home/buildadm/miniconda/3/amd64/pkgs/ca-certificates-2019.10.16-0.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "ca-certificates==2019.10.16=0",
+  "sha256": "8848b81d008afc6b8dfbe3172412cc4c77a9e3d544cbd90418f0546782bc9d37",
+  "size": 134498,
+  "subdir": "linux-64",
+  "timestamp": 1571667840027,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ca-certificates-2019.10.16-0.tar.bz2",
+  "version": "2019.10.16"
+}
