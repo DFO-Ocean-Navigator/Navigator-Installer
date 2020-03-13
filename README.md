@@ -25,6 +25,10 @@
 
 * cd Ocean-Data-Map-Project/oceannavigator/frontend ; yarn install && yarn build
 
+## Change the folling lines in the Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg file. By using the following strings 10.0.3.56,10.0.3.9 to navigator.oceansdata.ca.
+
+* sed -i 's/10.0.3.56/navigator.oceansdata.ca/;s/10.0.3.9/navigator.oceansdata.ca/' ~/Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg
+
 ## Change back to the Ocean-Data-Map-Project directory and launch the web services.
 
 * cd ~/Ocean-Data-Map-Project ; ./launch-web-service.sh
