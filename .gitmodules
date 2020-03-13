@@ -1,7 +1,7 @@
 [submodule ".nvm"]
 	path = .nvm
 	url = https://github.com/nvm-sh/nvm.git
-[submodule "Ocean-Data-Map-Project"]
+[submodule "miniconda"]
 	path = miniconda
 	url = https://github.com/DFO-Ocean-Navigator/navigator-toolchain.git
 [submodule "Ocean-Data-Map-Project"]
