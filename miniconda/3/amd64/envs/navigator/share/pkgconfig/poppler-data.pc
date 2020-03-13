@@ -1,8 +1,0 @@
-poppler_datadir=/home/buildadm/miniconda/3/amd64/envs/navigator/share/poppler
-
-Name: poppler-data
-Description: Encoding files for use with poppler
-Version: 0.4.9
-
-Cflags: -DPOPPLER_DATADIR=/home/buildadm/miniconda/3/amd64/envs/navigator/share/poppler
-
