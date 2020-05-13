@@ -4,6 +4,8 @@
 [submodule "miniconda"]
 	path = miniconda
 	url = https://github.com/DFO-Ocean-Navigator/navigator-toolchain.git
+        branch = master
 [submodule "Ocean-Data-Map-Project"]
 	path = Ocean-Data-Map-Project
 	url = https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git
+        branch = master
