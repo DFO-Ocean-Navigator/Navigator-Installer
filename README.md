@@ -33,6 +33,10 @@
 
 * cd ~/Ocean-Data-Map-Project ; ./launch-web-service.sh
 
+## Administrative housekeeping tasks
+
+* chmod 600 ${HOME}/.conf/.passwd-s3
+
 # If you wish to use Centos 8 or Fedora 31 you will need to have your system's person install the libnsl library. This package is required by Miniconda to be able to run its various binaries and libraries. To install the libnsl package issue the following dnf install command;
 
 * dnf install libnsl -y
