@@ -17,10 +17,10 @@ chown -R ${STD_USER_ACCT}:${STD_USER_ACCT} /home/${STD_USER_ACCT}/
 
 sed -i "s/buildadm/${STD_USER_ACCT}/" /home/${STD_USER_ACCT}/.bashrc
 
-su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; conda create --name navigator --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt"
-su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; conda create --name index-tool --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt"
-su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; conda create --name nco-tools --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt"
-su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; conda create --name devops --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/devops-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/dwayne/miniconda/3/amd64/bin/conda create --name navigator --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/dwayne/miniconda/3/amd64/bin/conda create --name index-tool --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/dwayne/miniconda/3/amd64/bin/conda create --name nco-tools --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/dwayne/miniconda/3/amd64/bin/conda create --name devops --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/devops-spec-file.txt"
 su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; nvm install v8.16.0 ; yarn global add bower"
 
 su - ${STD_USER_ACCT} -c ". /home/${STD_USER_ACCT}/.bashrc ; cd /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/oceannavigator/frontend ; yarn install && yarn build"
