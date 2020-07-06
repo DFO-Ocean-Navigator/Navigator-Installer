@@ -2,20 +2,25 @@
 
 ## Create standard Linux account.
 
-* groupadd -g 1001 buildadm
-* useradd -u 1001 -g 1001 --no-create-home -s /bin/bash buildadm
+* STD_USER_ACCT="${STD_USER_ACCT}"
+* groupadd -g 1001 ${STD_USER_ACCT}
+* useradd -u 1001 -g 1001 --no-create-home -s /bin/bash ${STD_USER_ACCT}
+
+## (OPTIONAL) If you are wishing to use our Datastore. Please create the /data directory and ensure that the user is set as owner in order for the ${HOME}/bin/mount-remote.sh script to work as stated later in this installation recipe. 
+
+* mkdir /data && chown ${STD_USER_ACCT}:${STD_USER_ACCT} /data
 
 ## Change your present working directory to /home and clone the Navigator-Install.git.
 
-* cd /home ; git clone https://github.com/DFO-Ocean-Navigator/Navigator-Installer.git buildadm
+* cd /home ; git clone https://github.com/DFO-Ocean-Navigator/Navigator-Installer.git ${STD_USER_ACCT}
 
-## Change your present working directory to buildadm initialize, fetch and checkout any nested submodules run the following command;
+## Change your present working directory to ${STD_USER_ACCT} initialize, fetch and checkout any nested submodules run the following command;
 
-* cd buildadm ; git submodule update --init --recursive
+* cd ${STD_USER_ACCT} ; git submodule update --init --recursive
 
-## Change user and group ownership of the /home/buildadm to the buildadm account and become the buildadm user.
+## Change user and group ownership of the /home/${STD_USER_ACCT} to the ${STD_USER_ACCT} account and become the ${STD_USER_ACCT} user.
 
-* chown -R buildadm:buildadm /home/buildadm/ ; su - buildadm
+* chown -R ${STD_USER_ACCT}:${STD_USER_ACCT} /home/${STD_USER_ACCT}/ ; su - ${STD_USER_ACCT}
 
 ## Install Node version 8.16.0, use yarn to bring in bower
 
@@ -23,19 +28,19 @@
 
 ## Change your working directory to Ocean-Data-Map-Project/oceannavigator/frontend, and build the UI
 
-* cd Ocean-Data-Map-Project/oceannavigator/frontend ; yarn install && yarn build
+* cd ${HOME}/Ocean-Data-Map-Project/oceannavigator/frontend ; yarn install && yarn build
 
-## Change the folling lines in the Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg file. By using the following strings 10.0.3.56,10.0.3.9 to navigator.oceansdata.ca.
+## Depening on location. You should either use the main branch in order to run in production (which is default). Or change to the off-site branch which is recommended for every other use case.
 
-* sed -i 's/10.0.3.56/navigator.oceansdata.ca/;s/10.0.3.9/navigator.oceansdata.ca/' ~/Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg
+* cd ${HOME}/Ocean-Data-Map-Project/oceannavigator/configs ; git checkout off-site
+
+## (OPTIONAL) If you are using our Datastore please send your request to DFO.OceanNavigator-NavigateurOcean.MPO@dfo-mpo.gc.ca and attach a copy of the Public SSH key generated for the user hosting the Ocean Navigator software.
+
+* ${HOME}/bin/mount-remote.sh
 
 ## Change back to the Ocean-Data-Map-Project directory and launch the web services.
 
-* cd ~/Ocean-Data-Map-Project ; ./launch-web-service.sh
-
-## Administrative housekeeping tasks
-
-* chmod 600 ${HOME}/.conf/.passwd-s3
+* cd ${HOME}/Ocean-Data-Map-Project ; ./launch-web-service.sh
 
 # If you wish to use Centos 8 or Fedora 31 you will need to have your system's person install the libnsl library. This package is required by Miniconda to be able to run its various binaries and libraries. To install the libnsl package issue the following dnf install command;
 
