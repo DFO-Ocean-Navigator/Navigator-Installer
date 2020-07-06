@@ -2,7 +2,7 @@
 
 ## Create standard Linux account.
 
-* STD_USER_ACCT="${STD_USER_ACCT}"
+* STD_USER_ACCT="buildadm"
 * groupadd -g 1001 ${STD_USER_ACCT}
 * useradd -u 1001 -g 1001 --no-create-home -s /bin/bash ${STD_USER_ACCT}
 
@@ -10,13 +10,13 @@
 
 * mkdir /data && chown ${STD_USER_ACCT}:${STD_USER_ACCT} /data
 
-## Change your present working directory to /home and clone the Navigator-Install.git.
+## Change your present working directory to /home and clone the Navigator-Install.git repository.
 
 * cd /home ; git clone https://github.com/DFO-Ocean-Navigator/Navigator-Installer.git ${STD_USER_ACCT}
 
-## Change your present working directory to ${STD_USER_ACCT} initialize, fetch and checkout any nested submodules run the following command;
+## Change your present working directory to /home/${STD_USER_ACCT} initialize, fetch and checkout any nested submodules run the following command;
 
-* cd ${STD_USER_ACCT} ; git submodule update --init --recursive
+* cd /home/${STD_USER_ACCT} ; git submodule update --init --recursive
 
 ## Change user and group ownership of the /home/${STD_USER_ACCT} to the ${STD_USER_ACCT} account and become the ${STD_USER_ACCT} user.
 
