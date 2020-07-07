@@ -1,6 +1,6 @@
 # Steps for deployment on a Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Debian 10, CentOS 6, and Centos 7.
 
-## Create standard Linux account.
+## Create standard Linux account. Adjust the variable STD_USER_ACCT accordingly.
 
 * STD_USER_ACCT="buildadm"
 * groupadd -g 1001 ${STD_USER_ACCT}
@@ -37,6 +37,12 @@
 ## (OPTIONAL) If you are using our Datastore please send your request to DFO.OceanNavigator-NavigateurOcean.MPO@dfo-mpo.gc.ca and attach a copy of the Public SSH key generated for the user hosting the Ocean Navigator software.
 
 * ${HOME}/bin/mount-remote.sh
+
+## (OPTIONAL) If you wish to visualize your local datasets. You will need to update the datasetconfig.json and oceannavigator.cfg configuration files.
+
+* cd ${HOME}/Ocean-Data-Map-Project/oceannavigator/configs 
+* edit datasetconfig.json
+* edit oceannavigator.cfg
 
 ## Change back to the Ocean-Data-Map-Project directory and launch the web services.
 
