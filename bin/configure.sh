@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [ ! -e bin/.configuration.updated ] ; then
-	sed "s#\/home\/buildadm\/cache\/oceannavigator#$(echo $HOME)\/cache\/oceannavigator#g" -i ../Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg
-	sed "s#LOCATION#$(echo $HOME)#g" -i ../tools/conf/ocean-navigator-env.sh
+   sed "s#\/home\/buildadm\/cache\/oceannavigator#$(echo $HOME)\/cache\/oceannavigator#g" -i ../Ocean-Data-Map-Project/oceannavigator/oceannavigator.cfg
+   sed "s#LOCATION#$(echo $HOME)#g" -i ../tools/conf/ocean-navigator-env.sh
    touch .configuration.updated
 fi
 
