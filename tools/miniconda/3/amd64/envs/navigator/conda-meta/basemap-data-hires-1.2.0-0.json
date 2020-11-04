@@ -1,0 +1,261 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "basemap >1.0.7"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/basemap-data-hires-1.2.0-0",
+  "features": "",
+  "files": [
+    "share/basemap/UScounties.dbf",
+    "share/basemap/UScounties.prj",
+    "share/basemap/UScounties.shp",
+    "share/basemap/UScounties.shx",
+    "share/basemap/countries_f.dat",
+    "share/basemap/countries_h.dat",
+    "share/basemap/countries_i.dat",
+    "share/basemap/countriesmeta_f.dat",
+    "share/basemap/countriesmeta_h.dat",
+    "share/basemap/countriesmeta_i.dat",
+    "share/basemap/gshhs_f.dat",
+    "share/basemap/gshhs_h.dat",
+    "share/basemap/gshhs_i.dat",
+    "share/basemap/gshhsmeta_f.dat",
+    "share/basemap/gshhsmeta_h.dat",
+    "share/basemap/gshhsmeta_i.dat",
+    "share/basemap/rivers_f.dat",
+    "share/basemap/rivers_h.dat",
+    "share/basemap/rivers_i.dat",
+    "share/basemap/riversmeta_f.dat",
+    "share/basemap/riversmeta_h.dat",
+    "share/basemap/riversmeta_i.dat",
+    "share/basemap/states_f.dat",
+    "share/basemap/states_h.dat",
+    "share/basemap/states_i.dat",
+    "share/basemap/statesmeta_f.dat",
+    "share/basemap/statesmeta_h.dat",
+    "share/basemap/statesmeta_i.dat"
+  ],
+  "fn": "basemap-data-hires-1.2.0-0.conda",
+  "license": "GPL-2.0",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/basemap-data-hires-1.2.0-0",
+    "type": 1
+  },
+  "md5": "c685737af151874f248303b54ea43ea7",
+  "name": "basemap-data-hires",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/basemap-data-hires-1.2.0-0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "share/basemap/UScounties.dbf",
+        "path_type": "hardlink",
+        "sha256": "dc2710d7142899f644627b9947e8d801bbe3e4b7263544271b1ee2f979f8f2bf",
+        "sha256_in_prefix": "dc2710d7142899f644627b9947e8d801bbe3e4b7263544271b1ee2f979f8f2bf",
+        "size_in_bytes": 154834
+      },
+      {
+        "_path": "share/basemap/UScounties.prj",
+        "path_type": "hardlink",
+        "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd",
+        "sha256_in_prefix": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd",
+        "size_in_bytes": 165
+      },
+      {
+        "_path": "share/basemap/UScounties.shp",
+        "path_type": "hardlink",
+        "sha256": "efeae56a018adf01ae6f5293b5b51585acf2e136742617627a6bbcab23705e53",
+        "sha256_in_prefix": "efeae56a018adf01ae6f5293b5b51585acf2e136742617627a6bbcab23705e53",
+        "size_in_bytes": 13575408
+      },
+      {
+        "_path": "share/basemap/UScounties.shx",
+        "path_type": "hardlink",
+        "sha256": "cf974159298d9493885baadee661bf7b5a86c38853e5d7d3e1e3f2de05cfea54",
+        "sha256_in_prefix": "cf974159298d9493885baadee661bf7b5a86c38853e5d7d3e1e3f2de05cfea54",
+        "size_in_bytes": 25868
+      },
+      {
+        "_path": "share/basemap/countries_f.dat",
+        "path_type": "hardlink",
+        "sha256": "3c322a1cdbf1f329530de9e191ee5ebf6b90912c3feecd8a6b352aeac490a12a",
+        "sha256_in_prefix": "3c322a1cdbf1f329530de9e191ee5ebf6b90912c3feecd8a6b352aeac490a12a",
+        "size_in_bytes": 3115216
+      },
+      {
+        "_path": "share/basemap/countries_h.dat",
+        "path_type": "hardlink",
+        "sha256": "09af201b06ef7788bee1e7f02063993fe029422bb48312f674c3b2de44f58a27",
+        "sha256_in_prefix": "09af201b06ef7788bee1e7f02063993fe029422bb48312f674c3b2de44f58a27",
+        "size_in_bytes": 832216
+      },
+      {
+        "_path": "share/basemap/countries_i.dat",
+        "path_type": "hardlink",
+        "sha256": "94cf836ef443c339ef46c07a9ea8ae78ecb2bd417cb8efbad1eb054c7e37b62a",
+        "sha256_in_prefix": "94cf836ef443c339ef46c07a9ea8ae78ecb2bd417cb8efbad1eb054c7e37b62a",
+        "size_in_bytes": 348088
+      },
+      {
+        "_path": "share/basemap/countriesmeta_f.dat",
+        "path_type": "hardlink",
+        "sha256": "830c6fbcce61442fd7cd9205ee63bccdf0f18351378414931cfa4d36802d59af",
+        "sha256_in_prefix": "830c6fbcce61442fd7cd9205ee63bccdf0f18351378414931cfa4d36802d59af",
+        "size_in_bytes": 21203
+      },
+      {
+        "_path": "share/basemap/countriesmeta_h.dat",
+        "path_type": "hardlink",
+        "sha256": "e9582dbe3e98c5b2dbc3871c6a3bb5f4102705b3cf0585dfc9472b7725c3fb62",
+        "sha256_in_prefix": "e9582dbe3e98c5b2dbc3871c6a3bb5f4102705b3cf0585dfc9472b7725c3fb62",
+        "size_in_bytes": 20176
+      },
+      {
+        "_path": "share/basemap/countriesmeta_i.dat",
+        "path_type": "hardlink",
+        "sha256": "f33ee7e59a104623220f077ee899065bf397b2b392200945be926a0e008010c4",
+        "sha256_in_prefix": "f33ee7e59a104623220f077ee899065bf397b2b392200945be926a0e008010c4",
+        "size_in_bytes": 19782
+      },
+      {
+        "_path": "share/basemap/gshhs_f.dat",
+        "path_type": "hardlink",
+        "sha256": "ad4e7edd7ff820ccb5feee4ffeb66e781fbfacac002c3eafe12a605270585e45",
+        "sha256_in_prefix": "ad4e7edd7ff820ccb5feee4ffeb66e781fbfacac002c3eafe12a605270585e45",
+        "size_in_bytes": 84707544
+      },
+      {
+        "_path": "share/basemap/gshhs_h.dat",
+        "path_type": "hardlink",
+        "sha256": "39475aac55361b6a21dc7c37a0cb5244ab736539adaa814b8bf1754765e6199e",
+        "sha256_in_prefix": "39475aac55361b6a21dc7c37a0cb5244ab736539adaa814b8bf1754765e6199e",
+        "size_in_bytes": 15391144
+      },
+      {
+        "_path": "share/basemap/gshhs_i.dat",
+        "path_type": "hardlink",
+        "sha256": "ad5e6fcb424b9d6bf86c396d4d982ddf0392fcb9d568b3716e3434f04a733e5d",
+        "sha256_in_prefix": "ad5e6fcb424b9d6bf86c396d4d982ddf0392fcb9d568b3716e3434f04a733e5d",
+        "size_in_bytes": 3606784
+      },
+      {
+        "_path": "share/basemap/gshhsmeta_f.dat",
+        "path_type": "hardlink",
+        "sha256": "6bc0e4a9c02b8df51fe67077740cfae5493ddfb0a1a285c6d55237b82c4c500e",
+        "sha256_in_prefix": "6bc0e4a9c02b8df51fe67077740cfae5493ddfb0a1a285c6d55237b82c4c500e",
+        "size_in_bytes": 11044932
+      },
+      {
+        "_path": "share/basemap/gshhsmeta_h.dat",
+        "path_type": "hardlink",
+        "sha256": "87985c1b377fba46ec8b486c1a0091fbdd2bbd0d40c050efe1e326f2f844bfa5",
+        "sha256_in_prefix": "87985c1b377fba46ec8b486c1a0091fbdd2bbd0d40c050efe1e326f2f844bfa5",
+        "size_in_bytes": 8763435
+      },
+      {
+        "_path": "share/basemap/gshhsmeta_i.dat",
+        "path_type": "hardlink",
+        "sha256": "7fded55ecd6c2467a93ed9900410524539588193b9e48141e97fa46aa5da9aa4",
+        "sha256_in_prefix": "7fded55ecd6c2467a93ed9900410524539588193b9e48141e97fa46aa5da9aa4",
+        "size_in_bytes": 2258217
+      },
+      {
+        "_path": "share/basemap/rivers_f.dat",
+        "path_type": "hardlink",
+        "sha256": "228980d2f39bf42675eacf450d042a84e1231c5bbfae9d98ff1e3fe6b1e33e90",
+        "sha256_in_prefix": "228980d2f39bf42675eacf450d042a84e1231c5bbfae9d98ff1e3fe6b1e33e90",
+        "size_in_bytes": 18261392
+      },
+      {
+        "_path": "share/basemap/rivers_h.dat",
+        "path_type": "hardlink",
+        "sha256": "83c25d1a5f1d70e1193b1c9b85835e2fd948697f82d9ee38b014aabc1c4b90c5",
+        "sha256_in_prefix": "83c25d1a5f1d70e1193b1c9b85835e2fd948697f82d9ee38b014aabc1c4b90c5",
+        "size_in_bytes": 4300464
+      },
+      {
+        "_path": "share/basemap/rivers_i.dat",
+        "path_type": "hardlink",
+        "sha256": "2c8839785e47d5430fa2ab203f53ecd8c122698bb503e81008de97437a359006",
+        "sha256_in_prefix": "2c8839785e47d5430fa2ab203f53ecd8c122698bb503e81008de97437a359006",
+        "size_in_bytes": 1590176
+      },
+      {
+        "_path": "share/basemap/riversmeta_f.dat",
+        "path_type": "hardlink",
+        "sha256": "a6a77f45b7bfe054795626a152f135f1b1ea07429779170e70466e72d3ee027a",
+        "sha256_in_prefix": "a6a77f45b7bfe054795626a152f135f1b1ea07429779170e70466e72d3ee027a",
+        "size_in_bytes": 1110723
+      },
+      {
+        "_path": "share/basemap/riversmeta_h.dat",
+        "path_type": "hardlink",
+        "sha256": "6673568737db001e8c2da7ef4f162f81a4f584e0f1cb38db42941f4fda53e243",
+        "sha256_in_prefix": "6673568737db001e8c2da7ef4f162f81a4f584e0f1cb38db42941f4fda53e243",
+        "size_in_bytes": 1059320
+      },
+      {
+        "_path": "share/basemap/riversmeta_i.dat",
+        "path_type": "hardlink",
+        "sha256": "8428c9d5fa684df120abd70c55e8873edec3b30816a71e8ec53ba4c9abd16399",
+        "sha256_in_prefix": "8428c9d5fa684df120abd70c55e8873edec3b30816a71e8ec53ba4c9abd16399",
+        "size_in_bytes": 1034205
+      },
+      {
+        "_path": "share/basemap/states_f.dat",
+        "path_type": "hardlink",
+        "sha256": "6ceebb0e2cf384983e8d95cfcd6f3239279fe31ba9bf473ba863a7cd8738431b",
+        "sha256_in_prefix": "6ceebb0e2cf384983e8d95cfcd6f3239279fe31ba9bf473ba863a7cd8738431b",
+        "size_in_bytes": 2824000
+      },
+      {
+        "_path": "share/basemap/states_h.dat",
+        "path_type": "hardlink",
+        "sha256": "43aee6286af6e0e42d3315f8e813df2e070e6683f029ac828b8e226f72bda438",
+        "sha256_in_prefix": "43aee6286af6e0e42d3315f8e813df2e070e6683f029ac828b8e226f72bda438",
+        "size_in_bytes": 854832
+      },
+      {
+        "_path": "share/basemap/states_i.dat",
+        "path_type": "hardlink",
+        "sha256": "880dd411a9469bfa81e9cbce431b6ea31ab64d990e0f3b872e9485ec1e23dcd8",
+        "sha256_in_prefix": "880dd411a9469bfa81e9cbce431b6ea31ab64d990e0f3b872e9485ec1e23dcd8",
+        "size_in_bytes": 379888
+      },
+      {
+        "_path": "share/basemap/statesmeta_f.dat",
+        "path_type": "hardlink",
+        "sha256": "13d3548cf90d3959a9f0fc6dc6542f4ce074d57241db22a69aa3d17c8bf94707",
+        "sha256_in_prefix": "13d3548cf90d3959a9f0fc6dc6542f4ce074d57241db22a69aa3d17c8bf94707",
+        "size_in_bytes": 30545
+      },
+      {
+        "_path": "share/basemap/statesmeta_h.dat",
+        "path_type": "hardlink",
+        "sha256": "da37192126f3c7c926bbc8ef03817580fe1ad7be89e356e50a2fdea8cb55d52d",
+        "sha256_in_prefix": "da37192126f3c7c926bbc8ef03817580fe1ad7be89e356e50a2fdea8cb55d52d",
+        "size_in_bytes": 28525
+      },
+      {
+        "_path": "share/basemap/statesmeta_i.dat",
+        "path_type": "hardlink",
+        "sha256": "9c6291331615bea992680fd78d0f29f5decdc392a734fdfd0d2d2b92147bcb00",
+        "sha256_in_prefix": "9c6291331615bea992680fd78d0f29f5decdc392a734fdfd0d2d2b92147bcb00",
+        "size_in_bytes": 28000
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "basemap-data-hires[url=https://navigator.oceansdata.ca/pkgs/basemap-data-hires-1.2.0-0.conda]",
+  "sha256": "bbe0c01fcdc943f579b4153fc14b071ffde833c9e03fc17b1913c692a7cf28a5",
+  "size": 87917168,
+  "subdir": "linux-64",
+  "timestamp": 1539184858018,
+  "track_features": "",
+  "url": "https://navigator.oceansdata.ca/pkgs/basemap-data-hires-1.2.0-0.conda",
+  "version": "1.2.0"
+}

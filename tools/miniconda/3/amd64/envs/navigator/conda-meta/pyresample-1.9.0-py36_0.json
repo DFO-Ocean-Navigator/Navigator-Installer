@@ -1,0 +1,615 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "configobj",
+    "numpy",
+    "pykdtree",
+    "pyproj",
+    "python >=3.6,<3.7.0a0",
+    "pyyaml",
+    "six"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pyresample-1.9.0-py36_0",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/not-zip-safe",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/requires.txt",
+    "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/pyresample/__init__.py",
+    "lib/python3.6/site-packages/pyresample/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/_cartopy.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/_multi_proc.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/_spatial_mp.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/data_reduce.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/geo_filter.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/geometry.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/grid.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/image.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/kd_tree.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/plot.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/spherical_geometry.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/__pycache__/version.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/_cartopy.py",
+    "lib/python3.6/site-packages/pyresample/_multi_proc.py",
+    "lib/python3.6/site-packages/pyresample/_spatial_mp.py",
+    "lib/python3.6/site-packages/pyresample/bilinear/__init__.py",
+    "lib/python3.6/site-packages/pyresample/bilinear/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/data_reduce.py",
+    "lib/python3.6/site-packages/pyresample/ewa/__init__.py",
+    "lib/python3.6/site-packages/pyresample/ewa/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/ewa/_fornav.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.6/site-packages/pyresample/ewa/_ll2cr.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.6/site-packages/pyresample/geo_filter.py",
+    "lib/python3.6/site-packages/pyresample/geometry.py",
+    "lib/python3.6/site-packages/pyresample/grid.py",
+    "lib/python3.6/site-packages/pyresample/image.py",
+    "lib/python3.6/site-packages/pyresample/kd_tree.py",
+    "lib/python3.6/site-packages/pyresample/plot.py",
+    "lib/python3.6/site-packages/pyresample/spherical_geometry.py",
+    "lib/python3.6/site-packages/pyresample/test/__init__.py",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_bilinear.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_data_reduce.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_ewa_fornav.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_ewa_ll2cr.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_geometry.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_grid.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_image.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_kd_tree.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_plot.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_rotation.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_spherical_geometry.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_swath.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/test_utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/__pycache__/utils.cpython-36.pyc",
+    "lib/python3.6/site-packages/pyresample/test/test_bilinear.py",
+    "lib/python3.6/site-packages/pyresample/test/test_data_reduce.py",
+    "lib/python3.6/site-packages/pyresample/test/test_ewa_fornav.py",
+    "lib/python3.6/site-packages/pyresample/test/test_ewa_ll2cr.py",
+    "lib/python3.6/site-packages/pyresample/test/test_geometry.py",
+    "lib/python3.6/site-packages/pyresample/test/test_grid.py",
+    "lib/python3.6/site-packages/pyresample/test/test_image.py",
+    "lib/python3.6/site-packages/pyresample/test/test_kd_tree.py",
+    "lib/python3.6/site-packages/pyresample/test/test_plot.py",
+    "lib/python3.6/site-packages/pyresample/test/test_rotation.py",
+    "lib/python3.6/site-packages/pyresample/test/test_spherical_geometry.py",
+    "lib/python3.6/site-packages/pyresample/test/test_swath.py",
+    "lib/python3.6/site-packages/pyresample/test/test_utils.py",
+    "lib/python3.6/site-packages/pyresample/test/utils.py",
+    "lib/python3.6/site-packages/pyresample/utils.py",
+    "lib/python3.6/site-packages/pyresample/version.py"
+  ],
+  "fn": "pyresample-1.9.0-py36_0.tar.bz2",
+  "license": "LGPL-3.0",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pyresample-1.9.0-py36_0",
+    "type": 1
+  },
+  "md5": "8d7bf3d95687d544f363c3ef0e4411be",
+  "name": "pyresample",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pyresample-1.9.0-py36_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "6a5d86fa3820ce8ed4dbf592491f6cee12577ce6efdefc0506e5e1f213b0a4a2",
+        "sha256_in_prefix": "6a5d86fa3820ce8ed4dbf592491f6cee12577ce6efdefc0506e5e1f213b0a4a2",
+        "size_in_bytes": 669
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "80e20c8b84cbea32fcb6825075be025f691de16df126b3a92c43bcfaf4729ee3",
+        "sha256_in_prefix": "80e20c8b84cbea32fcb6825075be025f691de16df126b3a92c43bcfaf4729ee3",
+        "size_in_bytes": 2081
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "d1327b740c8518027925f4f2a8a9c24b1af99fd6e32f14367eceaabd5e9a8120",
+        "sha256_in_prefix": "d1327b740c8518027925f4f2a8a9c24b1af99fd6e32f14367eceaabd5e9a8120",
+        "size_in_bytes": 2859
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "e97bc931a0f5202cd14dd7ebb7987973b96774ac81638bcb23cd035e82b3d8f8",
+        "sha256_in_prefix": "e97bc931a0f5202cd14dd7ebb7987973b96774ac81638bcb23cd035e82b3d8f8",
+        "size_in_bytes": 190
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample-1.9.0-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b28962e7483f0e910d305374d56d84ca110b7690931d003d08602c5ebd794534",
+        "sha256_in_prefix": "b28962e7483f0e910d305374d56d84ca110b7690931d003d08602c5ebd794534",
+        "size_in_bytes": 11
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ac051c66e938563be1a63eca04e0bf68503075d26e0636dbfe888fa3652298d6",
+        "sha256_in_prefix": "ac051c66e938563be1a63eca04e0bf68503075d26e0636dbfe888fa3652298d6",
+        "size_in_bytes": 1948
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9b230e595d9ae030e8dcf12ec2c8a968097a17692d83c4bada30f31e4f32602a",
+        "sha256_in_prefix": "9b230e595d9ae030e8dcf12ec2c8a968097a17692d83c4bada30f31e4f32602a",
+        "size_in_bytes": 1161
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/_cartopy.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "6177edc389884d36a38eabce264c21cabbcd644fe2e20d2e99201fd28b4bd3be",
+        "sha256_in_prefix": "6177edc389884d36a38eabce264c21cabbcd644fe2e20d2e99201fd28b4bd3be",
+        "size_in_bytes": 3309
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/_multi_proc.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "57d8fce0376af12b2c2041564e24591a2064722fedc4f6600ad6aa42fa9f1cb7",
+        "sha256_in_prefix": "57d8fce0376af12b2c2041564e24591a2064722fedc4f6600ad6aa42fa9f1cb7",
+        "size_in_bytes": 1922
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/_spatial_mp.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "374b1ccccadd640499fc11edd7a04777270db1599f8cad69644347bd813d1ae1",
+        "sha256_in_prefix": "374b1ccccadd640499fc11edd7a04777270db1599f8cad69644347bd813d1ae1",
+        "size_in_bytes": 6711
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/data_reduce.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "678cc16036d70fab1373f8731ef83c55e875abda0f0c3897935d34c3278bd714",
+        "sha256_in_prefix": "678cc16036d70fab1373f8731ef83c55e875abda0f0c3897935d34c3278bd714",
+        "size_in_bytes": 6865
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/geo_filter.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a3aac8d3f4e925bb9b0458eec0650502ee326a55dda05dbadf7df62bf823a57d",
+        "sha256_in_prefix": "a3aac8d3f4e925bb9b0458eec0650502ee326a55dda05dbadf7df62bf823a57d",
+        "size_in_bytes": 2410
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/geometry.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8faeccf8b920628da12a9ec7089bae7c9472d2e40e6790f76d79145b0a8c4c5",
+        "sha256_in_prefix": "e8faeccf8b920628da12a9ec7089bae7c9472d2e40e6790f76d79145b0a8c4c5",
+        "size_in_bytes": 44215
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/grid.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fcfec408491e462b5e66b9e5d933bff02a14ddb052be29bfc058118cda432597",
+        "sha256_in_prefix": "fcfec408491e462b5e66b9e5d933bff02a14ddb052be29bfc058118cda432597",
+        "size_in_bytes": 5457
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/image.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e992cf89db05dce02b2cd136583263176018614dc5172e3d96870546d5c2c311",
+        "sha256_in_prefix": "e992cf89db05dce02b2cd136583263176018614dc5172e3d96870546d5c2c311",
+        "size_in_bytes": 11896
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/kd_tree.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "bfa5f649a68111ffad09333757ff683d41e3ef6dcdd5f45c5776401dac707fb3",
+        "sha256_in_prefix": "bfa5f649a68111ffad09333757ff683d41e3ef6dcdd5f45c5776401dac707fb3",
+        "size_in_bytes": 24363
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/plot.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "670766293b629856b5c8d1dced681b035d6793b6f22b39f900ed514fc87bd574",
+        "sha256_in_prefix": "670766293b629856b5c8d1dced681b035d6793b6f22b39f900ed514fc87bd574",
+        "size_in_bytes": 8222
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/spherical_geometry.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "71b60db0c6fee9802252503c2434d95bdbbeaacfe82f7884c0354fe1a755f94f",
+        "sha256_in_prefix": "71b60db0c6fee9802252503c2434d95bdbbeaacfe82f7884c0354fe1a755f94f",
+        "size_in_bytes": 11536
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "aaf8818ef17b0280941510b384568b63f7f641771b55569e1d196583b25b8452",
+        "sha256_in_prefix": "aaf8818ef17b0280941510b384568b63f7f641771b55569e1d196583b25b8452",
+        "size_in_bytes": 13361
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/__pycache__/version.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2ac1cc62e4126090a52c4ceab6ddb8bda114d44834bca07d52b546790a53a2c",
+        "sha256_in_prefix": "c2ac1cc62e4126090a52c4ceab6ddb8bda114d44834bca07d52b546790a53a2c",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/_cartopy.py",
+        "path_type": "hardlink",
+        "sha256": "8a8b84030bf4af1b9f3ef8e5dd12913adc2e036831754772cdcb725671e18598",
+        "sha256_in_prefix": "8a8b84030bf4af1b9f3ef8e5dd12913adc2e036831754772cdcb725671e18598",
+        "size_in_bytes": 3482
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/_multi_proc.py",
+        "path_type": "hardlink",
+        "sha256": "ec807e6a58f1c5ac28658d8f6fce581623f873264e3285b302acb811b2096612",
+        "sha256_in_prefix": "ec807e6a58f1c5ac28658d8f6fce581623f873264e3285b302acb811b2096612",
+        "size_in_bytes": 3482
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/_spatial_mp.py",
+        "path_type": "hardlink",
+        "sha256": "bab63286486e7a8103cac16ea929838fc55c7926b30f848847a10568187ba83c",
+        "sha256_in_prefix": "bab63286486e7a8103cac16ea929838fc55c7926b30f848847a10568187ba83c",
+        "size_in_bytes": 10163
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/bilinear/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fa53117dafceddb59a46c1c7eb67b005f4a4f63892291c14345d37a0874da8bb",
+        "sha256_in_prefix": "fa53117dafceddb59a46c1c7eb67b005f4a4f63892291c14345d37a0874da8bb",
+        "size_in_bytes": 18895
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/bilinear/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "df3a58b4f2d7e54b405bf8057b4e78a906afffabc8bfb37a3e6e57b3d2492b11",
+        "sha256_in_prefix": "df3a58b4f2d7e54b405bf8057b4e78a906afffabc8bfb37a3e6e57b3d2492b11",
+        "size_in_bytes": 12983
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/data_reduce.py",
+        "path_type": "hardlink",
+        "sha256": "80b2070c64ec506f676b987f69142bbc78b06c8b81b4b1c019f02d21f28c7ba2",
+        "sha256_in_prefix": "80b2070c64ec506f676b987f69142bbc78b06c8b81b4b1c019f02d21f28c7ba2",
+        "size_in_bytes": 10723
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/ewa/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6afadb49787da0d773e655ae1771f08c3937784b34d202cda82f3ad30c27bc61",
+        "sha256_in_prefix": "6afadb49787da0d773e655ae1771f08c3937784b34d202cda82f3ad30c27bc61",
+        "size_in_bytes": 10878
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/ewa/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1132e83f8117487e2f060c976e87a27fa6e88417779b3bff930de7dd410a1f18",
+        "sha256_in_prefix": "1132e83f8117487e2f060c976e87a27fa6e88417779b3bff930de7dd410a1f18",
+        "size_in_bytes": 8770
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/ewa/_fornav.cpython-36m-x86_64-linux-gnu.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pyresample_1524838388626/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "a8d9b55ed9376092126176bd10b44b694afbbf80015c70bad6f613f4ab266601",
+        "sha256_in_prefix": "c4c7d2c97572bdfd65dd6cf9ba8fcd6b82c97534246f8217682c64d17d9c99ab",
+        "size_in_bytes": 1501993
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/ewa/_ll2cr.cpython-36m-x86_64-linux-gnu.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pyresample_1524838388626/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "1cbafeabbad8a33f4a7e6125ec164a57b8a0ae5dcf85ac6f98150d46a8e288d1",
+        "sha256_in_prefix": "f2a489cc6f70df91b4367ea844f204fac5db5d482a69789f39b85c0f0bedebe1",
+        "size_in_bytes": 1133587
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/geo_filter.py",
+        "path_type": "hardlink",
+        "sha256": "2d0ce7df8e62af3692fc5aa0f558b4c2b869fc401aca1d168b8ae949132b258e",
+        "sha256_in_prefix": "2d0ce7df8e62af3692fc5aa0f558b4c2b869fc401aca1d168b8ae949132b258e",
+        "size_in_bytes": 2751
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/geometry.py",
+        "path_type": "hardlink",
+        "sha256": "9f662afb546b3d44f84a75d9d3c86617d61b0be9eab102dbfb8f3ee66724fad9",
+        "sha256_in_prefix": "9f662afb546b3d44f84a75d9d3c86617d61b0be9eab102dbfb8f3ee66724fad9",
+        "size_in_bytes": 56476
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/grid.py",
+        "path_type": "hardlink",
+        "sha256": "ef8efc5bf251369cc15d3832328e85c5e79c5ce3e9e5ba244fb2eb447f5bd517",
+        "sha256_in_prefix": "ef8efc5bf251369cc15d3832328e85c5e79c5ce3e9e5ba244fb2eb447f5bd517",
+        "size_in_bytes": 8691
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/image.py",
+        "path_type": "hardlink",
+        "sha256": "960353007f337d52451b06b5b8177767eedee70cb32d832e5069de5d94408005",
+        "sha256_in_prefix": "960353007f337d52451b06b5b8177767eedee70cb32d832e5069de5d94408005",
+        "size_in_bytes": 15530
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/kd_tree.py",
+        "path_type": "hardlink",
+        "sha256": "1c6c7af3b85629a643eb3e5aa8f0e31872e910ead917df9c5ed1e1e163bc6810",
+        "sha256_in_prefix": "1c6c7af3b85629a643eb3e5aa8f0e31872e910ead917df9c5ed1e1e163bc6810",
+        "size_in_bytes": 45382
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/plot.py",
+        "path_type": "hardlink",
+        "sha256": "b4b38ea1064e341c447e2fff07e4ce433052ba619f7f8c2363a71910d1d06357",
+        "sha256_in_prefix": "b4b38ea1064e341c447e2fff07e4ce433052ba619f7f8c2363a71910d1d06357",
+        "size_in_bytes": 11973
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/spherical_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "a5a2d819bfc789c0f754b0a1de1a673ce59ec44803c7b04a1a3ee5142805c968",
+        "sha256_in_prefix": "a5a2d819bfc789c0f754b0a1de1a673ce59ec44803c7b04a1a3ee5142805c968",
+        "size_in_bytes": 14189
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "81cbf1d54a8db0722ab1c00def6bf06494122de24c1701472286aa0221531c42",
+        "sha256_in_prefix": "81cbf1d54a8db0722ab1c00def6bf06494122de24c1701472286aa0221531c42",
+        "size_in_bytes": 1825
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c8877284f85857537f2acc84397fd8e86e6c4bc04444fcf714a417e3ed75305",
+        "sha256_in_prefix": "1c8877284f85857537f2acc84397fd8e86e6c4bc04444fcf714a417e3ed75305",
+        "size_in_bytes": 1051
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_bilinear.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "93eae355fe574b76ab0b75082d4b2af0d4ec489614ec45feca9296e00b9d710a",
+        "sha256_in_prefix": "93eae355fe574b76ab0b75082d4b2af0d4ec489614ec45feca9296e00b9d710a",
+        "size_in_bytes": 7188
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_data_reduce.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f1fd1e80d9f843594a117617fc8d8bbf10bcd2092cf0aa42dc7c20f560ffc2b5",
+        "sha256_in_prefix": "f1fd1e80d9f843594a117617fc8d8bbf10bcd2092cf0aa42dc7c20f560ffc2b5",
+        "size_in_bytes": 6512
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_ewa_fornav.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0972d44d87d677a3b098b4748a6f17e4097daf33f4648104b3b47c317bb702b",
+        "sha256_in_prefix": "a0972d44d87d677a3b098b4748a6f17e4097daf33f4648104b3b47c317bb702b",
+        "size_in_bytes": 4430
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_ewa_ll2cr.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "5ab46410eebe14fbd8b94d58ecb4ba2590a440daa04bf726adc57bd226d6f221",
+        "sha256_in_prefix": "5ab46410eebe14fbd8b94d58ecb4ba2590a440daa04bf726adc57bd226d6f221",
+        "size_in_bytes": 6766
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_geometry.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fe14d3c2aa1e6982145661551026e60f5d6fd3572852cd5fc0d3bb3559de3ef8",
+        "sha256_in_prefix": "fe14d3c2aa1e6982145661551026e60f5d6fd3572852cd5fc0d3bb3559de3ef8",
+        "size_in_bytes": 30876
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_grid.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "902ac0adf2fde6126e5930bcd87169dd8e664ff5b9ca17af9a4323610c36670a",
+        "sha256_in_prefix": "902ac0adf2fde6126e5930bcd87169dd8e664ff5b9ca17af9a4323610c36670a",
+        "size_in_bytes": 8792
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_image.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "8b1c143c90379bdacd982fd1b8bd585c7020cc26f2e4a675cf3c8723b3c29544",
+        "sha256_in_prefix": "8b1c143c90379bdacd982fd1b8bd585c7020cc26f2e4a675cf3c8723b3c29544",
+        "size_in_bytes": 11240
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_kd_tree.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c9a7f0a1267b9d08371301863fd9392c45637da431ae338df2dcee124f01be9",
+        "sha256_in_prefix": "1c9a7f0a1267b9d08371301863fd9392c45637da431ae338df2dcee124f01be9",
+        "size_in_bytes": 39174
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_plot.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "90a66bba0cb14a2b7a0befa5b24bb72f7ccff3d2f180ba3d20c0e6c8d177fcc1",
+        "sha256_in_prefix": "90a66bba0cb14a2b7a0befa5b24bb72f7ccff3d2f180ba3d20c0e6c8d177fcc1",
+        "size_in_bytes": 3479
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_rotation.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9d0006eef3376d2da194c9b717f208d48fe650f8511b99698d7c8af65784af0b",
+        "sha256_in_prefix": "9d0006eef3376d2da194c9b717f208d48fe650f8511b99698d7c8af65784af0b",
+        "size_in_bytes": 3534
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_spherical_geometry.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ce7eb93a2ee65718c595bdf89ad0acfb5abe9c52c611a05a7de5b7ea8971cd0",
+        "sha256_in_prefix": "0ce7eb93a2ee65718c595bdf89ad0acfb5abe9c52c611a05a7de5b7ea8971cd0",
+        "size_in_bytes": 7904
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_swath.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ce062c72c0234ba60e53d8a45a15ae88a1de2fa0bae4e8c27a4935adfd55936e",
+        "sha256_in_prefix": "ce062c72c0234ba60e53d8a45a15ae88a1de2fa0bae4e8c27a4935adfd55936e",
+        "size_in_bytes": 2905
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/test_utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "d5cc54538d8c9b9a7a0d4c1e8af713fc4bab783a06df42545428aa70867b8451",
+        "sha256_in_prefix": "d5cc54538d8c9b9a7a0d4c1e8af713fc4bab783a06df42545428aa70867b8451",
+        "size_in_bytes": 10694
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/__pycache__/utils.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "1b860acc05487f413275de25d93d89739bd4a0f840fa2e984f215b14a6df0705",
+        "sha256_in_prefix": "1b860acc05487f413275de25d93d89739bd4a0f840fa2e984f215b14a6df0705",
+        "size_in_bytes": 4039
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_bilinear.py",
+        "path_type": "hardlink",
+        "sha256": "82e53c34805b82fc5877f319b4edef2dc2ef15f60ada1d9541b96d3531d6617b",
+        "sha256_in_prefix": "82e53c34805b82fc5877f319b4edef2dc2ef15f60ada1d9541b96d3531d6617b",
+        "size_in_bytes": 10709
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_data_reduce.py",
+        "path_type": "hardlink",
+        "sha256": "a768f905cc35992cea9baf66339fb1e75d0d880a3afc322dee94c0536e1d7a8c",
+        "sha256_in_prefix": "a768f905cc35992cea9baf66339fb1e75d0d880a3afc322dee94c0536e1d7a8c",
+        "size_in_bytes": 7576
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_ewa_fornav.py",
+        "path_type": "hardlink",
+        "sha256": "6c43a0dc40b2498241a573278c8601bab140495d5c545fe3e0edcd8c1ba903ff",
+        "sha256_in_prefix": "6c43a0dc40b2498241a573278c8601bab140495d5c545fe3e0edcd8c1ba903ff",
+        "size_in_bytes": 7126
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_ewa_ll2cr.py",
+        "path_type": "hardlink",
+        "sha256": "cf31cee2aa09486b482ae731270a338e465f9bbf12d0c46f34fa5a0c08c1f5e9",
+        "sha256_in_prefix": "cf31cee2aa09486b482ae731270a338e465f9bbf12d0c46f34fa5a0c08c1f5e9",
+        "size_in_bytes": 8978
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "4a7d15f40ce7f0b019fad76a0c22d65b562ac90ada0faedfccf09feacba40bda",
+        "sha256_in_prefix": "4a7d15f40ce7f0b019fad76a0c22d65b562ac90ada0faedfccf09feacba40bda",
+        "size_in_bytes": 55327
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_grid.py",
+        "path_type": "hardlink",
+        "sha256": "71ea400fe375c599240ecd4f811482ee0f8dec2666c78073e7d0b27da1d660b9",
+        "sha256_in_prefix": "71ea400fe375c599240ecd4f811482ee0f8dec2666c78073e7d0b27da1d660b9",
+        "size_in_bytes": 9792
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_image.py",
+        "path_type": "hardlink",
+        "sha256": "7c4e84b44b8596e3a2f8617acada330e21ee86bae75e281c4aa327e5f6f5b306",
+        "sha256_in_prefix": "7c4e84b44b8596e3a2f8617acada330e21ee86bae75e281c4aa327e5f6f5b306",
+        "size_in_bytes": 12347
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_kd_tree.py",
+        "path_type": "hardlink",
+        "sha256": "2f0d0d145750749b4ce274a6bc54b1590b0d2b7c5e5890c63c11698992a3d033",
+        "sha256_in_prefix": "2f0d0d145750749b4ce274a6bc54b1590b0d2b7c5e5890c63c11698992a3d033",
+        "size_in_bytes": 40222
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_plot.py",
+        "path_type": "hardlink",
+        "sha256": "f3f5586bf188d7fa291ab1d5c247d108d35879e0a81aea363c306019f86f64eb",
+        "sha256_in_prefix": "f3f5586bf188d7fa291ab1d5c247d108d35879e0a81aea363c306019f86f64eb",
+        "size_in_bytes": 4506
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_rotation.py",
+        "path_type": "hardlink",
+        "sha256": "dca220d7c625eeee7e903407cc0eacfd530f9b774cc37b49a397151a55e1add4",
+        "sha256_in_prefix": "dca220d7c625eeee7e903407cc0eacfd530f9b774cc37b49a397151a55e1add4",
+        "size_in_bytes": 3086
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_spherical_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "19f19e563e6b8a60012542b43df1479066fc2677dde1e8638f7b246b2cf7e2d1",
+        "sha256_in_prefix": "19f19e563e6b8a60012542b43df1479066fc2677dde1e8638f7b246b2cf7e2d1",
+        "size_in_bytes": 14656
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_swath.py",
+        "path_type": "hardlink",
+        "sha256": "bc1d4f4634c057f90b306402c93c66a2c45228258952e3e029aec12b01ce7d93",
+        "sha256_in_prefix": "bc1d4f4634c057f90b306402c93c66a2c45228258952e3e029aec12b01ce7d93",
+        "size_in_bytes": 3308
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "2ef004ba193e1aae91efac85914606159e5615eef642cf8f49d9a9583ab6fd7b",
+        "sha256_in_prefix": "2ef004ba193e1aae91efac85914606159e5615eef642cf8f49d9a9583ab6fd7b",
+        "size_in_bytes": 10594
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/test/utils.py",
+        "path_type": "hardlink",
+        "sha256": "66499f71c94a8dc9dfd4adc6428d7fe5488864ecfcaa1e5aa60e36086e580cda",
+        "sha256_in_prefix": "66499f71c94a8dc9dfd4adc6428d7fe5488864ecfcaa1e5aa60e36086e580cda",
+        "size_in_bytes": 6188
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/utils.py",
+        "path_type": "hardlink",
+        "sha256": "6010c4c7deb17d1ef978d38833f5a056f5127f64b140d60bfe94f407d6e66d13",
+        "sha256_in_prefix": "6010c4c7deb17d1ef978d38833f5a056f5127f64b140d60bfe94f407d6e66d13",
+        "size_in_bytes": 17496
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pyresample/version.py",
+        "path_type": "hardlink",
+        "sha256": "14bd056ac243593676d9eb35fe00b912281559b6f0465b52da981ff246a6757c",
+        "sha256_in_prefix": "14bd056ac243593676d9eb35fe00b912281559b6f0465b52da981ff246a6757c",
+        "size_in_bytes": 835
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "pyresample[url=https://navigator.oceansdata.ca/pkgs/pyresample-1.9.0-py36_0.tar.bz2]",
+  "sha256": "51e1ee62b7929d21694e61f448ea58274a16f4fd71be0454ac2117ccaaf3a673",
+  "size": 989262,
+  "subdir": "linux-64",
+  "timestamp": 1524838455007,
+  "track_features": "",
+  "url": "https://navigator.oceansdata.ca/pkgs/pyresample-1.9.0-py36_0.tar.bz2",
+  "version": "1.9.0"
+}

@@ -1,0 +1,674 @@
+{
+  "arch": "x86_64",
+  "build": "h1105359_1000",
+  "build_number": 1000,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "jpeg >=9c,<10a",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "libtiff >=4.0.9,<5.0a0",
+    "proj4 >=5.2.0,<5.2.1.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/geotiff-1.4.3-h1105359_1000",
+  "features": "",
+  "files": [
+    "bin/applygeo",
+    "bin/geotifcp",
+    "bin/listgeo",
+    "bin/makegeo",
+    "doc/AUTHORS",
+    "doc/COPYING",
+    "doc/ChangeLog",
+    "doc/INSTALL",
+    "doc/LICENSE",
+    "doc/README",
+    "doc/README.WIN",
+    "doc/README_BIN",
+    "etc/conda/activate.d/geotiff-activate.sh",
+    "etc/conda/deactivate.d/geotiff-deactivate.sh",
+    "include/cpl_serv.h",
+    "include/epsg_datum.inc",
+    "include/epsg_ellipse.inc",
+    "include/epsg_gcs.inc",
+    "include/epsg_pcs.inc",
+    "include/epsg_pm.inc",
+    "include/epsg_proj.inc",
+    "include/epsg_units.inc",
+    "include/epsg_vertcs.inc",
+    "include/geo_config.h",
+    "include/geo_ctrans.inc",
+    "include/geo_keyp.h",
+    "include/geo_normalize.h",
+    "include/geo_simpletags.h",
+    "include/geo_tiffp.h",
+    "include/geokeys.h",
+    "include/geokeys.inc",
+    "include/geonames.h",
+    "include/geotiff.h",
+    "include/geotiffio.h",
+    "include/geovalues.h",
+    "include/xtiffio.h",
+    "lib/libgeotiff.so",
+    "lib/libgeotiff.so.2",
+    "lib/libgeotiff.so.2.2.0",
+    "share/cmake/GeoTIFF/geotiff-config-version.cmake",
+    "share/cmake/GeoTIFF/geotiff-config.cmake",
+    "share/cmake/GeoTIFF/geotiff-depends-debug.cmake",
+    "share/cmake/GeoTIFF/geotiff-depends.cmake",
+    "share/epsg_csv/alias.csv",
+    "share/epsg_csv/area.csv",
+    "share/epsg_csv/change.csv",
+    "share/epsg_csv/compdcs.csv",
+    "share/epsg_csv/coordinate_axis.csv",
+    "share/epsg_csv/coordinate_axis_name.csv",
+    "share/epsg_csv/coordinate_operation.csv",
+    "share/epsg_csv/coordinate_operation_method.csv",
+    "share/epsg_csv/coordinate_operation_parameter.csv",
+    "share/epsg_csv/coordinate_operation_parameter_value.csv",
+    "share/epsg_csv/coordinate_operation_path.csv",
+    "share/epsg_csv/coordinate_reference_system.csv",
+    "share/epsg_csv/coordinate_system.csv",
+    "share/epsg_csv/datum.csv",
+    "share/epsg_csv/datum_shift.csv",
+    "share/epsg_csv/datum_shift_pref.csv",
+    "share/epsg_csv/deprecation.csv",
+    "share/epsg_csv/ellipsoid.csv",
+    "share/epsg_csv/esri_datum_override.csv",
+    "share/epsg_csv/gcs.csv",
+    "share/epsg_csv/gcs.override.csv",
+    "share/epsg_csv/geoccs.csv",
+    "share/epsg_csv/naming_system.csv",
+    "share/epsg_csv/pcs.csv",
+    "share/epsg_csv/pcs.override.csv",
+    "share/epsg_csv/prime_meridian.csv",
+    "share/epsg_csv/projop_wparm.csv",
+    "share/epsg_csv/stateplane.csv",
+    "share/epsg_csv/supersession.csv",
+    "share/epsg_csv/unit_of_measure.csv",
+    "share/epsg_csv/version_history.csv",
+    "share/epsg_csv/vertcs.csv",
+    "share/epsg_csv/vertcs.override.csv",
+    "share/man/man1/applygeo.1",
+    "share/man/man1/geotifcp.1",
+    "share/man/man1/listgeo.1"
+  ],
+  "fn": "geotiff-1.4.3-h1105359_1000.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/geotiff-1.4.3-h1105359_1000",
+    "type": 1
+  },
+  "md5": "dd2d8ce6c7b8a07338668715826b85cb",
+  "name": "geotiff",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/geotiff-1.4.3-h1105359_1000.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/applygeo",
+        "path_type": "hardlink",
+        "sha256": "cd7788fc6e243c93a816a8db2b6b8ff66b25aad28a0463746dd54049a2595244",
+        "sha256_in_prefix": "cd7788fc6e243c93a816a8db2b6b8ff66b25aad28a0463746dd54049a2595244",
+        "size_in_bytes": 36664
+      },
+      {
+        "_path": "bin/geotifcp",
+        "path_type": "hardlink",
+        "sha256": "21a7560fd1097d9b214a380864a7013f8b44f95348becbd16714fcb0acfee93b",
+        "sha256_in_prefix": "21a7560fd1097d9b214a380864a7013f8b44f95348becbd16714fcb0acfee93b",
+        "size_in_bytes": 117264
+      },
+      {
+        "_path": "bin/listgeo",
+        "path_type": "hardlink",
+        "sha256": "4678c8d7aa8d9c835998684cce44bc696a1b8be1163baa754e4cb5d638d2abfb",
+        "sha256_in_prefix": "4678c8d7aa8d9c835998684cce44bc696a1b8be1163baa754e4cb5d638d2abfb",
+        "size_in_bytes": 48016
+      },
+      {
+        "_path": "bin/makegeo",
+        "path_type": "hardlink",
+        "sha256": "90218dad1a9a41fb4e3e27fa726085673007e6f6a9bc21ddc781802f49bc40b9",
+        "sha256_in_prefix": "90218dad1a9a41fb4e3e27fa726085673007e6f6a9bc21ddc781802f49bc40b9",
+        "size_in_bytes": 40160
+      },
+      {
+        "_path": "doc/AUTHORS",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "doc/COPYING",
+        "path_type": "hardlink",
+        "sha256": "2f718eec2798cfe9aaf8cfef31f1926a815027e6336519b2dc50e0a89e55b8a5",
+        "sha256_in_prefix": "2f718eec2798cfe9aaf8cfef31f1926a815027e6336519b2dc50e0a89e55b8a5",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "doc/ChangeLog",
+        "path_type": "hardlink",
+        "sha256": "72c1f042e1a1b9115a5574f580b142a18c0248b7690d0ccaa413a96c050df1bc",
+        "sha256_in_prefix": "72c1f042e1a1b9115a5574f580b142a18c0248b7690d0ccaa413a96c050df1bc",
+        "size_in_bytes": 45757
+      },
+      {
+        "_path": "doc/INSTALL",
+        "path_type": "hardlink",
+        "sha256": "5e265c4567e60148617ebb0d89cf93e038dfcc7b7d427a697953013e7616181a",
+        "sha256_in_prefix": "5e265c4567e60148617ebb0d89cf93e038dfcc7b7d427a697953013e7616181a",
+        "size_in_bytes": 9416
+      },
+      {
+        "_path": "doc/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "16b83cf7c3bbfd20bffa768b9bfdb16506ca50f5c140a9f3431e740b155359c1",
+        "sha256_in_prefix": "16b83cf7c3bbfd20bffa768b9bfdb16506ca50f5c140a9f3431e740b155359c1",
+        "size_in_bytes": 5747
+      },
+      {
+        "_path": "doc/README",
+        "path_type": "hardlink",
+        "sha256": "c70a091be59d9cf50754c7b5fc722ed791bb33339217c621a219c5b28c118853",
+        "sha256_in_prefix": "c70a091be59d9cf50754c7b5fc722ed791bb33339217c621a219c5b28c118853",
+        "size_in_bytes": 5880
+      },
+      {
+        "_path": "doc/README.WIN",
+        "path_type": "hardlink",
+        "sha256": "8f2b3b606ccbfd7e507a3960eb6e72c6a870c3d6e629ba7931c6a1e9c2721682",
+        "sha256_in_prefix": "8f2b3b606ccbfd7e507a3960eb6e72c6a870c3d6e629ba7931c6a1e9c2721682",
+        "size_in_bytes": 604
+      },
+      {
+        "_path": "doc/README_BIN",
+        "path_type": "hardlink",
+        "sha256": "4db0c6f0cc368bc4a4ca43c24890c1cf2f303459f081f8c0b160ace06cd8417a",
+        "sha256_in_prefix": "4db0c6f0cc368bc4a4ca43c24890c1cf2f303459f081f8c0b160ace06cd8417a",
+        "size_in_bytes": 1473
+      },
+      {
+        "_path": "etc/conda/activate.d/geotiff-activate.sh",
+        "path_type": "hardlink",
+        "sha256": "39572a7c057495d33383e3fbd44f7d49154a1e2af8a405675fa69c5b0de823d7",
+        "sha256_in_prefix": "39572a7c057495d33383e3fbd44f7d49154a1e2af8a405675fa69c5b0de823d7",
+        "size_in_bytes": 555
+      },
+      {
+        "_path": "etc/conda/deactivate.d/geotiff-deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "f3f217eecf244f84455d51b4430e0db70a909c184db02ec48dd90aa41c124d1a",
+        "sha256_in_prefix": "f3f217eecf244f84455d51b4430e0db70a909c184db02ec48dd90aa41c124d1a",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "include/cpl_serv.h",
+        "path_type": "hardlink",
+        "sha256": "4e661b9bdf124c01567f11cf50a2533125ac256d462cbc9c7c110f0e61f8017b",
+        "sha256_in_prefix": "4e661b9bdf124c01567f11cf50a2533125ac256d462cbc9c7c110f0e61f8017b",
+        "size_in_bytes": 9797
+      },
+      {
+        "_path": "include/epsg_datum.inc",
+        "path_type": "hardlink",
+        "sha256": "045115d7ce20c446d9399572f97daa78e3ded816ba928c4ee39e5117c4475d34",
+        "sha256_in_prefix": "045115d7ce20c446d9399572f97daa78e3ded816ba928c4ee39e5117c4475d34",
+        "size_in_bytes": 6145
+      },
+      {
+        "_path": "include/epsg_ellipse.inc",
+        "path_type": "hardlink",
+        "sha256": "f1aab95879875b7cb9e2a2b63024292d878bbde4ec2eaae2568e45d817e29608",
+        "sha256_in_prefix": "f1aab95879875b7cb9e2a2b63024292d878bbde4ec2eaae2568e45d817e29608",
+        "size_in_bytes": 1694
+      },
+      {
+        "_path": "include/epsg_gcs.inc",
+        "path_type": "hardlink",
+        "sha256": "4994e774b632c540dc4833c1710c8458db93869a0c352e7ec8dc12d0fa359f61",
+        "sha256_in_prefix": "4994e774b632c540dc4833c1710c8458db93869a0c352e7ec8dc12d0fa359f61",
+        "size_in_bytes": 5944
+      },
+      {
+        "_path": "include/epsg_pcs.inc",
+        "path_type": "hardlink",
+        "sha256": "e5d6814d66bc392f5d7a1a5eb1547024c6cda3fb843e4b9bd6c2256bf944d33c",
+        "sha256_in_prefix": "e5d6814d66bc392f5d7a1a5eb1547024c6cda3fb843e4b9bd6c2256bf944d33c",
+        "size_in_bytes": 41711
+      },
+      {
+        "_path": "include/epsg_pm.inc",
+        "path_type": "hardlink",
+        "sha256": "3b9984b1dd9a27b586ba039cb234454dcdb60f4160156ec3f263a3b79cb7eab9",
+        "sha256_in_prefix": "3b9984b1dd9a27b586ba039cb234454dcdb60f4160156ec3f263a3b79cb7eab9",
+        "size_in_bytes": 578
+      },
+      {
+        "_path": "include/epsg_proj.inc",
+        "path_type": "hardlink",
+        "sha256": "8057f81dc5258a9ff0183787dd26af3e6816f22b2a3cf9c39b22b734b5702055",
+        "sha256_in_prefix": "8057f81dc5258a9ff0183787dd26af3e6816f22b2a3cf9c39b22b734b5702055",
+        "size_in_bytes": 17555
+      },
+      {
+        "_path": "include/epsg_units.inc",
+        "path_type": "hardlink",
+        "sha256": "e141cc141633efa365cf2315804707e0ad8d3ebd6ded1841d92a11b0805df0bd",
+        "sha256_in_prefix": "e141cc141633efa365cf2315804707e0ad8d3ebd6ded1841d92a11b0805df0bd",
+        "size_in_bytes": 970
+      },
+      {
+        "_path": "include/epsg_vertcs.inc",
+        "path_type": "hardlink",
+        "sha256": "40a66e46101c3c55fd09a1acf9dae236ee15659cb0bfe8f439651c7fe5243e77",
+        "sha256_in_prefix": "40a66e46101c3c55fd09a1acf9dae236ee15659cb0bfe8f439651c7fe5243e77",
+        "size_in_bytes": 1990
+      },
+      {
+        "_path": "include/geo_config.h",
+        "path_type": "hardlink",
+        "sha256": "26e96eda0fa971b26c1ca1d03eac108e08d380ab8376431cbb794f6a23c234bc",
+        "sha256_in_prefix": "26e96eda0fa971b26c1ca1d03eac108e08d380ab8376431cbb794f6a23c234bc",
+        "size_in_bytes": 351
+      },
+      {
+        "_path": "include/geo_ctrans.inc",
+        "path_type": "hardlink",
+        "sha256": "12166bb33ebec1a28f5c6abb4c96bce9efc0dc58cc3077636eef33832611f64c",
+        "sha256_in_prefix": "12166bb33ebec1a28f5c6abb4c96bce9efc0dc58cc3077636eef33832611f64c",
+        "size_in_bytes": 3786
+      },
+      {
+        "_path": "include/geo_keyp.h",
+        "path_type": "hardlink",
+        "sha256": "399505e0f935e7132179dd38ea126a8ad5d8c2672c4c5e2522bd755d3b12181e",
+        "sha256_in_prefix": "399505e0f935e7132179dd38ea126a8ad5d8c2672c4c5e2522bd755d3b12181e",
+        "size_in_bytes": 3969
+      },
+      {
+        "_path": "include/geo_normalize.h",
+        "path_type": "hardlink",
+        "sha256": "17efbf7e1f0737668cdfc0876d60cdadc489a6d1b18b9db281e51d0ee6f69ee9",
+        "sha256_in_prefix": "17efbf7e1f0737668cdfc0876d60cdadc489a6d1b18b9db281e51d0ee6f69ee9",
+        "size_in_bytes": 8185
+      },
+      {
+        "_path": "include/geo_simpletags.h",
+        "path_type": "hardlink",
+        "sha256": "7b8789ef2f5a97fa30ceec87615b592f1974c474bac0b8ac9386e8b5e1828996",
+        "sha256_in_prefix": "7b8789ef2f5a97fa30ceec87615b592f1974c474bac0b8ac9386e8b5e1828996",
+        "size_in_bytes": 2372
+      },
+      {
+        "_path": "include/geo_tiffp.h",
+        "path_type": "hardlink",
+        "sha256": "15010707fcb3c799fb2c4dfb4d0e7d6db2be5474012c0070e67ad61a07dd7019",
+        "sha256_in_prefix": "15010707fcb3c799fb2c4dfb4d0e7d6db2be5474012c0070e67ad61a07dd7019",
+        "size_in_bytes": 3859
+      },
+      {
+        "_path": "include/geokeys.h",
+        "path_type": "hardlink",
+        "sha256": "588a77a4026f1a4f2f907fdd84292f69fda1c461d2d06def6b9c31cd1c56643d",
+        "sha256_in_prefix": "588a77a4026f1a4f2f907fdd84292f69fda1c461d2d06def6b9c31cd1c56643d",
+        "size_in_bytes": 1599
+      },
+      {
+        "_path": "include/geokeys.inc",
+        "path_type": "hardlink",
+        "sha256": "b366a94e1fbc5bfc4aff69b85b96730d71ccc35af34b3f1d541ec6482a0e4a93",
+        "sha256_in_prefix": "b366a94e1fbc5bfc4aff69b85b96730d71ccc35af34b3f1d541ec6482a0e4a93",
+        "size_in_bytes": 4310
+      },
+      {
+        "_path": "include/geonames.h",
+        "path_type": "hardlink",
+        "sha256": "51328adf368af04c23f19e80c6cc8975d51ef60e5dac401661cb17e62233916c",
+        "sha256_in_prefix": "51328adf368af04c23f19e80c6cc8975d51ef60e5dac401661cb17e62233916c",
+        "size_in_bytes": 3080
+      },
+      {
+        "_path": "include/geotiff.h",
+        "path_type": "hardlink",
+        "sha256": "4813998cd92cfa513aecbfe84779157f9bd1a80bb33f3e3835fdf454911d4083",
+        "sha256_in_prefix": "4813998cd92cfa513aecbfe84779157f9bd1a80bb33f3e3835fdf454911d4083",
+        "size_in_bytes": 4768
+      },
+      {
+        "_path": "include/geotiffio.h",
+        "path_type": "hardlink",
+        "sha256": "f4345cfb487b33b9a4c12cec8cdf010149e2208bf6e13d7f449d6ad4ba1f6e78",
+        "sha256_in_prefix": "f4345cfb487b33b9a4c12cec8cdf010149e2208bf6e13d7f449d6ad4ba1f6e78",
+        "size_in_bytes": 480
+      },
+      {
+        "_path": "include/geovalues.h",
+        "path_type": "hardlink",
+        "sha256": "fca11db9dc9904b3d8e419d6e1b31d17a04c01bfebbed33501796bab100dbd7f",
+        "sha256_in_prefix": "fca11db9dc9904b3d8e419d6e1b31d17a04c01bfebbed33501796bab100dbd7f",
+        "size_in_bytes": 2781
+      },
+      {
+        "_path": "include/xtiffio.h",
+        "path_type": "hardlink",
+        "sha256": "a77cce5780f3ec43959703ecca7509957ceadbcce8dd1c2755c4ad798e3d2e2b",
+        "sha256_in_prefix": "a77cce5780f3ec43959703ecca7509957ceadbcce8dd1c2755c4ad798e3d2e2b",
+        "size_in_bytes": 2821
+      },
+      {
+        "_path": "lib/libgeotiff.so",
+        "path_type": "softlink",
+        "sha256": "ae1dc5df30caf1b3c8947663e00fa079d45da61a98638fef4178ca5ec47da42d",
+        "size_in_bytes": 509464
+      },
+      {
+        "_path": "lib/libgeotiff.so.2",
+        "path_type": "softlink",
+        "sha256": "ae1dc5df30caf1b3c8947663e00fa079d45da61a98638fef4178ca5ec47da42d",
+        "size_in_bytes": 509464
+      },
+      {
+        "_path": "lib/libgeotiff.so.2.2.0",
+        "path_type": "hardlink",
+        "sha256": "ae1dc5df30caf1b3c8947663e00fa079d45da61a98638fef4178ca5ec47da42d",
+        "sha256_in_prefix": "ae1dc5df30caf1b3c8947663e00fa079d45da61a98638fef4178ca5ec47da42d",
+        "size_in_bytes": 509464
+      },
+      {
+        "_path": "share/cmake/GeoTIFF/geotiff-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "14470de4fa1924127367bd4548dca3d28fd0f3f6d8052d2a04292f9569197fed",
+        "sha256_in_prefix": "14470de4fa1924127367bd4548dca3d28fd0f3f6d8052d2a04292f9569197fed",
+        "size_in_bytes": 1410
+      },
+      {
+        "_path": "share/cmake/GeoTIFF/geotiff-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "f21b464f82f0c252e7af999b0e36e64c9f1b311effc425fe42a46ddcbd9287e5",
+        "sha256_in_prefix": "f21b464f82f0c252e7af999b0e36e64c9f1b311effc425fe42a46ddcbd9287e5",
+        "size_in_bytes": 1891
+      },
+      {
+        "_path": "share/cmake/GeoTIFF/geotiff-depends-debug.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "c74e5928120c5aa19d0ca09b96a6923ffbb4b25c08239639f0e3b47d7593b393",
+        "sha256_in_prefix": "3d3f408fe983f4c25840e8e2b379676f95900ea96206d1e7efbcbbb79d9f2a7c",
+        "size_in_bytes": 1069
+      },
+      {
+        "_path": "share/cmake/GeoTIFF/geotiff-depends.cmake",
+        "path_type": "hardlink",
+        "sha256": "be4e5a2abe0404bdb7ad21da6264baeab7d52a17a1bcefbf62e7574d2343b924",
+        "sha256_in_prefix": "be4e5a2abe0404bdb7ad21da6264baeab7d52a17a1bcefbf62e7574d2343b924",
+        "size_in_bytes": 3145
+      },
+      {
+        "_path": "share/epsg_csv/alias.csv",
+        "path_type": "hardlink",
+        "sha256": "c82f5758ed2b89276abf3b5e5aff6d0007cfc760c18abaeb0d0e6c69d974d5d0",
+        "sha256_in_prefix": "c82f5758ed2b89276abf3b5e5aff6d0007cfc760c18abaeb0d0e6c69d974d5d0",
+        "size_in_bytes": 149486
+      },
+      {
+        "_path": "share/epsg_csv/area.csv",
+        "path_type": "hardlink",
+        "sha256": "20fef521486d0c7704b46e4b8a2a98126a3312bcf1dadedca5c01fd430060bce",
+        "sha256_in_prefix": "20fef521486d0c7704b46e4b8a2a98126a3312bcf1dadedca5c01fd430060bce",
+        "size_in_bytes": 852875
+      },
+      {
+        "_path": "share/epsg_csv/change.csv",
+        "path_type": "hardlink",
+        "sha256": "638ef4bec0b85320f05095e04feec1dbc72ad353a3cb9dcede1b6ff3e6251024",
+        "sha256_in_prefix": "638ef4bec0b85320f05095e04feec1dbc72ad353a3cb9dcede1b6ff3e6251024",
+        "size_in_bytes": 175329
+      },
+      {
+        "_path": "share/epsg_csv/compdcs.csv",
+        "path_type": "hardlink",
+        "sha256": "639dbf0148e868aa989720ec3c439db26fcaa1a8cbe87901f809c6ee0b783462",
+        "sha256_in_prefix": "639dbf0148e868aa989720ec3c439db26fcaa1a8cbe87901f809c6ee0b783462",
+        "size_in_bytes": 9202
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_axis.csv",
+        "path_type": "hardlink",
+        "sha256": "d7064740157ec8628d37032f073409f01095c0e7a406ac79c3f64efb79001d32",
+        "sha256_in_prefix": "d7064740157ec8628d37032f073409f01095c0e7a406ac79c3f64efb79001d32",
+        "size_in_bytes": 8302
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_axis_name.csv",
+        "path_type": "hardlink",
+        "sha256": "cc77095a21f59141ffb0c87cd9220968c6770e06f7234f02e22edbbe45596eff",
+        "sha256_in_prefix": "cc77095a21f59141ffb0c87cd9220968c6770e06f7234f02e22edbbe45596eff",
+        "size_in_bytes": 8323
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_operation.csv",
+        "path_type": "hardlink",
+        "sha256": "2f2898ea024cfb973b704ed26a6907a05cc026a89149df1b5064e71e7940d7a4",
+        "sha256_in_prefix": "2f2898ea024cfb973b704ed26a6907a05cc026a89149df1b5064e71e7940d7a4",
+        "size_in_bytes": 1391593
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_operation_method.csv",
+        "path_type": "hardlink",
+        "sha256": "bb0d1feaf905e82d70cb439c4e2bb71a19ae0ac4911971d04c18f4daf34003bb",
+        "sha256_in_prefix": "bb0d1feaf905e82d70cb439c4e2bb71a19ae0ac4911971d04c18f4daf34003bb",
+        "size_in_bytes": 333181
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_operation_parameter.csv",
+        "path_type": "hardlink",
+        "sha256": "73cd762101b270fcfb7cd2c9e7c99c14945d5a974d092301e830972012c4d249",
+        "sha256_in_prefix": "73cd762101b270fcfb7cd2c9e7c99c14945d5a974d092301e830972012c4d249",
+        "size_in_bytes": 36404
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_operation_parameter_value.csv",
+        "path_type": "hardlink",
+        "sha256": "89c42ea0962cae30aaf36e34b6750a4435c57962725bcb7909bf6295e20e1e04",
+        "sha256_in_prefix": "89c42ea0962cae30aaf36e34b6750a4435c57962725bcb7909bf6295e20e1e04",
+        "size_in_bytes": 582873
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_operation_path.csv",
+        "path_type": "hardlink",
+        "sha256": "9cd4cd59027de02145d7b8082a9db32086d55db32c604dde70f7b08cbb1a8ba7",
+        "sha256_in_prefix": "9cd4cd59027de02145d7b8082a9db32086d55db32c604dde70f7b08cbb1a8ba7",
+        "size_in_bytes": 5235
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_reference_system.csv",
+        "path_type": "hardlink",
+        "sha256": "0b36734c19354e8747a636b03a568d31317aedf7ae31761ac163dfbb2eaad0eb",
+        "sha256_in_prefix": "0b36734c19354e8747a636b03a568d31317aedf7ae31761ac163dfbb2eaad0eb",
+        "size_in_bytes": 1760128
+      },
+      {
+        "_path": "share/epsg_csv/coordinate_system.csv",
+        "path_type": "hardlink",
+        "sha256": "e5184b41005e1bb5f20f54bfba5735dfac6d8c1879df80f3d3d9db4dd93e707b",
+        "sha256_in_prefix": "e5184b41005e1bb5f20f54bfba5735dfac6d8c1879df80f3d3d9db4dd93e707b",
+        "size_in_bytes": 30380
+      },
+      {
+        "_path": "share/epsg_csv/datum.csv",
+        "path_type": "hardlink",
+        "sha256": "8162e3ae78a48fab1df3a4a3bddcc28d1f4aab579f1c670f4f2c9f126e6e740c",
+        "sha256_in_prefix": "8162e3ae78a48fab1df3a4a3bddcc28d1f4aab579f1c670f4f2c9f126e6e740c",
+        "size_in_bytes": 236262
+      },
+      {
+        "_path": "share/epsg_csv/datum_shift.csv",
+        "path_type": "hardlink",
+        "sha256": "dd0c6b938e8ccc17a0a6786375db6f23792d26312759adf3b55c692f049be270",
+        "sha256_in_prefix": "dd0c6b938e8ccc17a0a6786375db6f23792d26312759adf3b55c692f049be270",
+        "size_in_bytes": 180007
+      },
+      {
+        "_path": "share/epsg_csv/datum_shift_pref.csv",
+        "path_type": "hardlink",
+        "sha256": "0e3617ed7bffd4e61eebe3dbe3d64e5df910d668615bf25574138821726c3514",
+        "sha256_in_prefix": "0e3617ed7bffd4e61eebe3dbe3d64e5df910d668615bf25574138821726c3514",
+        "size_in_bytes": 4075
+      },
+      {
+        "_path": "share/epsg_csv/deprecation.csv",
+        "path_type": "hardlink",
+        "sha256": "87c697b9ff77d317a38d9df598d0ab7fffea0ea0661d6635b409633bad441180",
+        "sha256_in_prefix": "87c697b9ff77d317a38d9df598d0ab7fffea0ea0661d6635b409633bad441180",
+        "size_in_bytes": 90632
+      },
+      {
+        "_path": "share/epsg_csv/ellipsoid.csv",
+        "path_type": "hardlink",
+        "sha256": "b1701647f5b9ed49b9602ab0efa22b5d28506e46fe24f324b3f0aaa00f7e7ed5",
+        "sha256_in_prefix": "b1701647f5b9ed49b9602ab0efa22b5d28506e46fe24f324b3f0aaa00f7e7ed5",
+        "size_in_bytes": 14759
+      },
+      {
+        "_path": "share/epsg_csv/esri_datum_override.csv",
+        "path_type": "hardlink",
+        "sha256": "cbac95a05c48eee4ca169c6ba6adc4eba50da666163bbdfccf99acb7abce6edb",
+        "sha256_in_prefix": "cbac95a05c48eee4ca169c6ba6adc4eba50da666163bbdfccf99acb7abce6edb",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "share/epsg_csv/gcs.csv",
+        "path_type": "hardlink",
+        "sha256": "32ee6fee13c1ed0cf56a0962a179ca77df851876138d0169976fe8d7ab9f18d2",
+        "sha256_in_prefix": "32ee6fee13c1ed0cf56a0962a179ca77df851876138d0169976fe8d7ab9f18d2",
+        "size_in_bytes": 54388
+      },
+      {
+        "_path": "share/epsg_csv/gcs.override.csv",
+        "path_type": "hardlink",
+        "sha256": "97ee0bee1d80834b048a68bad368a782061cdfe84d58f5ef78f7977a0ac1c0be",
+        "sha256_in_prefix": "97ee0bee1d80834b048a68bad368a782061cdfe84d58f5ef78f7977a0ac1c0be",
+        "size_in_bytes": 513
+      },
+      {
+        "_path": "share/epsg_csv/geoccs.csv",
+        "path_type": "hardlink",
+        "sha256": "45284bd105c37226aa0228f7d856a480cf828a775231980817dde3e56ae5de56",
+        "sha256_in_prefix": "45284bd105c37226aa0228f7d856a480cf828a775231980817dde3e56ae5de56",
+        "size_in_bytes": 15669
+      },
+      {
+        "_path": "share/epsg_csv/naming_system.csv",
+        "path_type": "hardlink",
+        "sha256": "9e7cf7910887414698d0d1025cbfd5d81caf3dbd8f8f1f7928b5aac14dc6c16c",
+        "sha256_in_prefix": "9e7cf7910887414698d0d1025cbfd5d81caf3dbd8f8f1f7928b5aac14dc6c16c",
+        "size_in_bytes": 1608
+      },
+      {
+        "_path": "share/epsg_csv/pcs.csv",
+        "path_type": "hardlink",
+        "sha256": "122efe6747bc63c4db17c8050f16a0d0da3648e06a8b415101596be5123279d3",
+        "sha256_in_prefix": "122efe6747bc63c4db17c8050f16a0d0da3648e06a8b415101596be5123279d3",
+        "size_in_bytes": 798625
+      },
+      {
+        "_path": "share/epsg_csv/pcs.override.csv",
+        "path_type": "hardlink",
+        "sha256": "dc5e582714cc25d0e12efe083aca89a0bde0fb878deafa85ea89d62f19d83c5c",
+        "sha256_in_prefix": "dc5e582714cc25d0e12efe083aca89a0bde0fb878deafa85ea89d62f19d83c5c",
+        "size_in_bytes": 1581
+      },
+      {
+        "_path": "share/epsg_csv/prime_meridian.csv",
+        "path_type": "hardlink",
+        "sha256": "972b1b88cd6f4daff24c6ca403dda1ef81aea46e6aff2044d10f773a0f27768a",
+        "sha256_in_prefix": "972b1b88cd6f4daff24c6ca403dda1ef81aea46e6aff2044d10f773a0f27768a",
+        "size_in_bytes": 1910
+      },
+      {
+        "_path": "share/epsg_csv/projop_wparm.csv",
+        "path_type": "hardlink",
+        "sha256": "afbff88708c4dc64764a9705fd2eaf431616fc409ae6843199e008e0f38519d7",
+        "sha256_in_prefix": "afbff88708c4dc64764a9705fd2eaf431616fc409ae6843199e008e0f38519d7",
+        "size_in_bytes": 289707
+      },
+      {
+        "_path": "share/epsg_csv/stateplane.csv",
+        "path_type": "hardlink",
+        "sha256": "30c6210872b0a4c10d40739a8cb6beda630a7ef3eb4cb07a7128e26e8e83cbe3",
+        "sha256_in_prefix": "30c6210872b0a4c10d40739a8cb6beda630a7ef3eb4cb07a7128e26e8e83cbe3",
+        "size_in_bytes": 10360
+      },
+      {
+        "_path": "share/epsg_csv/supersession.csv",
+        "path_type": "hardlink",
+        "sha256": "9bb7b7b2c3eb335289210e0a448464a813be30ee685be51acbd17d202427c395",
+        "sha256_in_prefix": "9bb7b7b2c3eb335289210e0a448464a813be30ee685be51acbd17d202427c395",
+        "size_in_bytes": 20815
+      },
+      {
+        "_path": "share/epsg_csv/unit_of_measure.csv",
+        "path_type": "hardlink",
+        "sha256": "013e3aa222d040af0e649128e16c4452fa929708368d25f377187f4091f2a63f",
+        "sha256_in_prefix": "013e3aa222d040af0e649128e16c4452fa929708368d25f377187f4091f2a63f",
+        "size_in_bytes": 22291
+      },
+      {
+        "_path": "share/epsg_csv/version_history.csv",
+        "path_type": "hardlink",
+        "sha256": "6ec4ff78cc2dc8f0eac34d87e39aa23db65ee278019331f4624123c9538d07c4",
+        "sha256_in_prefix": "6ec4ff78cc2dc8f0eac34d87e39aa23db65ee278019331f4624123c9538d07c4",
+        "size_in_bytes": 1662
+      },
+      {
+        "_path": "share/epsg_csv/vertcs.csv",
+        "path_type": "hardlink",
+        "sha256": "3b93b3d36d9c048dd9a20c833b1486429966e15e5d0803853118e8ed31587e5e",
+        "sha256_in_prefix": "3b93b3d36d9c048dd9a20c833b1486429966e15e5d0803853118e8ed31587e5e",
+        "size_in_bytes": 13530
+      },
+      {
+        "_path": "share/epsg_csv/vertcs.override.csv",
+        "path_type": "hardlink",
+        "sha256": "709b6805d561e909c5f85f529e4d312f7a639a81f72a33de757c302294c6647d",
+        "sha256_in_prefix": "709b6805d561e909c5f85f529e4d312f7a639a81f72a33de757c302294c6647d",
+        "size_in_bytes": 1081
+      },
+      {
+        "_path": "share/man/man1/applygeo.1",
+        "path_type": "hardlink",
+        "sha256": "a9c476c20387f866d8c228c9133c94a35290df046c5a0e720944cdda4eb40a2f",
+        "sha256_in_prefix": "a9c476c20387f866d8c228c9133c94a35290df046c5a0e720944cdda4eb40a2f",
+        "size_in_bytes": 657
+      },
+      {
+        "_path": "share/man/man1/geotifcp.1",
+        "path_type": "hardlink",
+        "sha256": "027f012e7fb7df0b12f4f24419e0c24a866e3b6e1b6071938a25a794f2676eab",
+        "sha256_in_prefix": "027f012e7fb7df0b12f4f24419e0c24a866e3b6e1b6071938a25a794f2676eab",
+        "size_in_bytes": 3864
+      },
+      {
+        "_path": "share/man/man1/listgeo.1",
+        "path_type": "hardlink",
+        "sha256": "b77288e20be58c05d206d72e809cdb9a2641a248f15e5133dfcfdb19a521c11f",
+        "sha256_in_prefix": "b77288e20be58c05d206d72e809cdb9a2641a248f15e5133dfcfdb19a521c11f",
+        "size_in_bytes": 1426
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "geotiff[url=https://navigator.oceansdata.ca/pkgs/geotiff-1.4.3-h1105359_1000.tar.bz2]",
+  "sha256": "e186052f69d9c290941fc4dba896bc7c1eeeec688a7b291a4715ff9cb58d8ed2",
+  "size": 1192711,
+  "subdir": "linux-64",
+  "timestamp": 1545130656436,
+  "track_features": "",
+  "url": "https://navigator.oceansdata.ca/pkgs/geotiff-1.4.3-h1105359_1000.tar.bz2",
+  "version": "1.4.3"
+}

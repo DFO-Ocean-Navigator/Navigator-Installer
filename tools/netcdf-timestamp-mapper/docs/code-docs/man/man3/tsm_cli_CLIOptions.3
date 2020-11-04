@@ -1,0 +1,86 @@
+.TH "tsm::cli::CLIOptions" 3 "Wed Nov 13 2019" "Version 1.0" "NetCDF Timestamp Mapper" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tsm::cli::CLIOptions \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CLIOptions\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCLIOptions\fP (const cxxopts::ParseResult &result)"
+.br
+.ti -1c
+.RI "bool \fBverify\fP () const "
+.br
+.RI "\fIValidate the given inputs\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const std::string \fBInputDir\fP"
+.br
+.ti -1c
+.RI "const std::string \fBDatasetName\fP"
+.br
+.ti -1c
+.RI "const std::string \fBOutputDir\fP"
+.br
+.ti -1c
+.RI "const std::string \fBRegexPattern\fP"
+.br
+.ti -1c
+.RI "const std::string \fBFileListPath\fP"
+.br
+.ti -1c
+.RI "const bool \fBDryRun\fP { false }"
+.br
+.ti -1c
+.RI "const bool \fBRegenIndices\fP { false }"
+.br
+.ti -1c
+.RI "const bool \fBForecast\fP { false }"
+.br
+.ti -1c
+.RI "const bool \fBHistorical\fP { false }"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "tsm::cli::CLIOptions::CLIOptions (const cxxopts::ParseResult & result)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool tsm::cli::CLIOptions::verify () const"
+
+.PP
+Validate the given inputs\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "const std::string tsm::cli::CLIOptions::DatasetName"
+
+.SS "const bool tsm::cli::CLIOptions::DryRun { false }"
+
+.SS "const std::string tsm::cli::CLIOptions::FileListPath"
+
+.SS "const bool tsm::cli::CLIOptions::Forecast { false }"
+
+.SS "const bool tsm::cli::CLIOptions::Historical { false }"
+
+.SS "const std::string tsm::cli::CLIOptions::InputDir"
+
+.SS "const std::string tsm::cli::CLIOptions::OutputDir"
+
+.SS "const bool tsm::cli::CLIOptions::RegenIndices { false }"
+
+.SS "const std::string tsm::cli::CLIOptions::RegexPattern"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for NetCDF Timestamp Mapper from the source code\&.

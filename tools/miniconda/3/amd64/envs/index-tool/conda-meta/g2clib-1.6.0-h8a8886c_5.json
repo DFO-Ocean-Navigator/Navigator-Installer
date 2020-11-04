@@ -1,0 +1,80 @@
+{
+  "arch": "x86_64",
+  "build": "h8a8886c_5",
+  "build_number": 5,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "jasper >=2.0.14,<3.0a0",
+    "libgcc-ng >=7.2.0",
+    "libpng >=1.6.34,<1.7.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/g2clib-1.6.0-h8a8886c_5",
+  "features": "",
+  "files": [
+    "include/drstemplates.h",
+    "include/grib2.h",
+    "include/gridtemplates.h",
+    "include/pdstemplates.h",
+    "lib/libgrib2c.a"
+  ],
+  "fn": "g2clib-1.6.0-h8a8886c_5.conda",
+  "license": "Public Domain",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/g2clib-1.6.0-h8a8886c_5",
+    "type": 1
+  },
+  "md5": "5b464877b2d9fc443474a6a634f67191",
+  "name": "g2clib",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/g2clib-1.6.0-h8a8886c_5.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/drstemplates.h",
+        "path_type": "hardlink",
+        "sha256": "d153e4bc4980b2f2aadcce061de4e0c869147852b2d683d3715a61e0f5684849",
+        "sha256_in_prefix": "d153e4bc4980b2f2aadcce061de4e0c869147852b2d683d3715a61e0f5684849",
+        "size_in_bytes": 3101
+      },
+      {
+        "_path": "include/grib2.h",
+        "path_type": "hardlink",
+        "sha256": "da5f87913d0fe6518f453173006f812b9123b4dc65a0b77d7588640d1911e43d",
+        "sha256_in_prefix": "da5f87913d0fe6518f453173006f812b9123b4dc65a0b77d7588640d1911e43d",
+        "size_in_bytes": 12858
+      },
+      {
+        "_path": "include/gridtemplates.h",
+        "path_type": "hardlink",
+        "sha256": "6b51bcbe294689b91236af1ef33bfe926baf20a9ed275bca98859dc6c9bba30d",
+        "sha256_in_prefix": "6b51bcbe294689b91236af1ef33bfe926baf20a9ed275bca98859dc6c9bba30d",
+        "size_in_bytes": 6011
+      },
+      {
+        "_path": "include/pdstemplates.h",
+        "path_type": "hardlink",
+        "sha256": "9b5462d675f4fe252af663e5520f24fbbb5b956a6b5184a3145f5e8edb1d1774",
+        "sha256_in_prefix": "9b5462d675f4fe252af663e5520f24fbbb5b956a6b5184a3145f5e8edb1d1774",
+        "size_in_bytes": 13269
+      },
+      {
+        "_path": "lib/libgrib2c.a",
+        "path_type": "hardlink",
+        "sha256": "8cd895b528953ee817054dd4d40477844d5f4371615d0463091ca72731daf8fc",
+        "sha256_in_prefix": "8cd895b528953ee817054dd4d40477844d5f4371615d0463091ca72731daf8fc",
+        "size_in_bytes": 260408
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "defaults/linux-64::g2clib==1.6.0=h8a8886c_5",
+  "sha256": "9e503aa800bb8a096b29eeffc435c12d84c09ad0fb35cfb23e1f50185da4928b",
+  "size": 57749,
+  "subdir": "linux-64",
+  "timestamp": 1531092606455,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/g2clib-1.6.0-h8a8886c_5.conda",
+  "version": "1.6.0"
+}

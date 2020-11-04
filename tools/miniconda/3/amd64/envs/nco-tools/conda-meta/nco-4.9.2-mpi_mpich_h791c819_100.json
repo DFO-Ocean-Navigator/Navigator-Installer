@@ -1,0 +1,438 @@
+{
+  "arch": "x86_64",
+  "build": "mpi_mpich_h791c819_100",
+  "build_number": 100,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "curl >=7.64.1,<8.0a0",
+    "esmf * mpi_mpich_*",
+    "expat >=2.2.9,<2.3.0a0",
+    "gsl >=2.6,<2.7.0a0",
+    "hdf5 >=1.10.5,<1.10.6.0a0 mpi_mpich_*",
+    "krb5 >=1.16.4,<1.17.0a0",
+    "libblas >=3.8.0,<4.0a0",
+    "libcblas >=3.8.0,<4.0a0",
+    "libgcc-ng >=7.3.0",
+    "libnetcdf >=4.7.3,<5.0a0 mpi_mpich_*",
+    "libstdcxx-ng >=7.3.0",
+    "mpich >=3.3.2,<3.4.0a0",
+    "tempest-remap * mpi_mpich_*",
+    "udunits2",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/nco-4.9.2-mpi_mpich_h791c819_100",
+  "features": "",
+  "files": [
+    "bin/ncap2",
+    "bin/ncatted",
+    "bin/ncbo",
+    "bin/ncclimo",
+    "bin/ncdiff",
+    "bin/ncea",
+    "bin/ncecat",
+    "bin/nces",
+    "bin/ncflint",
+    "bin/ncks",
+    "bin/ncpdq",
+    "bin/ncra",
+    "bin/ncrcat",
+    "bin/ncremap",
+    "bin/ncrename",
+    "bin/ncwa",
+    "include/libnco_c++.hh",
+    "include/nco_att.hh",
+    "include/nco_dmn.hh",
+    "include/nco_fl.hh",
+    "include/nco_hgh.hh",
+    "include/nco_utl.hh",
+    "include/nco_var.hh",
+    "lib/libnco-4.9.2.so",
+    "lib/libnco.a",
+    "lib/libnco.so",
+    "lib/libnco_c++-4.9.2.so",
+    "lib/libnco_c++.a",
+    "lib/libnco_c++.so",
+    "share/info/nco.info",
+    "share/info/nco.info-1",
+    "share/info/nco.info-2",
+    "share/info/nco.info-3",
+    "share/info/nco.info-4",
+    "share/man/man1/ncap2.1",
+    "share/man/man1/ncatted.1",
+    "share/man/man1/ncbo.1",
+    "share/man/man1/ncclimo.1",
+    "share/man/man1/ncecat.1",
+    "share/man/man1/nces.1",
+    "share/man/man1/ncflint.1",
+    "share/man/man1/ncks.1",
+    "share/man/man1/nco.1",
+    "share/man/man1/ncpdq.1",
+    "share/man/man1/ncra.1",
+    "share/man/man1/ncrcat.1",
+    "share/man/man1/ncremap.1",
+    "share/man/man1/ncrename.1",
+    "share/man/man1/ncwa.1"
+  ],
+  "fn": "nco-4.9.2-mpi_mpich_h791c819_100.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/nco-4.9.2-mpi_mpich_h791c819_100",
+    "type": 1
+  },
+  "md5": "79504ab3849537b373a458d4c9d92036",
+  "name": "nco",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/nco-4.9.2-mpi_mpich_h791c819_100.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/ncap2",
+        "path_type": "hardlink",
+        "sha256": "287a90ee56fb908d7dfc98b07e1353e3b2f67e47245c6c7e650b64c27a903fe6",
+        "sha256_in_prefix": "287a90ee56fb908d7dfc98b07e1353e3b2f67e47245c6c7e650b64c27a903fe6",
+        "size_in_bytes": 1535184
+      },
+      {
+        "_path": "bin/ncatted",
+        "path_type": "hardlink",
+        "sha256": "36e0d5daeeecfbf6127587adb6743338d287ac29f942bd83cfb9c271998471db",
+        "sha256_in_prefix": "36e0d5daeeecfbf6127587adb6743338d287ac29f942bd83cfb9c271998471db",
+        "size_in_bytes": 32416
+      },
+      {
+        "_path": "bin/ncbo",
+        "path_type": "hardlink",
+        "sha256": "f180b86df5c6bcb8bef0dd9c8f8325189b5f6172b10ac67d52459631a5fd0ce4",
+        "sha256_in_prefix": "f180b86df5c6bcb8bef0dd9c8f8325189b5f6172b10ac67d52459631a5fd0ce4",
+        "size_in_bytes": 47376
+      },
+      {
+        "_path": "bin/ncclimo",
+        "path_type": "hardlink",
+        "sha256": "9807eb1569200d60c763a802f90c6ca0c09a4570b9cfde8c8d79cef8492528d1",
+        "sha256_in_prefix": "9807eb1569200d60c763a802f90c6ca0c09a4570b9cfde8c8d79cef8492528d1",
+        "size_in_bytes": 164731
+      },
+      {
+        "_path": "bin/ncdiff",
+        "path_type": "softlink",
+        "sha256": "f180b86df5c6bcb8bef0dd9c8f8325189b5f6172b10ac67d52459631a5fd0ce4",
+        "size_in_bytes": 47376
+      },
+      {
+        "_path": "bin/ncea",
+        "path_type": "softlink",
+        "sha256": "66c73173c6473b5e0d3159d357aeb97d71966a96fcbdb657c1be6de5d42cdc39",
+        "size_in_bytes": 84544
+      },
+      {
+        "_path": "bin/ncecat",
+        "path_type": "hardlink",
+        "sha256": "4854002ce6839f6b0beddccd3a43492de7e7ddd292db23d3395163f09d62195e",
+        "sha256_in_prefix": "4854002ce6839f6b0beddccd3a43492de7e7ddd292db23d3395163f09d62195e",
+        "size_in_bytes": 57608
+      },
+      {
+        "_path": "bin/nces",
+        "path_type": "softlink",
+        "sha256": "66c73173c6473b5e0d3159d357aeb97d71966a96fcbdb657c1be6de5d42cdc39",
+        "size_in_bytes": 84544
+      },
+      {
+        "_path": "bin/ncflint",
+        "path_type": "hardlink",
+        "sha256": "abb81979494679b3cedda039f2781718b725aaa7cc81db5421c52fbe57cf4b0e",
+        "sha256_in_prefix": "abb81979494679b3cedda039f2781718b725aaa7cc81db5421c52fbe57cf4b0e",
+        "size_in_bytes": 57272
+      },
+      {
+        "_path": "bin/ncks",
+        "path_type": "hardlink",
+        "sha256": "83ee974e8eb66d4cd32aff8fe7e064e5c714b01bd080d88bb61f11a62fd58067",
+        "sha256_in_prefix": "83ee974e8eb66d4cd32aff8fe7e064e5c714b01bd080d88bb61f11a62fd58067",
+        "size_in_bytes": 74272
+      },
+      {
+        "_path": "bin/ncpdq",
+        "path_type": "hardlink",
+        "sha256": "0d7e486ff507b8e78991a7a5121a1763797b7b1c6dd5a8bdce1180361c55e676",
+        "sha256_in_prefix": "0d7e486ff507b8e78991a7a5121a1763797b7b1c6dd5a8bdce1180361c55e676",
+        "size_in_bytes": 57672
+      },
+      {
+        "_path": "bin/ncra",
+        "path_type": "hardlink",
+        "sha256": "66c73173c6473b5e0d3159d357aeb97d71966a96fcbdb657c1be6de5d42cdc39",
+        "sha256_in_prefix": "66c73173c6473b5e0d3159d357aeb97d71966a96fcbdb657c1be6de5d42cdc39",
+        "size_in_bytes": 84544
+      },
+      {
+        "_path": "bin/ncrcat",
+        "path_type": "softlink",
+        "sha256": "66c73173c6473b5e0d3159d357aeb97d71966a96fcbdb657c1be6de5d42cdc39",
+        "size_in_bytes": 84544
+      },
+      {
+        "_path": "bin/ncremap",
+        "path_type": "hardlink",
+        "sha256": "8ef59a8405cff1e7b1cf6f658c32e21c414991708d5204e1949bf7cf0b268115",
+        "sha256_in_prefix": "8ef59a8405cff1e7b1cf6f658c32e21c414991708d5204e1949bf7cf0b268115",
+        "size_in_bytes": 169799
+      },
+      {
+        "_path": "bin/ncrename",
+        "path_type": "hardlink",
+        "sha256": "4de7df11441a9c710a9bcf8b7c4b922229f0d82ecc1229a0bc12cff90be7757a",
+        "sha256_in_prefix": "4de7df11441a9c710a9bcf8b7c4b922229f0d82ecc1229a0bc12cff90be7757a",
+        "size_in_bytes": 40744
+      },
+      {
+        "_path": "bin/ncwa",
+        "path_type": "hardlink",
+        "sha256": "475ae4c0ab6e7f9a357ff5fc2de63fc1aa73902ec14efc8f8f97a4f59a8f70c9",
+        "sha256_in_prefix": "475ae4c0ab6e7f9a357ff5fc2de63fc1aa73902ec14efc8f8f97a4f59a8f70c9",
+        "size_in_bytes": 95184
+      },
+      {
+        "_path": "include/libnco_c++.hh",
+        "path_type": "hardlink",
+        "sha256": "d8d3fb768207d6de983adad768ca6218ea2da0c212c8a0d95ebf636eaf79d3a2",
+        "sha256_in_prefix": "d8d3fb768207d6de983adad768ca6218ea2da0c212c8a0d95ebf636eaf79d3a2",
+        "size_in_bytes": 1164
+      },
+      {
+        "_path": "include/nco_att.hh",
+        "path_type": "hardlink",
+        "sha256": "e7aaded130f762de88a8a6f06e00cc5ab9116ce5e75a102525167db0bd80604e",
+        "sha256_in_prefix": "e7aaded130f762de88a8a6f06e00cc5ab9116ce5e75a102525167db0bd80604e",
+        "size_in_bytes": 15763
+      },
+      {
+        "_path": "include/nco_dmn.hh",
+        "path_type": "hardlink",
+        "sha256": "5cf8553fddddc9f4d31bc84f77b3ae40aa35a8ff472e97cd60082f3aee6268a5",
+        "sha256_in_prefix": "5cf8553fddddc9f4d31bc84f77b3ae40aa35a8ff472e97cd60082f3aee6268a5",
+        "size_in_bytes": 3440
+      },
+      {
+        "_path": "include/nco_fl.hh",
+        "path_type": "hardlink",
+        "sha256": "9b797bd1afd38dd8adaa13fcab0680f2ce9b15e9b3a0cdb0299cd9c4cc28f3e9",
+        "sha256_in_prefix": "9b797bd1afd38dd8adaa13fcab0680f2ce9b15e9b3a0cdb0299cd9c4cc28f3e9",
+        "size_in_bytes": 4813
+      },
+      {
+        "_path": "include/nco_hgh.hh",
+        "path_type": "hardlink",
+        "sha256": "7c43f58682d271d06669002a401b5935bc001b4fa6a598888198e0107273a61f",
+        "sha256_in_prefix": "7c43f58682d271d06669002a401b5935bc001b4fa6a598888198e0107273a61f",
+        "size_in_bytes": 2026
+      },
+      {
+        "_path": "include/nco_utl.hh",
+        "path_type": "hardlink",
+        "sha256": "8c1ed1eac0b711e87f3719d67712ccd97d3ce966cc0b67fdf7c815942aaad423",
+        "sha256_in_prefix": "8c1ed1eac0b711e87f3719d67712ccd97d3ce966cc0b67fdf7c815942aaad423",
+        "size_in_bytes": 13827
+      },
+      {
+        "_path": "include/nco_var.hh",
+        "path_type": "hardlink",
+        "sha256": "7c67c9418aff46a52b17fb903755b05800abfc98c42492fd29c5652c08d82aa0",
+        "sha256_in_prefix": "7c67c9418aff46a52b17fb903755b05800abfc98c42492fd29c5652c08d82aa0",
+        "size_in_bytes": 31606
+      },
+      {
+        "_path": "lib/libnco-4.9.2.so",
+        "path_type": "hardlink",
+        "sha256": "d6ae28b5148ed78bcac4f65fe1fb2a82077b2ec3e11c6141a72f7770ee34223c",
+        "sha256_in_prefix": "d6ae28b5148ed78bcac4f65fe1fb2a82077b2ec3e11c6141a72f7770ee34223c",
+        "size_in_bytes": 1278640
+      },
+      {
+        "_path": "lib/libnco.a",
+        "path_type": "hardlink",
+        "sha256": "e4cbd8f1753ec9accfc4b31e9bdde4e03bfb18650d7045acc2fdef70a788f480",
+        "sha256_in_prefix": "e4cbd8f1753ec9accfc4b31e9bdde4e03bfb18650d7045acc2fdef70a788f480",
+        "size_in_bytes": 2207450
+      },
+      {
+        "_path": "lib/libnco.so",
+        "path_type": "softlink",
+        "sha256": "d6ae28b5148ed78bcac4f65fe1fb2a82077b2ec3e11c6141a72f7770ee34223c",
+        "size_in_bytes": 1278640
+      },
+      {
+        "_path": "lib/libnco_c++-4.9.2.so",
+        "path_type": "hardlink",
+        "sha256": "0fd825a3a1712d82e293cda175887f512cc540488dd6da83282db3fd51e98abf",
+        "sha256_in_prefix": "0fd825a3a1712d82e293cda175887f512cc540488dd6da83282db3fd51e98abf",
+        "size_in_bytes": 127224
+      },
+      {
+        "_path": "lib/libnco_c++.a",
+        "path_type": "hardlink",
+        "sha256": "7d8bfc5eb806dea99812a9561b0f197e9cfe34cff1ce4e78219e7b40ce4aae0e",
+        "sha256_in_prefix": "7d8bfc5eb806dea99812a9561b0f197e9cfe34cff1ce4e78219e7b40ce4aae0e",
+        "size_in_bytes": 224718
+      },
+      {
+        "_path": "lib/libnco_c++.so",
+        "path_type": "softlink",
+        "sha256": "0fd825a3a1712d82e293cda175887f512cc540488dd6da83282db3fd51e98abf",
+        "size_in_bytes": 127224
+      },
+      {
+        "_path": "share/info/nco.info",
+        "path_type": "hardlink",
+        "sha256": "5134dd8d088b9062c0dd1d48f01f7fba6cfe418eb453b3b607d04d399927f9ef",
+        "sha256_in_prefix": "5134dd8d088b9062c0dd1d48f01f7fba6cfe418eb453b3b607d04d399927f9ef",
+        "size_in_bytes": 10711
+      },
+      {
+        "_path": "share/info/nco.info-1",
+        "path_type": "hardlink",
+        "sha256": "5513909a454d1f2d862d1325857be308016b09bcabdb448a47acd0ce45f146a7",
+        "sha256_in_prefix": "5513909a454d1f2d862d1325857be308016b09bcabdb448a47acd0ce45f146a7",
+        "size_in_bytes": 312217
+      },
+      {
+        "_path": "share/info/nco.info-2",
+        "path_type": "hardlink",
+        "sha256": "7c0ec06a4a1588233ccfffb8ac00736a4a4ddb371423220b05236ea32dd4020b",
+        "sha256_in_prefix": "7c0ec06a4a1588233ccfffb8ac00736a4a4ddb371423220b05236ea32dd4020b",
+        "size_in_bytes": 298856
+      },
+      {
+        "_path": "share/info/nco.info-3",
+        "path_type": "hardlink",
+        "sha256": "87aa71fd2a9e6549a90fa55ee4e60237a60ca1eb39570fdb883cdfee4d9c71fc",
+        "sha256_in_prefix": "87aa71fd2a9e6549a90fa55ee4e60237a60ca1eb39570fdb883cdfee4d9c71fc",
+        "size_in_bytes": 302550
+      },
+      {
+        "_path": "share/info/nco.info-4",
+        "path_type": "hardlink",
+        "sha256": "adcbc54382ce35f4ee3a2447c526b1f6273fa3df78c8b466ebba461559bd79c0",
+        "sha256_in_prefix": "adcbc54382ce35f4ee3a2447c526b1f6273fa3df78c8b466ebba461559bd79c0",
+        "size_in_bytes": 471950
+      },
+      {
+        "_path": "share/man/man1/ncap2.1",
+        "path_type": "hardlink",
+        "sha256": "a0e0ab6e8076a84618436bdb37e698868ea93dc0c29761af9732eb250e5212d5",
+        "sha256_in_prefix": "a0e0ab6e8076a84618436bdb37e698868ea93dc0c29761af9732eb250e5212d5",
+        "size_in_bytes": 3807
+      },
+      {
+        "_path": "share/man/man1/ncatted.1",
+        "path_type": "hardlink",
+        "sha256": "4ca1ce47a57242696a7d8970d93f5a7cd9cdb412990e003b2b4bae7a5613b2a5",
+        "sha256_in_prefix": "4ca1ce47a57242696a7d8970d93f5a7cd9cdb412990e003b2b4bae7a5613b2a5",
+        "size_in_bytes": 11499
+      },
+      {
+        "_path": "share/man/man1/ncbo.1",
+        "path_type": "hardlink",
+        "sha256": "0ede9e786f63ba5f25b939b7d55140e6939cf966ee19f35f914fb78ac2e58b86",
+        "sha256_in_prefix": "0ede9e786f63ba5f25b939b7d55140e6939cf966ee19f35f914fb78ac2e58b86",
+        "size_in_bytes": 8059
+      },
+      {
+        "_path": "share/man/man1/ncclimo.1",
+        "path_type": "hardlink",
+        "sha256": "7415d3b44f26a06154f033b3dcb16722e374249bd571b445c3a69359e8faa5da",
+        "sha256_in_prefix": "7415d3b44f26a06154f033b3dcb16722e374249bd571b445c3a69359e8faa5da",
+        "size_in_bytes": 3041
+      },
+      {
+        "_path": "share/man/man1/ncecat.1",
+        "path_type": "hardlink",
+        "sha256": "f0518b3f5f333531f60be036b2522978a897b7170a978366c3aedc19f19200c7",
+        "sha256_in_prefix": "f0518b3f5f333531f60be036b2522978a897b7170a978366c3aedc19f19200c7",
+        "size_in_bytes": 4891
+      },
+      {
+        "_path": "share/man/man1/nces.1",
+        "path_type": "hardlink",
+        "sha256": "891fefc35266ff0eadc32e2f132dcac49e8d854d1bcf01f7249daf2c74592daf",
+        "sha256_in_prefix": "891fefc35266ff0eadc32e2f132dcac49e8d854d1bcf01f7249daf2c74592daf",
+        "size_in_bytes": 5605
+      },
+      {
+        "_path": "share/man/man1/ncflint.1",
+        "path_type": "hardlink",
+        "sha256": "9d090896b056cbad47aac76e401ddecde0497c1564efa72c1ff3afc7c28866b0",
+        "sha256_in_prefix": "9d090896b056cbad47aac76e401ddecde0497c1564efa72c1ff3afc7c28866b0",
+        "size_in_bytes": 5785
+      },
+      {
+        "_path": "share/man/man1/ncks.1",
+        "path_type": "hardlink",
+        "sha256": "14ad3b35cbd9752aa2cf0957b3ed77fb8e9c01149b99f045231d27159f8af611",
+        "sha256_in_prefix": "14ad3b35cbd9752aa2cf0957b3ed77fb8e9c01149b99f045231d27159f8af611",
+        "size_in_bytes": 15596
+      },
+      {
+        "_path": "share/man/man1/nco.1",
+        "path_type": "hardlink",
+        "sha256": "27674fcd2d048574b2720299f1196ca4c523d8ed156edea0035995d8f65d62fe",
+        "sha256_in_prefix": "27674fcd2d048574b2720299f1196ca4c523d8ed156edea0035995d8f65d62fe",
+        "size_in_bytes": 4218
+      },
+      {
+        "_path": "share/man/man1/ncpdq.1",
+        "path_type": "hardlink",
+        "sha256": "cf3ea7ce691f7dfc40e9c3c63de8a12c14fef0bb1b99f87055bd54890e62d01c",
+        "sha256_in_prefix": "cf3ea7ce691f7dfc40e9c3c63de8a12c14fef0bb1b99f87055bd54890e62d01c",
+        "size_in_bytes": 4465
+      },
+      {
+        "_path": "share/man/man1/ncra.1",
+        "path_type": "hardlink",
+        "sha256": "dc475b64ab607268aca0aabca1afade2e8785a075cb26afc5bbc74fd1cb6e987",
+        "sha256_in_prefix": "dc475b64ab607268aca0aabca1afade2e8785a075cb26afc5bbc74fd1cb6e987",
+        "size_in_bytes": 5095
+      },
+      {
+        "_path": "share/man/man1/ncrcat.1",
+        "path_type": "hardlink",
+        "sha256": "369cbfa236fc989c7a4ad6a3e8b546dc36df16cfa12378246766dc4a397927d4",
+        "sha256_in_prefix": "369cbfa236fc989c7a4ad6a3e8b546dc36df16cfa12378246766dc4a397927d4",
+        "size_in_bytes": 5640
+      },
+      {
+        "_path": "share/man/man1/ncremap.1",
+        "path_type": "hardlink",
+        "sha256": "190b189ea31a8c8c94c6685d0b1c9d49a6c62e2057fa3a9ed60b801ae3dac4e1",
+        "sha256_in_prefix": "190b189ea31a8c8c94c6685d0b1c9d49a6c62e2057fa3a9ed60b801ae3dac4e1",
+        "size_in_bytes": 3630
+      },
+      {
+        "_path": "share/man/man1/ncrename.1",
+        "path_type": "hardlink",
+        "sha256": "dc6c000942cfefa555c890313b71a346b837f27cb62a85c6541280c40e6bc454",
+        "sha256_in_prefix": "dc6c000942cfefa555c890313b71a346b837f27cb62a85c6541280c40e6bc454",
+        "size_in_bytes": 6160
+      },
+      {
+        "_path": "share/man/man1/ncwa.1",
+        "path_type": "hardlink",
+        "sha256": "ee035c198e6f708f2fc0321b8b50326cc41764806e44953c3414e6f7e39f70d1",
+        "sha256_in_prefix": "ee035c198e6f708f2fc0321b8b50326cc41764806e44953c3414e6f7e39f70d1",
+        "size_in_bytes": 6484
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "conda-forge/linux-64::nco==4.9.2=mpi_mpich_h791c819_100",
+  "sha256": "1629d58e2833d85129f627382e568a7bb4877fe272367874c4712e0331e61aa7",
+  "size": 2175690,
+  "subdir": "linux-64",
+  "timestamp": 1581720534536,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/nco-4.9.2-mpi_mpich_h791c819_100.tar.bz2",
+  "version": "4.9.2"
+}
