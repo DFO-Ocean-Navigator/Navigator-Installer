@@ -9,16 +9,17 @@ cd /home ; git clone https://github.com/DFO-Ocean-Navigator/Navigator-Installer.
 
 cd ${STD_USER_ACCT} ; git submodule update --init --recursive
 
-bash Miniconda3-latest-Linux-x86_64.sh -b -p /home/${STD_USER_ACCT}/miniconda/3/amd64
+[ -d /home/${STD_USER_ACCT}/tools/miniconda ] && rm -rf /home/${STD_USER_ACCT}/tools/miniconda
+
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /home/${STD_USER_ACCT}/tools/miniconda/3/amd64
 
 chown -R ${STD_USER_ACCT}:${STD_USER_ACCT} /home/${STD_USER_ACCT}/ 
 
-sed -i "s/buildadm/${STD_USER_ACCT}/" /home/${STD_USER_ACCT}/.bashrc
-
-su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/miniconda/3/amd64/bin/conda create --name navigator --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt"
-su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/miniconda/3/amd64/bin/conda create --name index-tool --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt"
-su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/miniconda/3/amd64/bin/conda create --name nco-tools --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt"
-su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/miniconda/3/amd64/bin/conda create --name devops --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/devops-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/tools/miniconda/3/amd64/bin/conda create --name navigator --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/tools/miniconda/3/amd64/bin/conda create --name index-tool --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/tools/miniconda/3/amd64/bin/conda create --name nco-tools --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/tools/miniconda/3/amd64/bin/conda create --name devops --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/devops-spec-file.txt"
+su - ${STD_USER_ACCT} -c "/home/${STD_USER_ACCT}/tools/miniconda/3/amd64/bin/conda create --name devops --file /home/${STD_USER_ACCT}/Ocean-Data-Map-Project/config/conda/devops-spec-file.txt"
 
 if [ ! -d /data ] && [ -f /home/${STD_USER_ACCT}/.ssh/id_rsa ] ; then
    mkdir /data && chown ${STD_USER_ACCT}:${STD_USER_ACCT} /data

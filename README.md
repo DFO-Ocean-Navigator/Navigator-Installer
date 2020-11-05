@@ -14,25 +14,25 @@
 
 * cd /home ; git clone https://github.com/DFO-Ocean-Navigator/Navigator-Installer.git ${STD_USER_ACCT}
 
-## Change your present working directory to /home/${STD_USER_ACCT} initialize, fetch and checkout any nested submodules run the following command;
-
-* cd /home/${STD_USER_ACCT} ; git submodule update --init --recursive
-
 ## Change user and group ownership of the /home/${STD_USER_ACCT} to the ${STD_USER_ACCT} account and become the ${STD_USER_ACCT} user.
 
 * chown -R ${STD_USER_ACCT}:${STD_USER_ACCT} /home/${STD_USER_ACCT}/ ; su - ${STD_USER_ACCT}
 
+## Run the bin/configure.sh script in order to populate the toolchain and checkout various repos both internally and externally
+
+* bash bin/configure.sh
+
+## Source the Ocean Navigator environment file located in tools/conf/ocean-navigator-env.sh in order to have your session's environment variables update.
+
+* source tools/conf/ocean-navigator-env.sh
+
 ## Install Node version 8.16.0, use yarn to bring in bower
 
-* nvm install v8.16.0 ; yarn global add bower
+* nvm install v12.18.4 ; yarn global add bower --prefix=$HOME/tools/bowner --global-folder $(npm prefix -g)
 
 ## Change your working directory to Ocean-Data-Map-Project/oceannavigator/frontend, and build the UI
 
 * cd ${HOME}/Ocean-Data-Map-Project/oceannavigator/frontend ; yarn install && yarn build
-
-## Depening on location. You should either use the main branch in order to run in production (which is default). Or change to the off-site branch which is recommended for every other use case.
-
-* cd ${HOME}/Ocean-Data-Map-Project/oceannavigator/configs ; git checkout off-site
 
 ## (OPTIONAL) If you are using our Datastore please send your request to DFO.OceanNavigator-NavigateurOcean.MPO@dfo-mpo.gc.ca and attach a copy of the Public SSH key generated for the user hosting the Ocean Navigator software.
 
