@@ -26,7 +26,7 @@
 
 * source tools/conf/ocean-navigator-env.sh
 
-## Install Node version 8.16.0, use yarn to bring in bower
+## Install Node version 12.18.4, use yarn to bring in bower
 
 * nvm install v12.18.4 ; yarn global add bower --prefix=$HOME/tools/bowner --global-folder $(npm prefix -g)
 
