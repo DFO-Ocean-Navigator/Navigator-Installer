@@ -17,7 +17,6 @@ if [ ! -e bin/.miniconda.installed ] ; then
    ./tools/miniconda/3/amd64/bin/conda create --name index-tool --file Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt
    ./tools/miniconda/3/amd64/bin/conda create --name nco-tools --file Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt
    ./tools/miniconda/3/amd64/bin/conda create --name devops --file Ocean-Data-Map-Project/config/conda/devops-spec-file.txt
-   ./tools/miniconda/3/amd64/bin/conda create --name devops --file Ocean-Data-Map-Project/config/conda/devops-spec-file.txt
    touch bin/.miniconda.installed
 fi
 
