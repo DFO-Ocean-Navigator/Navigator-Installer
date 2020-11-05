@@ -10,3 +10,13 @@ if [ ! -e bin/.configuration.updated ] ; then
    touch bin/.configuration.updated
 fi
 
+if [ ! -e bin/.miniconda.installed ] ; then
+   rm -rf tools/miniconda
+   bash Miniconda3-latest-Linux-x86_64.sh -b -p tools/miniconda/3/amd64
+   ./tools/miniconda/3/amd64/bin/conda create --quiet --name navigator --file Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt
+   ./tools/miniconda/3/amd64/bin/conda create --quiet --name index-tool --file Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt
+   ./tools/miniconda/3/amd64/bin/conda create --quiet --name nco-tools --file Ocean-Data-Map-Project/config/conda/nco-tools-spec-file.txt
+   ./tools/miniconda/3/amd64/bin/conda create --quiet --name devops --file Ocean-Data-Map-Project/config/conda/devops-spec-file.txt
+   touch bin/.miniconda.installed
+fi
+
