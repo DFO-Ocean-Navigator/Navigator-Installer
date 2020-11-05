@@ -1,3 +1,0 @@
-/home/buildadm/miniconda/3/amd64
-/home/buildadm/miniconda/3/amd64/envs/devops
-/home/buildadm/miniconda/3/amd64/envs/navigator

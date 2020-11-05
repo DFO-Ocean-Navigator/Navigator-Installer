@@ -1,0 +1,135 @@
+{
+  "arch": "x86_64",
+  "build": "py36h3010b51_1002",
+  "build_number": 1002,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.9.3,<2.0a0",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pykdtree-1.3.1-py36h3010b51_1002",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/not-zip-safe",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/requires.txt",
+    "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/pykdtree/__init__.py",
+    "lib/python3.6/site-packages/pykdtree/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/pykdtree/__pycache__/test_tree.cpython-36.pyc",
+    "lib/python3.6/site-packages/pykdtree/kdtree.cpython-36m-x86_64-linux-gnu.so",
+    "lib/python3.6/site-packages/pykdtree/test_tree.py"
+  ],
+  "fn": "pykdtree-1.3.1-py36h3010b51_1002.tar.bz2",
+  "license": "LGPL-3.0",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pykdtree-1.3.1-py36h3010b51_1002",
+    "type": 1
+  },
+  "md5": "ff91bfb6b2efb4602050b7098b2b37a5",
+  "name": "pykdtree",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/pykdtree-1.3.1-py36h3010b51_1002.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "62045fa6b5c0f7b4401f7f7776cd9b80bb59b9049476d7d0667ec6ee7dd8fc39",
+        "sha256_in_prefix": "62045fa6b5c0f7b4401f7f7776cd9b80bb59b9049476d7d0667ec6ee7dd8fc39",
+        "size_in_bytes": 625
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "69b6692090a3ac84115ac8c4bfd98d54a2d6e082438a7d063adb5d5c887e05de",
+        "sha256_in_prefix": "69b6692090a3ac84115ac8c4bfd98d54a2d6e082438a7d063adb5d5c887e05de",
+        "size_in_bytes": 324
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "1a228790dfa77d4c3986cc155f6d386557bec887cf3305a2e2c9b84a68abc01a",
+        "sha256_in_prefix": "1a228790dfa77d4c3986cc155f6d386557bec887cf3305a2e2c9b84a68abc01a",
+        "size_in_bytes": 279
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+        "sha256_in_prefix": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree-1.3.1-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "13aa848eee6870c07a8eebb68f453b025116d679241c0e96eff37b1fbd99d1e4",
+        "sha256_in_prefix": "13aa848eee6870c07a8eebb68f453b025116d679241c0e96eff37b1fbd99d1e4",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "432e9cb2ed6aaf9ea60661377ce61ce37d423c33de2146854dab8cb3d9c173db",
+        "sha256_in_prefix": "432e9cb2ed6aaf9ea60661377ce61ce37d423c33de2146854dab8cb3d9c173db",
+        "size_in_bytes": 131
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree/__pycache__/test_tree.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "f6477f3ae30b7391d5ab4d6dca93144438e49703aeaed6aa999fbacf9389e837",
+        "sha256_in_prefix": "f6477f3ae30b7391d5ab4d6dca93144438e49703aeaed6aa999fbacf9389e837",
+        "size_in_bytes": 13788
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree/kdtree.cpython-36m-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "9f15e1660a97a59bd8fd7e769048ea1ac167a087254ec9af2c35a8b11a2a7ca5",
+        "sha256_in_prefix": "9f15e1660a97a59bd8fd7e769048ea1ac167a087254ec9af2c35a8b11a2a7ca5",
+        "size_in_bytes": 125824
+      },
+      {
+        "_path": "lib/python3.6/site-packages/pykdtree/test_tree.py",
+        "path_type": "hardlink",
+        "sha256": "b7a2f520aeaa94c133aca7038af54943c4bf6ed79d9acde90d50c55ec81b59ff",
+        "sha256_in_prefix": "b7a2f520aeaa94c133aca7038af54943c4bf6ed79d9acde90d50c55ec81b59ff",
+        "size_in_bytes": 14984
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "pykdtree[url=https://navigator.oceansdata.ca/pkgs/pykdtree-1.3.1-py36h3010b51_1002.tar.bz2]",
+  "sha256": "f0bd8bc23676d8cb9fc63d02fdaf69e115c1a44f16b8114a331a43f196d4ac63",
+  "size": 64448,
+  "subdir": "linux-64",
+  "timestamp": 1539540404478,
+  "track_features": "",
+  "url": "https://navigator.oceansdata.ca/pkgs/pykdtree-1.3.1-py36h3010b51_1002.tar.bz2",
+  "version": "1.3.1"
+}

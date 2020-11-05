@@ -1,0 +1,756 @@
+{
+  "arch": "x86_64",
+  "build": "mpi_mpich_h21555f6_7",
+  "build_number": 7,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "hdf5 * mpi_mpich_*",
+    "hdf5 >=1.10.5,<1.10.6.0a0 mpi_mpich_*",
+    "libblas >=3.8.0,<4.0a0",
+    "libgcc-ng >=7.3.0",
+    "liblapack >=3.8.0,<3.9.0a0",
+    "libnetcdf * mpi_mpich_*",
+    "libnetcdf >=4.7.3,<5.0a0 mpi_mpich_*",
+    "libstdcxx-ng >=7.3.0",
+    "mpich >=3.3,<3.4.0a0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/tempest-remap-2.0.3-mpi_mpich_h21555f6_7",
+  "features": "",
+  "files": [
+    "bin/ApplyOfflineMap",
+    "bin/CalculateDiffNorms",
+    "bin/CoarsenRectilinearData",
+    "bin/ConvertExodusToSCRIP",
+    "bin/GenerateCSMesh",
+    "bin/GenerateConnectivityFile",
+    "bin/GenerateGLLMetaData",
+    "bin/GenerateICOMesh",
+    "bin/GenerateLambertConfConicMesh",
+    "bin/GenerateOfflineMap",
+    "bin/GenerateOverlapMesh",
+    "bin/GenerateOverlapMesh_v1",
+    "bin/GenerateRLLMesh",
+    "bin/GenerateTestData",
+    "bin/GenerateTransposeMap",
+    "bin/GenerateUTMMesh",
+    "bin/GenerateVolumetricMesh",
+    "bin/MeshToTxt",
+    "bin/ShpToMesh",
+    "bin/test/areaint.m",
+    "bin/test/generate_testdata.sh",
+    "bin/test/optimtest.m",
+    "bin/test/plot_meshes.m",
+    "bin/test/plot_nodes.m",
+    "bin/test/run.sh",
+    "bin/test/run_fvtofv_ico.sh",
+    "bin/test/run_fvtofv_ico_diffnorms.sh",
+    "bin/test/run_fvtofv_rll.sh",
+    "bin/test/run_fvtofv_rll_diffnorms.sh",
+    "bin/test/run_fvtogll_cs.sh",
+    "bin/test/run_fvtogll_cs_diffnorms.sh",
+    "bin/test/run_fvtogll_cs_m.sh",
+    "bin/test/run_fvtogll_cs_m_diffnorms.sh",
+    "bin/test/run_fvtogll_ico.sh",
+    "bin/test/run_fvtogll_ico_diffnorms.sh",
+    "bin/test/run_fvtogll_rll.sh",
+    "bin/test/run_fvtogll_rll_diffnorms.sh",
+    "bin/test/run_glltofv_ico.sh",
+    "bin/test/run_glltofv_rll.sh",
+    "bin/test/run_glltofv_rll_diffnorms.sh",
+    "bin/test/run_glltofv_rll_m.sh",
+    "bin/test/run_glltofv_rll_m_diffnorms.sh",
+    "bin/test/run_glltogll_cs.sh",
+    "bin/test/run_glltogll_cs_diffnorms.sh",
+    "bin/test/testdata_diffnorms_mono.sh",
+    "include/Announce.h",
+    "include/CommandLine.h",
+    "include/DataArray1D.h",
+    "include/DataArray2D.h",
+    "include/DataArray3D.h",
+    "include/Defines.h",
+    "include/Exception.h",
+    "include/FiniteElementTools.h",
+    "include/FixedPoint.h",
+    "include/GaussLobattoQuadrature.h",
+    "include/GaussQuadrature.h",
+    "include/GridElements.h",
+    "include/GridElementsExact.h",
+    "include/LegendrePolynomial.h",
+    "include/LinearRemapFV.h",
+    "include/LinearRemapSE0.h",
+    "include/MathHelper.h",
+    "include/MeshUtilities.h",
+    "include/MeshUtilitiesExact.h",
+    "include/MeshUtilitiesFuzzy.h",
+    "include/NetCDFUtilities.h",
+    "include/OfflineMap.h",
+    "include/OverlapFace.h",
+    "include/OverlapMesh.h",
+    "include/PolynomialInterp.h",
+    "include/STLStringHelper.h",
+    "include/SparseMatrix.h",
+    "include/Subscript.h",
+    "include/TempestConfig.h",
+    "include/TempestRemapAPI.h",
+    "include/TriangularQuadrature.h",
+    "include/kdtree.h",
+    "include/ncvalues.h",
+    "include/netcdf.hh",
+    "include/netcdfcpp.h",
+    "include/order32.h",
+    "include/triangle.h",
+    "lib/libTempestRemap.a",
+    "lib/libTempestRemap.so",
+    "lib/libTempestRemap.so.0",
+    "lib/libTempestRemap.so.0.0.0",
+    "share/doc/tempestremap/GreatCircleArcIntersections.mw",
+    "share/doc/tempestremap/GreatCircleLatitudeIntersections.mw",
+    "share/doc/tempestremap/README.md"
+  ],
+  "fn": "tempest-remap-2.0.3-mpi_mpich_h21555f6_7.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/tempest-remap-2.0.3-mpi_mpich_h21555f6_7",
+    "type": 1
+  },
+  "md5": "3c5d311e95fa476907398408438717bc",
+  "name": "tempest-remap",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/tempest-remap-2.0.3-mpi_mpich_h21555f6_7.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/ApplyOfflineMap",
+        "path_type": "hardlink",
+        "sha256": "485c4c542a2d6c2a3282605f1dd7b9bd3ce71144c2d4bbffc6f22b8041fd60c9",
+        "sha256_in_prefix": "485c4c542a2d6c2a3282605f1dd7b9bd3ce71144c2d4bbffc6f22b8041fd60c9",
+        "size_in_bytes": 48256
+      },
+      {
+        "_path": "bin/CalculateDiffNorms",
+        "path_type": "hardlink",
+        "sha256": "fcbbe9cfd427c45f4ba738e39a202c58f9d2adb3c0b717a31bae873c50182f2e",
+        "sha256_in_prefix": "fcbbe9cfd427c45f4ba738e39a202c58f9d2adb3c0b717a31bae873c50182f2e",
+        "size_in_bytes": 73344
+      },
+      {
+        "_path": "bin/CoarsenRectilinearData",
+        "path_type": "hardlink",
+        "sha256": "3c835cd1a65bc847e6f418a3dd69b5b69c908402f82f251f1e956654c35780b6",
+        "sha256_in_prefix": "3c835cd1a65bc847e6f418a3dd69b5b69c908402f82f251f1e956654c35780b6",
+        "size_in_bytes": 100464
+      },
+      {
+        "_path": "bin/ConvertExodusToSCRIP",
+        "path_type": "hardlink",
+        "sha256": "3d9d9a00fe800e8a5aadac6d321328b6647f0e60b8c723aa2d45148455c73724",
+        "sha256_in_prefix": "3d9d9a00fe800e8a5aadac6d321328b6647f0e60b8c723aa2d45148455c73724",
+        "size_in_bytes": 49032
+      },
+      {
+        "_path": "bin/GenerateCSMesh",
+        "path_type": "hardlink",
+        "sha256": "59b4a56804496a943ba16e0e067952b834fcf33623067c336de13cc1540232d5",
+        "sha256_in_prefix": "59b4a56804496a943ba16e0e067952b834fcf33623067c336de13cc1540232d5",
+        "size_in_bytes": 49448
+      },
+      {
+        "_path": "bin/GenerateConnectivityFile",
+        "path_type": "hardlink",
+        "sha256": "104a0ccbe309072452da57c648347b5af9d855d6ae2da76cb57e2456b465ea1a",
+        "sha256_in_prefix": "104a0ccbe309072452da57c648347b5af9d855d6ae2da76cb57e2456b465ea1a",
+        "size_in_bytes": 54152
+      },
+      {
+        "_path": "bin/GenerateGLLMetaData",
+        "path_type": "hardlink",
+        "sha256": "d2efed4e7a869eefc68f491f974a284daccecef4089832454faa847aae88a08f",
+        "sha256_in_prefix": "d2efed4e7a869eefc68f491f974a284daccecef4089832454faa847aae88a08f",
+        "size_in_bytes": 54000
+      },
+      {
+        "_path": "bin/GenerateICOMesh",
+        "path_type": "hardlink",
+        "sha256": "61b70eec477a1d73fc5db6ee9eecfaa99f1946a3540a86cbd7de55cc00f7cac7",
+        "sha256_in_prefix": "61b70eec477a1d73fc5db6ee9eecfaa99f1946a3540a86cbd7de55cc00f7cac7",
+        "size_in_bytes": 49448
+      },
+      {
+        "_path": "bin/GenerateLambertConfConicMesh",
+        "path_type": "hardlink",
+        "sha256": "e48b2c13205d16daa4cd63187cf4775ab3b0e7d0e30d0c19419a5f5ba055f73f",
+        "sha256_in_prefix": "e48b2c13205d16daa4cd63187cf4775ab3b0e7d0e30d0c19419a5f5ba055f73f",
+        "size_in_bytes": 53952
+      },
+      {
+        "_path": "bin/GenerateOfflineMap",
+        "path_type": "hardlink",
+        "sha256": "eb348d7ce1b5f29a64512ac01d8281917ea3f28ac6f43217f6f819e90328b3eb",
+        "sha256_in_prefix": "eb348d7ce1b5f29a64512ac01d8281917ea3f28ac6f43217f6f819e90328b3eb",
+        "size_in_bytes": 63368
+      },
+      {
+        "_path": "bin/GenerateOverlapMesh",
+        "path_type": "hardlink",
+        "sha256": "0844c55693b922ca356450084bd6e7e6ce64afa4b77def85d8fe04cb72ffd144",
+        "sha256_in_prefix": "0844c55693b922ca356450084bd6e7e6ce64afa4b77def85d8fe04cb72ffd144",
+        "size_in_bytes": 53120
+      },
+      {
+        "_path": "bin/GenerateOverlapMesh_v1",
+        "path_type": "hardlink",
+        "sha256": "ea86637369f8a564b3104098c2579f01d0d8de09bbf0992f396bc91cfdb50fba",
+        "sha256_in_prefix": "ea86637369f8a564b3104098c2579f01d0d8de09bbf0992f396bc91cfdb50fba",
+        "size_in_bytes": 48800
+      },
+      {
+        "_path": "bin/GenerateRLLMesh",
+        "path_type": "hardlink",
+        "sha256": "5c1d10d2cc3f40df8c5f7b13cf2fa4651e026e5dfe0f3627583961dec3ec849c",
+        "sha256_in_prefix": "5c1d10d2cc3f40df8c5f7b13cf2fa4651e026e5dfe0f3627583961dec3ec849c",
+        "size_in_bytes": 55208
+      },
+      {
+        "_path": "bin/GenerateTestData",
+        "path_type": "hardlink",
+        "sha256": "c91ee673538eb6ae3a142ab4b6ae79a41e944a1a3407c6875e0ea573bd1eeaa8",
+        "sha256_in_prefix": "c91ee673538eb6ae3a142ab4b6ae79a41e944a1a3407c6875e0ea573bd1eeaa8",
+        "size_in_bytes": 80984
+      },
+      {
+        "_path": "bin/GenerateTransposeMap",
+        "path_type": "hardlink",
+        "sha256": "88b999b8c872f52d7b813b92bed2b8259d8b867ff9dc5617566d16781f3bc157",
+        "sha256_in_prefix": "88b999b8c872f52d7b813b92bed2b8259d8b867ff9dc5617566d16781f3bc157",
+        "size_in_bytes": 60032
+      },
+      {
+        "_path": "bin/GenerateUTMMesh",
+        "path_type": "hardlink",
+        "sha256": "e573466e2d93c9887f7b714e26a087ace6ebc8f232473f175879dcf49e6a1c64",
+        "sha256_in_prefix": "e573466e2d93c9887f7b714e26a087ace6ebc8f232473f175879dcf49e6a1c64",
+        "size_in_bytes": 54736
+      },
+      {
+        "_path": "bin/GenerateVolumetricMesh",
+        "path_type": "hardlink",
+        "sha256": "54183b56340d968bedee89a2fa8334bb1e680309dd670a59aca9efa2b393acbc",
+        "sha256_in_prefix": "54183b56340d968bedee89a2fa8334bb1e680309dd670a59aca9efa2b393acbc",
+        "size_in_bytes": 73808
+      },
+      {
+        "_path": "bin/MeshToTxt",
+        "path_type": "hardlink",
+        "sha256": "5cc0a816e8078839fc16c5c4c7ab541c37367f5318756571aadd0ceeec36a17a",
+        "sha256_in_prefix": "5cc0a816e8078839fc16c5c4c7ab541c37367f5318756571aadd0ceeec36a17a",
+        "size_in_bytes": 53448
+      },
+      {
+        "_path": "bin/ShpToMesh",
+        "path_type": "hardlink",
+        "sha256": "28b9329f649352906511d4aa8c9d9989fad633a6eb41fad7a5d46bee859b1197",
+        "sha256_in_prefix": "28b9329f649352906511d4aa8c9d9989fad633a6eb41fad7a5d46bee859b1197",
+        "size_in_bytes": 59624
+      },
+      {
+        "_path": "bin/test/areaint.m",
+        "path_type": "hardlink",
+        "sha256": "5ff2b37801138c7eb1fc8aaf5483a9acdf6b3f7ee7b718f13e006a13920eac03",
+        "sha256_in_prefix": "5ff2b37801138c7eb1fc8aaf5483a9acdf6b3f7ee7b718f13e006a13920eac03",
+        "size_in_bytes": 4065
+      },
+      {
+        "_path": "bin/test/generate_testdata.sh",
+        "path_type": "hardlink",
+        "sha256": "5f6d28ead29ccee1f83f41ec2cfd8af691ecd7ad4158a4c0cb39960d6213a501",
+        "sha256_in_prefix": "5f6d28ead29ccee1f83f41ec2cfd8af691ecd7ad4158a4c0cb39960d6213a501",
+        "size_in_bytes": 833
+      },
+      {
+        "_path": "bin/test/optimtest.m",
+        "path_type": "hardlink",
+        "sha256": "d67ee0e0e517992666169ae292eec2b40b853981402b129cc52f592d5b3b9785",
+        "sha256_in_prefix": "d67ee0e0e517992666169ae292eec2b40b853981402b129cc52f592d5b3b9785",
+        "size_in_bytes": 4182
+      },
+      {
+        "_path": "bin/test/plot_meshes.m",
+        "path_type": "hardlink",
+        "sha256": "5aaf4491254de5abb5cb54566ff01c265d89b3ae82da0b564ab2a495a34445ef",
+        "sha256_in_prefix": "5aaf4491254de5abb5cb54566ff01c265d89b3ae82da0b564ab2a495a34445ef",
+        "size_in_bytes": 2645
+      },
+      {
+        "_path": "bin/test/plot_nodes.m",
+        "path_type": "hardlink",
+        "sha256": "edc719a2626c16da2ee26c05fddb4dc7d4e86abdc6282aef7d4a4506f7096408",
+        "sha256_in_prefix": "edc719a2626c16da2ee26c05fddb4dc7d4e86abdc6282aef7d4a4506f7096408",
+        "size_in_bytes": 1214
+      },
+      {
+        "_path": "bin/test/run.sh",
+        "path_type": "hardlink",
+        "sha256": "ea47d900a11a6757aac7edae6341cb3255d89ddcf523a6e42ec6152977c2409d",
+        "sha256_in_prefix": "ea47d900a11a6757aac7edae6341cb3255d89ddcf523a6e42ec6152977c2409d",
+        "size_in_bytes": 555
+      },
+      {
+        "_path": "bin/test/run_fvtofv_ico.sh",
+        "path_type": "hardlink",
+        "sha256": "871d0519f007d787aeef7a4dbe1598322394ee13a494c996745eb4f93432aec6",
+        "sha256_in_prefix": "871d0519f007d787aeef7a4dbe1598322394ee13a494c996745eb4f93432aec6",
+        "size_in_bytes": 8987
+      },
+      {
+        "_path": "bin/test/run_fvtofv_ico_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "dd94b0b0b5ad1a3b3d55add89beade7f5c4ea4e8a666fa5ebca4aad82b9c5865",
+        "sha256_in_prefix": "dd94b0b0b5ad1a3b3d55add89beade7f5c4ea4e8a666fa5ebca4aad82b9c5865",
+        "size_in_bytes": 5761
+      },
+      {
+        "_path": "bin/test/run_fvtofv_rll.sh",
+        "path_type": "hardlink",
+        "sha256": "d7686ea4ac99e7a1ff4d9bedb63fbcc805244ef89d9ddfdb5b94680ddb5e6332",
+        "sha256_in_prefix": "d7686ea4ac99e7a1ff4d9bedb63fbcc805244ef89d9ddfdb5b94680ddb5e6332",
+        "size_in_bytes": 8988
+      },
+      {
+        "_path": "bin/test/run_fvtofv_rll_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "ee1047e02b6d53ce092c0a7feecff4a27f576ec1efb29eca51485fc8768bc811",
+        "sha256_in_prefix": "ee1047e02b6d53ce092c0a7feecff4a27f576ec1efb29eca51485fc8768bc811",
+        "size_in_bytes": 5989
+      },
+      {
+        "_path": "bin/test/run_fvtogll_cs.sh",
+        "path_type": "hardlink",
+        "sha256": "d84432f6c3625d8d485995a9e82c7e47997edd0cf97899780706c2b43b308dee",
+        "sha256_in_prefix": "d84432f6c3625d8d485995a9e82c7e47997edd0cf97899780706c2b43b308dee",
+        "size_in_bytes": 9888
+      },
+      {
+        "_path": "bin/test/run_fvtogll_cs_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "b50a49affd3ccf89ffb2b667dd4cf8f406993674a0e1610bc4c8e41aca3c9811",
+        "sha256_in_prefix": "b50a49affd3ccf89ffb2b667dd4cf8f406993674a0e1610bc4c8e41aca3c9811",
+        "size_in_bytes": 6388
+      },
+      {
+        "_path": "bin/test/run_fvtogll_cs_m.sh",
+        "path_type": "hardlink",
+        "sha256": "f8c1175d03e5e3819ee82879554ea609da871b3eec9511716e34914da04cac5f",
+        "sha256_in_prefix": "f8c1175d03e5e3819ee82879554ea609da871b3eec9511716e34914da04cac5f",
+        "size_in_bytes": 8177
+      },
+      {
+        "_path": "bin/test/run_fvtogll_cs_m_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "d1c8a31851f0a700eff93db1ae775781bc7c4d0029c64aaae953445d4fd1fddf",
+        "sha256_in_prefix": "d1c8a31851f0a700eff93db1ae775781bc7c4d0029c64aaae953445d4fd1fddf",
+        "size_in_bytes": 6009
+      },
+      {
+        "_path": "bin/test/run_fvtogll_ico.sh",
+        "path_type": "hardlink",
+        "sha256": "97feb8c6388475b61a47d0b756b0cd7bbc915d27a442438a823b256a18e4d7aa",
+        "sha256_in_prefix": "97feb8c6388475b61a47d0b756b0cd7bbc915d27a442438a823b256a18e4d7aa",
+        "size_in_bytes": 2934
+      },
+      {
+        "_path": "bin/test/run_fvtogll_ico_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "326fd97217c4406d99f8d78b7ecd793b5ffaaa37b0791f3faf450b9338ec32aa",
+        "sha256_in_prefix": "326fd97217c4406d99f8d78b7ecd793b5ffaaa37b0791f3faf450b9338ec32aa",
+        "size_in_bytes": 2299
+      },
+      {
+        "_path": "bin/test/run_fvtogll_rll.sh",
+        "path_type": "hardlink",
+        "sha256": "5641a176fa5f1d15ca23a1f244ca4a3e86203a1262c5095327a81b7bbadeef18",
+        "sha256_in_prefix": "5641a176fa5f1d15ca23a1f244ca4a3e86203a1262c5095327a81b7bbadeef18",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "bin/test/run_fvtogll_rll_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "17291a7e8b96a0e6a05afb00e77ee54e682b6bdfe9d627140ed5a2955f477a43",
+        "sha256_in_prefix": "17291a7e8b96a0e6a05afb00e77ee54e682b6bdfe9d627140ed5a2955f477a43",
+        "size_in_bytes": 2395
+      },
+      {
+        "_path": "bin/test/run_glltofv_ico.sh",
+        "path_type": "hardlink",
+        "sha256": "31841b80d9522f688c7b7ad3c46612eb20d2ccc6b982795f6c886dc354cfd4c5",
+        "sha256_in_prefix": "31841b80d9522f688c7b7ad3c46612eb20d2ccc6b982795f6c886dc354cfd4c5",
+        "size_in_bytes": 5501
+      },
+      {
+        "_path": "bin/test/run_glltofv_rll.sh",
+        "path_type": "hardlink",
+        "sha256": "64c9fb92c4961b9618d608f957d423138839fac6b2feef69d30950a671e652c4",
+        "sha256_in_prefix": "64c9fb92c4961b9618d608f957d423138839fac6b2feef69d30950a671e652c4",
+        "size_in_bytes": 9452
+      },
+      {
+        "_path": "bin/test/run_glltofv_rll_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "e68fb788bd3e3bfdfc4fe7616c7f7f28536134ef3a2711fe5e4ce07095f10c39",
+        "sha256_in_prefix": "e68fb788bd3e3bfdfc4fe7616c7f7f28536134ef3a2711fe5e4ce07095f10c39",
+        "size_in_bytes": 4365
+      },
+      {
+        "_path": "bin/test/run_glltofv_rll_m.sh",
+        "path_type": "hardlink",
+        "sha256": "b734a83f15635a4e775aadb6dd05da4f926321cdd819d4c98bf8dc5626cf245c",
+        "sha256_in_prefix": "b734a83f15635a4e775aadb6dd05da4f926321cdd819d4c98bf8dc5626cf245c",
+        "size_in_bytes": 9776
+      },
+      {
+        "_path": "bin/test/run_glltofv_rll_m_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "ea4c74cb73c7b197a4cdb74823ea90fe259bc13048bdb148204150e7d52237ce",
+        "sha256_in_prefix": "ea4c74cb73c7b197a4cdb74823ea90fe259bc13048bdb148204150e7d52237ce",
+        "size_in_bytes": 4650
+      },
+      {
+        "_path": "bin/test/run_glltogll_cs.sh",
+        "path_type": "hardlink",
+        "sha256": "42dde5a5ede0a7894420bff70783404e595547b5416abe9d6a2d7e3c20c54998",
+        "sha256_in_prefix": "42dde5a5ede0a7894420bff70783404e595547b5416abe9d6a2d7e3c20c54998",
+        "size_in_bytes": 10210
+      },
+      {
+        "_path": "bin/test/run_glltogll_cs_diffnorms.sh",
+        "path_type": "hardlink",
+        "sha256": "0f4d0efba716ac62c820607d46cf22cc7e37738dcbda1d66f3b2ae708d4d1740",
+        "sha256_in_prefix": "0f4d0efba716ac62c820607d46cf22cc7e37738dcbda1d66f3b2ae708d4d1740",
+        "size_in_bytes": 5792
+      },
+      {
+        "_path": "bin/test/testdata_diffnorms_mono.sh",
+        "path_type": "hardlink",
+        "sha256": "8df2fb38178519b8cd28ee92107eb09f86f963bf169181e893a4807044120b98",
+        "sha256_in_prefix": "8df2fb38178519b8cd28ee92107eb09f86f963bf169181e893a4807044120b98",
+        "size_in_bytes": 4155
+      },
+      {
+        "_path": "include/Announce.h",
+        "path_type": "hardlink",
+        "sha256": "c297fd2a719efe9d1e47f349ff576d653cfbf629d383c8c37bc95ea31b57606a",
+        "sha256_in_prefix": "c297fd2a719efe9d1e47f349ff576d653cfbf629d383c8c37bc95ea31b57606a",
+        "size_in_bytes": 1949
+      },
+      {
+        "_path": "include/CommandLine.h",
+        "path_type": "hardlink",
+        "sha256": "49176c49a158a99fb18a1e1b1d57b8adb928af6b36cb29468f53d2f7555dac7d",
+        "sha256_in_prefix": "49176c49a158a99fb18a1e1b1d57b8adb928af6b36cb29468f53d2f7555dac7d",
+        "size_in_bytes": 14081
+      },
+      {
+        "_path": "include/DataArray1D.h",
+        "path_type": "hardlink",
+        "sha256": "deaf2991096d82b75308c562dbd0ba3d51f2dffa3939add6964c19973f787e49",
+        "sha256_in_prefix": "deaf2991096d82b75308c562dbd0ba3d51f2dffa3939add6964c19973f787e49",
+        "size_in_bytes": 6999
+      },
+      {
+        "_path": "include/DataArray2D.h",
+        "path_type": "hardlink",
+        "sha256": "30b93039996d4ef4f80dc7d750fae13faef31e71fd3f96c526defdc7c1ca0f26",
+        "sha256_in_prefix": "30b93039996d4ef4f80dc7d750fae13faef31e71fd3f96c526defdc7c1ca0f26",
+        "size_in_bytes": 10851
+      },
+      {
+        "_path": "include/DataArray3D.h",
+        "path_type": "hardlink",
+        "sha256": "a7a164153672a8d411e47c1cfd977177fd6d3f63fe35305abee3920084b02612",
+        "sha256_in_prefix": "a7a164153672a8d411e47c1cfd977177fd6d3f63fe35305abee3920084b02612",
+        "size_in_bytes": 11825
+      },
+      {
+        "_path": "include/Defines.h",
+        "path_type": "hardlink",
+        "sha256": "8bd256574f4abcfc03245b11b5a43e8a1dafd06e5d1efbfee7f9659069fe2f6c",
+        "sha256_in_prefix": "8bd256574f4abcfc03245b11b5a43e8a1dafd06e5d1efbfee7f9659069fe2f6c",
+        "size_in_bytes": 1128
+      },
+      {
+        "_path": "include/Exception.h",
+        "path_type": "hardlink",
+        "sha256": "3e6f8c20d8e5b4e0a537fb8146525f5e93a21053be41e52279670ed3f1c9bc1a",
+        "sha256_in_prefix": "3e6f8c20d8e5b4e0a537fb8146525f5e93a21053be41e52279670ed3f1c9bc1a",
+        "size_in_bytes": 4270
+      },
+      {
+        "_path": "include/FiniteElementTools.h",
+        "path_type": "hardlink",
+        "sha256": "1fe03cf5e91f12573c140ea00c66a51366b6d77bf817a787fcc5b710311ed60d",
+        "sha256_in_prefix": "1fe03cf5e91f12573c140ea00c66a51366b6d77bf817a787fcc5b710311ed60d",
+        "size_in_bytes": 3317
+      },
+      {
+        "_path": "include/FixedPoint.h",
+        "path_type": "hardlink",
+        "sha256": "d59b989c4f5440d6646fada67653704fb2cfe9f04a3dbe5485b8d88453a14299",
+        "sha256_in_prefix": "d59b989c4f5440d6646fada67653704fb2cfe9f04a3dbe5485b8d88453a14299",
+        "size_in_bytes": 9923
+      },
+      {
+        "_path": "include/GaussLobattoQuadrature.h",
+        "path_type": "hardlink",
+        "sha256": "5a5b470bafab51de7928e42dcb49fc41b60b6f9ed8fb139d9d108a322d61f4d5",
+        "sha256_in_prefix": "5a5b470bafab51de7928e42dcb49fc41b60b6f9ed8fb139d9d108a322d61f4d5",
+        "size_in_bytes": 1515
+      },
+      {
+        "_path": "include/GaussQuadrature.h",
+        "path_type": "hardlink",
+        "sha256": "00fdd9a80e21af36672f2d8c83fcfdda532caf044c66c7eb3a3b3f585d2756bc",
+        "sha256_in_prefix": "00fdd9a80e21af36672f2d8c83fcfdda532caf044c66c7eb3a3b3f585d2756bc",
+        "size_in_bytes": 1483
+      },
+      {
+        "_path": "include/GridElements.h",
+        "path_type": "hardlink",
+        "sha256": "18c048f2b43d3cff1957f0352e43cb951ff2f4f2d9e9410640b61d4d22b8d6f7",
+        "sha256_in_prefix": "18c048f2b43d3cff1957f0352e43cb951ff2f4f2d9e9410640b61d4d22b8d6f7",
+        "size_in_bytes": 22191
+      },
+      {
+        "_path": "include/GridElementsExact.h",
+        "path_type": "hardlink",
+        "sha256": "99f03a008d1750aa21b29198b34dd5c05d9809780e577ec30f736386ab9acaa6",
+        "sha256_in_prefix": "99f03a008d1750aa21b29198b34dd5c05d9809780e577ec30f736386ab9acaa6",
+        "size_in_bytes": 4691
+      },
+      {
+        "_path": "include/LegendrePolynomial.h",
+        "path_type": "hardlink",
+        "sha256": "847b8d51c1d2522f5e92babf01bc05b1f2abd81e50021cbaec18cf0e32ab4577",
+        "sha256_in_prefix": "847b8d51c1d2522f5e92babf01bc05b1f2abd81e50021cbaec18cf0e32ab4577",
+        "size_in_bytes": 3275
+      },
+      {
+        "_path": "include/LinearRemapFV.h",
+        "path_type": "hardlink",
+        "sha256": "313ab41388b3b145d511ddec0fb24192d1f09ffdb2eeed5971f46a20ca289900",
+        "sha256_in_prefix": "313ab41388b3b145d511ddec0fb24192d1f09ffdb2eeed5971f46a20ca289900",
+        "size_in_bytes": 4259
+      },
+      {
+        "_path": "include/LinearRemapSE0.h",
+        "path_type": "hardlink",
+        "sha256": "5c875770e7502b215580e870470a94112dc9eda06a8aaf129be12048678d1c86",
+        "sha256_in_prefix": "5c875770e7502b215580e870470a94112dc9eda06a8aaf129be12048678d1c86",
+        "size_in_bytes": 3113
+      },
+      {
+        "_path": "include/MathHelper.h",
+        "path_type": "hardlink",
+        "sha256": "2623d8a486885f58207e5f82d06d88bd13af23bd14b2e48ab88e40f0624a0cf2",
+        "sha256_in_prefix": "2623d8a486885f58207e5f82d06d88bd13af23bd14b2e48ab88e40f0624a0cf2",
+        "size_in_bytes": 2811
+      },
+      {
+        "_path": "include/MeshUtilities.h",
+        "path_type": "hardlink",
+        "sha256": "3cf992ee383404bb3c109df65db91b895bcc2de1d8a085d5242327dce22a6d03",
+        "sha256_in_prefix": "3cf992ee383404bb3c109df65db91b895bcc2de1d8a085d5242327dce22a6d03",
+        "size_in_bytes": 1341
+      },
+      {
+        "_path": "include/MeshUtilitiesExact.h",
+        "path_type": "hardlink",
+        "sha256": "2d580e78e97c99cb5dcb3f11a4a6185a4254253917f6cb51d6e79bd1f9aa4638",
+        "sha256_in_prefix": "2d580e78e97c99cb5dcb3f11a4a6185a4254253917f6cb51d6e79bd1f9aa4638",
+        "size_in_bytes": 3440
+      },
+      {
+        "_path": "include/MeshUtilitiesFuzzy.h",
+        "path_type": "hardlink",
+        "sha256": "dca190e66c047f80e0d591a71cf2ee316b21f18c00b2488d0baac692ce120985",
+        "sha256_in_prefix": "dca190e66c047f80e0d591a71cf2ee316b21f18c00b2488d0baac692ce120985",
+        "size_in_bytes": 4100
+      },
+      {
+        "_path": "include/NetCDFUtilities.h",
+        "path_type": "hardlink",
+        "sha256": "1af05afcc516cde92c58bf8f1299ec3ebece6f3330ba93c3293e49d18991ab94",
+        "sha256_in_prefix": "1af05afcc516cde92c58bf8f1299ec3ebece6f3330ba93c3293e49d18991ab94",
+        "size_in_bytes": 1431
+      },
+      {
+        "_path": "include/OfflineMap.h",
+        "path_type": "hardlink",
+        "sha256": "0a9555692b0d7275e45e13fe8ead886871a6f63b889f1d4af6be83de19cbb5a7",
+        "sha256_in_prefix": "0a9555692b0d7275e45e13fe8ead886871a6f63b889f1d4af6be83de19cbb5a7",
+        "size_in_bytes": 15180
+      },
+      {
+        "_path": "include/OverlapFace.h",
+        "path_type": "hardlink",
+        "sha256": "e5c7cf1c6aef6d5812d93663ea9568ff881e3b314caafde82a28599c482cde2a",
+        "sha256_in_prefix": "e5c7cf1c6aef6d5812d93663ea9568ff881e3b314caafde82a28599c482cde2a",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "include/OverlapMesh.h",
+        "path_type": "hardlink",
+        "sha256": "e56a86918a8fd94cec83fa50b140a6948a3d582b9d7994699db7d9996acc4492",
+        "sha256_in_prefix": "e56a86918a8fd94cec83fa50b140a6948a3d582b9d7994699db7d9996acc4492",
+        "size_in_bytes": 2125
+      },
+      {
+        "_path": "include/PolynomialInterp.h",
+        "path_type": "hardlink",
+        "sha256": "343286c309d344475fb20ece95a57557494757bfcb1390056df8a0ca0ed6fe39",
+        "sha256_in_prefix": "343286c309d344475fb20ece95a57557494757bfcb1390056df8a0ca0ed6fe39",
+        "size_in_bytes": 3211
+      },
+      {
+        "_path": "include/STLStringHelper.h",
+        "path_type": "hardlink",
+        "sha256": "2f669a27360698765102743d4a6bdcb2ac7baa61908d9dbd330ab41ec064e793",
+        "sha256_in_prefix": "2f669a27360698765102743d4a6bdcb2ac7baa61908d9dbd330ab41ec064e793",
+        "size_in_bytes": 1463
+      },
+      {
+        "_path": "include/SparseMatrix.h",
+        "path_type": "hardlink",
+        "sha256": "c90e901704a903165b214d77f3a9780526d4387e1144bb70c9f962fe51782072",
+        "sha256_in_prefix": "c90e901704a903165b214d77f3a9780526d4387e1144bb70c9f962fe51782072",
+        "size_in_bytes": 4579
+      },
+      {
+        "_path": "include/Subscript.h",
+        "path_type": "hardlink",
+        "sha256": "88ad3e641a821431fbe7193ce4b8cd0d6998ee8c19015e1d4b502bab31163502",
+        "sha256_in_prefix": "88ad3e641a821431fbe7193ce4b8cd0d6998ee8c19015e1d4b502bab31163502",
+        "size_in_bytes": 3863
+      },
+      {
+        "_path": "include/TempestConfig.h",
+        "path_type": "hardlink",
+        "sha256": "199d5f07c76e7dd13e8404909e7b89debaa8add25bd87f69c5f83ffc2877e6fd",
+        "sha256_in_prefix": "199d5f07c76e7dd13e8404909e7b89debaa8add25bd87f69c5f83ffc2877e6fd",
+        "size_in_bytes": 4627
+      },
+      {
+        "_path": "include/TempestRemapAPI.h",
+        "path_type": "hardlink",
+        "sha256": "8b1230a6c10b43d5fbaed73710b3eb74d2d0195dc7e33310b65bc4d4682e9fc6",
+        "sha256_in_prefix": "8b1230a6c10b43d5fbaed73710b3eb74d2d0195dc7e33310b65bc4d4682e9fc6",
+        "size_in_bytes": 5508
+      },
+      {
+        "_path": "include/TriangularQuadrature.h",
+        "path_type": "hardlink",
+        "sha256": "ef855e60348aa29a609244b2b9c4a9e9020c1e49d7cf59ae8374c8b18054f41f",
+        "sha256_in_prefix": "ef855e60348aa29a609244b2b9c4a9e9020c1e49d7cf59ae8374c8b18054f41f",
+        "size_in_bytes": 2029
+      },
+      {
+        "_path": "include/kdtree.h",
+        "path_type": "hardlink",
+        "sha256": "d7ac43e85170511f83b76af84555f62c6455e7e14cd8902d895f40f033b7fb5e",
+        "sha256_in_prefix": "d7ac43e85170511f83b76af84555f62c6455e7e14cd8902d895f40f033b7fb5e",
+        "size_in_bytes": 5335
+      },
+      {
+        "_path": "include/ncvalues.h",
+        "path_type": "hardlink",
+        "sha256": "6acbd63560a391d3ec11b7ecec622601357b52a6f140d5dc7fe85b0dc72b37e0",
+        "sha256_in_prefix": "6acbd63560a391d3ec11b7ecec622601357b52a6f140d5dc7fe85b0dc72b37e0",
+        "size_in_bytes": 10123
+      },
+      {
+        "_path": "include/netcdf.hh",
+        "path_type": "hardlink",
+        "sha256": "094ded5ba7b270e9b265e1eb97e7b969bd3bd617b6361813e9de32e6f3307af8",
+        "sha256_in_prefix": "094ded5ba7b270e9b265e1eb97e7b969bd3bd617b6361813e9de32e6f3307af8",
+        "size_in_bytes": 23
+      },
+      {
+        "_path": "include/netcdfcpp.h",
+        "path_type": "hardlink",
+        "sha256": "86799cb34f51376076e6e1afc887fbd75d402d7835ab1623997ecce0f997ecc9",
+        "sha256_in_prefix": "86799cb34f51376076e6e1afc887fbd75d402d7835ab1623997ecce0f997ecc9",
+        "size_in_bytes": 18932
+      },
+      {
+        "_path": "include/order32.h",
+        "path_type": "hardlink",
+        "sha256": "d45286c51c55055054589771d19ab8a4db0099561df89dbb28d31c5051a72771",
+        "sha256_in_prefix": "d45286c51c55055054589771d19ab8a4db0099561df89dbb28d31c5051a72771",
+        "size_in_bytes": 416
+      },
+      {
+        "_path": "include/triangle.h",
+        "path_type": "hardlink",
+        "sha256": "8f2f4a34b10b5bcc879a773b10ef7204448d557b3587b9e8f636aa8cac9aa4f0",
+        "sha256_in_prefix": "8f2f4a34b10b5bcc879a773b10ef7204448d557b3587b9e8f636aa8cac9aa4f0",
+        "size_in_bytes": 21922
+      },
+      {
+        "_path": "lib/libTempestRemap.a",
+        "path_type": "hardlink",
+        "sha256": "b86a87376070b4d1acc73c25d951a91afa2e5a408c3d6be7305a1a4efcad5531",
+        "sha256_in_prefix": "b86a87376070b4d1acc73c25d951a91afa2e5a408c3d6be7305a1a4efcad5531",
+        "size_in_bytes": 2184438
+      },
+      {
+        "_path": "lib/libTempestRemap.so",
+        "path_type": "softlink",
+        "sha256": "9bfbe1cfcf5169c93df14653bddf99c670743037ac8158fc0671ed9461ecbcfa",
+        "size_in_bytes": 989456
+      },
+      {
+        "_path": "lib/libTempestRemap.so.0",
+        "path_type": "softlink",
+        "sha256": "9bfbe1cfcf5169c93df14653bddf99c670743037ac8158fc0671ed9461ecbcfa",
+        "size_in_bytes": 989456
+      },
+      {
+        "_path": "lib/libTempestRemap.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "9bfbe1cfcf5169c93df14653bddf99c670743037ac8158fc0671ed9461ecbcfa",
+        "sha256_in_prefix": "9bfbe1cfcf5169c93df14653bddf99c670743037ac8158fc0671ed9461ecbcfa",
+        "size_in_bytes": 989456
+      },
+      {
+        "_path": "share/doc/tempestremap/GreatCircleArcIntersections.mw",
+        "path_type": "hardlink",
+        "sha256": "4e735899ce8ba299129a370bfea0c5fe8148395b83acdaa818f840fa8dfba519",
+        "sha256_in_prefix": "4e735899ce8ba299129a370bfea0c5fe8148395b83acdaa818f840fa8dfba519",
+        "size_in_bytes": 110901
+      },
+      {
+        "_path": "share/doc/tempestremap/GreatCircleLatitudeIntersections.mw",
+        "path_type": "hardlink",
+        "sha256": "fa6e6fd865b4197cce777b98a271c32bad4536a80b008332426a77ffa14fac66",
+        "sha256_in_prefix": "fa6e6fd865b4197cce777b98a271c32bad4536a80b008332426a77ffa14fac66",
+        "size_in_bytes": 100626
+      },
+      {
+        "_path": "share/doc/tempestremap/README.md",
+        "path_type": "hardlink",
+        "sha256": "5ef082d80bb6a73f6ff31f73b8112c210d37ef7061bcbe2f0eeb596e2149d6d2",
+        "sha256_in_prefix": "5ef082d80bb6a73f6ff31f73b8112c210d37ef7061bcbe2f0eeb596e2149d6d2",
+        "size_in_bytes": 6900
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "conda-forge/linux-64::tempest-remap==2.0.3=mpi_mpich_h21555f6_7",
+  "sha256": "9a677b7c5e9fcdb79911b10b20376119024e35780007fd1a0c62398761e3cebe",
+  "size": 1162636,
+  "subdir": "linux-64",
+  "timestamp": 1579819666061,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/tempest-remap-2.0.3-mpi_mpich_h21555f6_7.tar.bz2",
+  "version": "2.0.3"
+}

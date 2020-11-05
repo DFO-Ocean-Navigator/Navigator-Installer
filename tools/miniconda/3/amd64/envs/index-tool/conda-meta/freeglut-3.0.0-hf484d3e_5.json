@@ -1,0 +1,111 @@
+{
+  "arch": "x86_64",
+  "build": "hf484d3e_5",
+  "build_number": 5,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.2.0",
+    "libstdcxx-ng >=7.2.0"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/freeglut-3.0.0-hf484d3e_5",
+  "features": "",
+  "files": [
+    "include/GL/freeglut.h",
+    "include/GL/freeglut_ext.h",
+    "include/GL/freeglut_std.h",
+    "include/GL/glut.h",
+    "lib/libglut.a",
+    "lib/libglut.so",
+    "lib/libglut.so.3",
+    "lib/libglut.so.3.10.0",
+    "lib/pkgconfig/freeglut.pc"
+  ],
+  "fn": "freeglut-3.0.0-hf484d3e_5.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/freeglut-3.0.0-hf484d3e_5",
+    "type": 1
+  },
+  "md5": "b036f88ede337fcb45e94f15a72eb017",
+  "name": "freeglut",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/freeglut-3.0.0-hf484d3e_5.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/GL/freeglut.h",
+        "path_type": "hardlink",
+        "sha256": "e5a823629d7b4ed8f3ec9497161ae2765bf5f13e32bb7928f6f1bf8eef2a3109",
+        "sha256_in_prefix": "e5a823629d7b4ed8f3ec9497161ae2765bf5f13e32bb7928f6f1bf8eef2a3109",
+        "size_in_bytes": 681
+      },
+      {
+        "_path": "include/GL/freeglut_ext.h",
+        "path_type": "hardlink",
+        "sha256": "1f81e3e596013e16073f688d8a9d8a1f07595f9a14d0e63863b39c23a20606f5",
+        "sha256_in_prefix": "1f81e3e596013e16073f688d8a9d8a1f07595f9a14d0e63863b39c23a20606f5",
+        "size_in_bytes": 10411
+      },
+      {
+        "_path": "include/GL/freeglut_std.h",
+        "path_type": "hardlink",
+        "sha256": "4d19d4c491d8b36db0bb2d96d201ab5f29a938b3b014ad216755964ae3bd3d03",
+        "sha256_in_prefix": "4d19d4c491d8b36db0bb2d96d201ab5f29a938b3b014ad216755964ae3bd3d03",
+        "size_in_bytes": 27097
+      },
+      {
+        "_path": "include/GL/glut.h",
+        "path_type": "hardlink",
+        "sha256": "e3ffcfd1147cd45a9ddb49ab9791e8fc6269f52732f0c02f10f2daf9cc0e730b",
+        "sha256_in_prefix": "e3ffcfd1147cd45a9ddb49ab9791e8fc6269f52732f0c02f10f2daf9cc0e730b",
+        "size_in_bytes": 639
+      },
+      {
+        "_path": "lib/libglut.a",
+        "path_type": "hardlink",
+        "sha256": "7aff4c2e80775789199974fde60ab55a9247f941efc5d1f1c97336956aa78d20",
+        "sha256_in_prefix": "7aff4c2e80775789199974fde60ab55a9247f941efc5d1f1c97336956aa78d20",
+        "size_in_bytes": 632924
+      },
+      {
+        "_path": "lib/libglut.so",
+        "path_type": "softlink",
+        "sha256": "a60e0d11335d2e5e6801eb33ddee9c8ede13941dbe0740e3c2f1686ab1675930",
+        "size_in_bytes": 482880
+      },
+      {
+        "_path": "lib/libglut.so.3",
+        "path_type": "softlink",
+        "sha256": "a60e0d11335d2e5e6801eb33ddee9c8ede13941dbe0740e3c2f1686ab1675930",
+        "size_in_bytes": 482880
+      },
+      {
+        "_path": "lib/libglut.so.3.10.0",
+        "path_type": "hardlink",
+        "sha256": "a60e0d11335d2e5e6801eb33ddee9c8ede13941dbe0740e3c2f1686ab1675930",
+        "sha256_in_prefix": "a60e0d11335d2e5e6801eb33ddee9c8ede13941dbe0740e3c2f1686ab1675930",
+        "size_in_bytes": 482880
+      },
+      {
+        "_path": "lib/pkgconfig/freeglut.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+        "sha256": "52ed70eb21819dc6cfce5b2c531125190b2ac98fd2f7163a22f3dc16729bd0ac",
+        "sha256_in_prefix": "aee3e686a8a72da4d5e8fbf687ccc612682758ff808db3323a70ba64234daa70",
+        "size_in_bytes": 314
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "defaults/linux-64::freeglut==3.0.0=hf484d3e_5",
+  "sha256": "6556d96614bdddb1f95613946902f0480c853d4b71bcf0f079df34d45d9d71ee",
+  "size": 179717,
+  "subdir": "linux-64",
+  "timestamp": 1520767673427,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/freeglut-3.0.0-hf484d3e_5.conda",
+  "version": "3.0.0"
+}

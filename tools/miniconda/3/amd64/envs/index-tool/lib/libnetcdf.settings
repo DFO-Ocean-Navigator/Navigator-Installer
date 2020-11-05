@@ -1,0 +1,41 @@
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.7.1
+Configured On:		Sat Nov 23 14:30:26 UTC 2019
+Host System:		x86_64-Linux-4.15.0-1061-azure
+Build Directory: 	/home/conda/feedstock_root/build_artifacts/libnetcdf_1574519229483/work
+Install Prefix:         /mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool
+
+# Compiling Options
+-----------------
+C Compiler:		/home/conda/feedstock_root/build_artifacts/libnetcdf_1574519229483/_build_env/bin/x86_64-conda_cos6-linux-gnu-cc
+CFLAGS:			-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool/include -fdebug-prefix-map=/home/conda/feedstock_root/build_artifacts/libnetcdf_1574519229483/work=/usr/local/src/conda/libnetcdf-4.7.1 -fdebug-prefix-map=/mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool=/usr/local/src/conda-prefix -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -march=nocona
+CPPFLAGS:		 
+LDFLAGS:		-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool/lib -Wl,-rpath-link,/mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool/lib -L/mnt/ramdisk/tools/miniconda/3/amd64/envs/index-tool/lib 
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		no
+Extra libraries:	-lmfhdf -ldf -lhdf5_hl -lhdf5 -lrt -lpthread -lz -ldl -lm -lcurl
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		yes
+HDF5 Support:		yes
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	no
+PnetCDF Support:	no
+DAP2 Support:		yes
+DAP4 Support:		yes
+Byte-Range Support:	no
+Diskless Support:	yes
+MMap Support:		yes
+JNA Support:		no
+CDF5 Support:		yes
+ERANGE Fill Support:	yes
+Relaxed Boundary Check:	yes

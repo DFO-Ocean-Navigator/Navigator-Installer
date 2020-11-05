@@ -1,0 +1,136 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "<unknown>",
+  "constrains": [],
+  "depends": [
+    "babel >=2.3",
+    "flask",
+    "jinja2 >=2.5",
+    "python"
+  ],
+  "extracted_package_dir": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/flask-babel-0.11.2-py_1",
+  "features": "",
+  "files": [
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/PKG-INFO",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/SOURCES.txt",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/dependency_links.txt",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/installed-files.txt",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/not-zip-safe",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/requires.txt",
+    "lib/python3.6/site-packages/Flask_Babel-0.11.2-py2.7.egg-info/top_level.txt",
+    "lib/python3.6/site-packages/flask_babel/__init__.py",
+    "lib/python3.6/site-packages/flask_babel/_compat.py",
+    "lib/python3.6/site-packages/flask_babel/speaklater.py",
+    "lib/python3.6/site-packages/flask_babel/__pycache__/__init__.cpython-36.pyc",
+    "lib/python3.6/site-packages/flask_babel/__pycache__/_compat.cpython-36.pyc",
+    "lib/python3.6/site-packages/flask_babel/__pycache__/speaklater.cpython-36.pyc"
+  ],
+  "fn": "flask-babel-0.11.2-py_1.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/flask-babel-0.11.2-py_1",
+    "type": 1
+  },
+  "md5": "d66429088a21bd0328fd8fdf4db9aaa2",
+  "name": "flask-babel",
+  "noarch": "python",
+  "package_tarball_full_path": "/mnt/ramdisk/tools/miniconda/3/amd64/pkgs/flask-babel-0.11.2-py_1.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "ed83221d0744f82c0c5e08b4b69c1c5a553fe59ba9a70cf7e8ee057045d3e238",
+        "sha256_in_prefix": "ed83221d0744f82c0c5e08b4b69c1c5a553fe59ba9a70cf7e8ee057045d3e238",
+        "size_in_bytes": 1179
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "b3c9425550ada7b3f65b362b63886776d7b755b9764c1aeaa3ccfd1b49f5ce93",
+        "sha256_in_prefix": "b3c9425550ada7b3f65b362b63886776d7b755b9764c1aeaa3ccfd1b49f5ce93",
+        "size_in_bytes": 882
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/installed-files.txt",
+        "path_type": "hardlink",
+        "sha256": "1be20b22f2f68395f2d0fe4f247392d61dd74f44da6d910c15eeb39271245087",
+        "sha256_in_prefix": "1be20b22f2f68395f2d0fe4f247392d61dd74f44da6d910c15eeb39271245087",
+        "size_in_bytes": 249
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/not-zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "ad3a747cd1bd10caddf56025e15f588738c2c2497c678a4d8545b441b666f0a0",
+        "sha256_in_prefix": "ad3a747cd1bd10caddf56025e15f588738c2c2497c678a4d8545b441b666f0a0",
+        "size_in_bytes": 29
+      },
+      {
+        "_path": "site-packages/Flask_Babel-0.11.2-py2.7.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d82235793be43d2c720ec988023092cefc82f6fc9ee809ea7af1380723a81a98",
+        "sha256_in_prefix": "d82235793be43d2c720ec988023092cefc82f6fc9ee809ea7af1380723a81a98",
+        "size_in_bytes": 12
+      },
+      {
+        "_path": "site-packages/flask_babel/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "258d85a9175d0e7884de299fc62314a18dab3097479b347392e7a96dca4491c4",
+        "sha256_in_prefix": "258d85a9175d0e7884de299fc62314a18dab3097479b347392e7a96dca4491c4",
+        "size_in_bytes": 22024
+      },
+      {
+        "_path": "site-packages/flask_babel/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "fa3c2a0bc0cfcec6f2e2507f839d0f0d0e685cadc45948ed184cef0debf12be7",
+        "sha256_in_prefix": "fa3c2a0bc0cfcec6f2e2507f839d0f0d0e685cadc45948ed184cef0debf12be7",
+        "size_in_bytes": 366
+      },
+      {
+        "_path": "site-packages/flask_babel/speaklater.py",
+        "path_type": "hardlink",
+        "sha256": "6ba6e235337747678cb43522aa0435921d9e00303bb6075ab10bca39311df20a",
+        "sha256_in_prefix": "6ba6e235337747678cb43522aa0435921d9e00303bb6075ab10bca39311df20a",
+        "size_in_bytes": 1860
+      },
+      {
+        "_path": "lib/python3.6/site-packages/flask_babel/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/flask_babel/__pycache__/_compat.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.6/site-packages/flask_babel/__pycache__/speaklater.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "flask-babel[url=https://navigator.oceansdata.ca/pkgs/flask-babel-0.11.2-py_1.tar.bz2]",
+  "sha256": "e0aba6a4048504e4e76c57fb5fb872f27711e443e0916a7f4c04233f9bc3f82c",
+  "size": 10725,
+  "subdir": "noarch",
+  "timestamp": 1531796866370,
+  "track_features": "",
+  "url": "https://navigator.oceansdata.ca/pkgs/flask-babel-0.11.2-py_1.tar.bz2",
+  "version": "0.11.2"
+}

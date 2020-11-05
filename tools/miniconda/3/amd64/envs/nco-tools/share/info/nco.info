@@ -1,0 +1,305 @@
+This is nco.info, produced by makeinfo version 6.7 from nco.texi.
+
+INFO-DIR-SECTION netCDF
+START-INFO-DIR-ENTRY
+* NCO::        User Guide for the netCDF Operator suite
+END-INFO-DIR-ENTRY
+
+This file documents NCO, a collection of utilities to manipulate and
+analyze netCDF files.
+
+   Copyright (C) 1995-2020 Charlie Zender
+
+   This is the first edition of the 'NCO User Guide',
+and is consistent with version 2 of 'texinfo.tex'.
+
+   Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  The
+license is available online at <http://www.gnu.org/copyleft/fdl.html>
+
+   The original author of this software, Charlie Zender, wants to
+improve it with the help of your suggestions, improvements, bug-reports,
+and patches.
+Charlie Zender <surname at uci dot edu> (yes, my surname is zender)
+3200 Croul Hall
+Department of Earth System Science
+University of California, Irvine
+Irvine, CA 92697-3100
+
+
+Indirect:
+nco.info-1: 1111
+nco.info-2: 313328
+nco.info-3: 612184
+nco.info-4: 914734
+
+Tag Table:
+(Indirect)
+Node: Top1111
+Node: Foreword2886
+Node: Summary7297
+Node: Introduction8092
+Node: Availability8380
+Ref: Availability-Footnote-110493
+Node: How to Use This guide10877
+Node: Compatability12680
+Ref: Compatability-Footnote-118082
+Ref: Compatability-Footnote-218218
+Node: Windows Operating System18416
+Ref: Windows Operating System-Footnote-120966
+Node: Symbolic Links21195
+Node: Libraries23155
+Ref: Libraries-Footnote-124298
+Node: netCDF2/3/4 and HDF4/5 Support24474
+Ref: netCDF2/3/4 and HDF4/5 Support-Footnote-135077
+Ref: netCDF2/3/4 and HDF4/5 Support-Footnote-235368
+Ref: netCDF2/3/4 and HDF4/5 Support-Footnote-335730
+Ref: netCDF2/3/4 and HDF4/5 Support-Footnote-435852
+Ref: netCDF2/3/4 and HDF4/5 Support-Footnote-536891
+Node: Help Requests and Bug Reports37361
+Node: Strategies42038
+Node: Philosophy42437
+Node: Climate Model Paradigm43975
+Node: Temporary Output Files44614
+Ref: Temporary Output Files-Footnote-149778
+Ref: Temporary Output Files-Footnote-249888
+Node: Appending Variables49989
+Ref: Appending Variables-Footnote-152022
+Ref: Appending Variables-Footnote-252203
+Node: Simple Arithmetic and Interpolation52352
+Node: Statistics vs. Concatenation53100
+Ref: Statistics vs. Concatenation-Footnote-154278
+Ref: Statistics vs. Concatenation-Footnote-254539
+Node: Concatenation54906
+Node: Averaging58420
+Node: Interpolating59838
+Node: Large Numbers of Files60351
+Ref: Large Numbers of Files-Footnote-165987
+Node: Large Datasets66319
+Node: Memory Requirements69203
+Node: Single and Multi-file Operators70650
+Ref: Single and Multi-file Operators-Footnote-176307
+Node: Memory for ncap276461
+Node: Performance77925
+Node: Shared features79912
+Node: Internationalization81448
+Node: Metadata Optimization82028
+Node: OpenMP Threading83653
+Node: Command Line Options87610
+Ref: Command Line Options-Footnote-190035
+Node: Truncating Long Options90316
+Node: Multi-arguments91968
+Ref: Multi-arguments-Footnote-196263
+Node: Sanitization of Input96552
+Node: Specifying Input Files98897
+Ref: Specifying Input Files-Footnote-1106728
+Node: Specifying Output Files107061
+Node: Remote storage108826
+Ref: Remote storage-Footnote-1114315
+Ref: Remote storage-Footnote-2114540
+Ref: Remote storage-Footnote-3114870
+Node: OPeNDAP115298
+Ref: OPeNDAP-Footnote-1121315
+Ref: OPeNDAP-Footnote-2121896
+Ref: OPeNDAP-Footnote-3122366
+Ref: OPeNDAP-Footnote-4122597
+Ref: OPeNDAP-Footnote-5122981
+Node: Retaining Retrieved Files123246
+Node: File Formats and Conversion125458
+Node: File Formats126564
+Ref: File Formats-Footnote-1130454
+Node: Determining File Format130638
+Node: File Conversion134139
+Ref: File Conversion-Footnote-1135895
+Node: Autoconversion136122
+Node: Large File Support140473
+Ref: Large File Support-Footnote-1142028
+Node: Subsetting Files142066
+Ref: Subsetting Files-Footnote-1156289
+Node: Subsetting Coordinate Variables156516
+Node: Group Path Editing159524
+Node: Flattening Groups161610
+Node: Moving Groups166622
+Ref: Moving Groups-Footnote-1168750
+Node: Dismembering Files168927
+Node: Checking CF-compliance177036
+Ref: Checking CF-compliance-Footnote-1184360
+Node: C and Fortran Index Conventions184516
+Node: Hyperslabs186263
+Node: Stride192758
+Node: Record Appending195951
+Node: Subcycle199613
+Ref: Subcycle-Footnote-1203484
+Node: Multislabs203590
+Node: Wrapped Coordinates211428
+Node: Auxiliary Coordinates214296
+Node: Grid Generation220934
+Ref: Grid Generation-Footnote-1243967
+Ref: Grid Generation-Footnote-2244429
+Node: Regridding245018
+Node: UDUnits Support274023
+Node: Rebasing Time Coordinate282796
+Node: Multiple Record Dimensions285813
+Node: Missing Values288094
+Ref: Missing Values-Footnote-1293878
+Ref: Missing Values-Footnote-2294111
+Node: Chunking294212
+Ref: Chunking-Footnote-1311967
+Node: Compression313328
+Node: Linear Packing314476
+Node: Precision-Preserving Compression316001
+Ref: Precision-Preserving Compression-Footnote-1340890
+Ref: Precision-Preserving Compression-Footnote-2341256
+Ref: Precision-Preserving Compression-Footnote-3342359
+Node: Deflation342557
+Node: MD5 digests344718
+Node: Buffer sizes348587
+Ref: Buffer sizes-Footnote-1349865
+Node: RAM disks349989
+Node: Packed data354795
+Ref: Packed data-Footnote-1362352
+Node: Operation Types362525
+Node: Type Conversion370013
+Node: Automatic type conversion371211
+Ref: Automatic type conversion-Footnote-1377753
+Ref: Automatic type conversion-Footnote-2377776
+Ref: Automatic type conversion-Footnote-3377969
+Node: Promoting Single-precision to Double378169
+Ref: Promoting Single-precision to Double-Footnote-1396890
+Ref: Promoting Single-precision to Double-Footnote-2397355
+Ref: Promoting Single-precision to Double-Footnote-3397848
+Ref: Promoting Single-precision to Double-Footnote-4398148
+Ref: Promoting Single-precision to Double-Footnote-5398253
+Node: Manual type conversion398317
+Node: Batch Mode399254
+Node: Global Attribute Addition400371
+Node: History Attribute402822
+Ref: History Attribute-Footnote-1406344
+Node: File List Attributes406585
+Node: CF Conventions408320
+Node: ARM Conventions423788
+Node: Operator Version425819
+Node: Reference Manual426921
+Node: ncap2 netCDF Arithmetic Processor428015
+Node: Syntax of ncap2 statements433249
+Node: Expressions434577
+Node: Dimensions441885
+Node: Left hand casting444110
+Node: Arrays and hyperslabs448868
+Node: Attributes455265
+Node: Value List459064
+Node: Number literals460319
+Node: if statement464258
+Node: Print & String methods466466
+Node: Missing values ncap2470561
+Node: Methods and functions475594
+Node: RAM variables482534
+Node: Where statement483795
+Node: Loops489052
+Node: Include files490380
+Node: Sort methods491596
+Node: UDUnits script502884
+Node: Vpointer506493
+Node: Irregular grids510887
+Node: Bilinear interpolation515992
+Node: GSL special functions520158
+Ref: GSL special functions-Footnote-1542404
+Node: GSL interpolation542598
+Node: GSL least-squares fitting544667
+Node: GSL statistics548721
+Node: GSL random number generation552466
+Node: Examples ncap2556886
+Node: Intrinsic mathematical methods564162
+Ref: Intrinsic mathematical methods-Footnote-1569212
+Ref: Intrinsic mathematical methods-Footnote-2570031
+Node: Operator precedence and associativity570104
+Node: ID Quoting572576
+Node: make_bounds() function575123
+Node: solar_zenith_angle function576255
+Node: ncatted netCDF Attribute Editor577601
+Ref: ncatted netCDF Attribute Editor-Footnote-1595712
+Node: ncbo netCDF Binary Operator596767
+Ref: ncbo netCDF Binary Operator-Footnote-1609901
+Ref: ncbo netCDF Binary Operator-Footnote-2610074
+Ref: ncbo netCDF Binary Operator-Footnote-3610414
+Ref: ncbo netCDF Binary Operator-Footnote-4610470
+Ref: ncbo netCDF Binary Operator-Footnote-5610538
+Ref: ncbo netCDF Binary Operator-Footnote-6610740
+Node: ncclimo netCDF Climatology Generator612184
+Ref: ncclimo netCDF Climatology Generator-Footnote-1679650
+Ref: ncclimo netCDF Climatology Generator-Footnote-2680053
+Node: ncecat netCDF Ensemble Concatenator680312
+Node: nces netCDF Ensemble Statistics689694
+Ref: nces netCDF Ensemble Statistics-Footnote-1697939
+Ref: nces netCDF Ensemble Statistics-Footnote-2698205
+Node: ncflint netCDF File Interpolator698720
+Node: ncks netCDF Kitchen Sink707240
+Ref: ncks netCDF Kitchen Sink-Footnote-1753293
+Ref: ncks netCDF Kitchen Sink-Footnote-2753603
+Node: Filters for ncks753718
+Node: ncpdq netCDF Permute Dimensions Quickly768068
+Ref: ncpdq netCDF Permute Dimensions Quickly-Footnote-1789089
+Ref: ncpdq netCDF Permute Dimensions Quickly-Footnote-2789194
+Ref: ncpdq netCDF Permute Dimensions Quickly-Footnote-3789763
+Node: ncra netCDF Record Averager790031
+Node: ncrcat netCDF Record Concatenator799282
+Node: ncremap netCDF Remapper803723
+Ref: ncremap netCDF Remapper-Footnote-1912604
+Ref: ncremap netCDF Remapper-Footnote-2913007
+Ref: ncremap netCDF Remapper-Footnote-3913086
+Ref: ncremap netCDF Remapper-Footnote-4913549
+Node: ncrename netCDF Renamer914734
+Node: ncwa netCDF Weighted Averager930982
+Ref: ncwa netCDF Weighted Averager-Footnote-1936235
+Ref: ncwa netCDF Weighted Averager-Footnote-2936372
+Node: Mask condition936570
+Ref: Mask condition-Footnote-1937945
+Node: Normalization and Integration938129
+Ref: Normalization and Integration-Footnote-1943774
+Ref: Normalization and Integration-Footnote-2943840
+Ref: Normalization and Integration-Footnote-3943956
+Node: Contributing944117
+Ref: Contributing-Footnote-1944852
+Node: Contributors945266
+Node: Citation949135
+Node: Proposals for Institutional Funding950551
+Node: Quick Start951726
+Node: Daily data in one file952203
+Node: Monthly data in one file953601
+Node: One time point one file955203
+Node: Multiple files with multiple time points956148
+Node: CMIP5 Example956636
+Node: Combine Files959372
+Node: Global Distribution of Long-term Average968822
+Ref: fgr:glb969058
+Node: Annual Average over Regions973777
+Ref: fgr:anl973987
+Node: Monthly Cycle986832
+Ref: fgr:mon986991
+Node: Regrid MODIS Data994051
+Node: Add Coordinates to MODIS Data1001607
+Node: Permute MODIS Coordinates1003609
+Node: Parallel1005546
+Node: CCSM Example1005898
+Node: mybibnode1018584
+Ref: ZeM071018707
+Ref: Zen081018936
+Ref: WZJ071019142
+Ref: ZMW061019526
+Ref: ZeW071019764
+Ref: WZJ061020177
+Ref: WZJ0731020365
+Ref: WZJ0741020811
+Ref: WZJ0811021011
+Ref: WZJ0911021289
+Ref: PFT881021505
+Node: General Index1021632
+
+End Tag Table
+
+
+Local Variables:
+coding: utf-8
+End:

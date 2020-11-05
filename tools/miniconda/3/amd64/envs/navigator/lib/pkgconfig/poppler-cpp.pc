@@ -1,0 +1,12 @@
+prefix=/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator
+libdir=/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator/lib
+includedir=/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator/include
+
+Name: poppler-cpp
+Description: cpp backend for Poppler PDF rendering library
+Version: 0.67.0
+Requires: 
+Requires.private: poppler = 0.67.0
+
+Libs: -L${libdir} -lpoppler-cpp
+Cflags: -I${includedir}/poppler/cpp
