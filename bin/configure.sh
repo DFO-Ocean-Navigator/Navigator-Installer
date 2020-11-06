@@ -16,7 +16,7 @@ if [ ! -e bin/.miniconda.installed ] ; then
    if [ $(which wget) ] ; then
       [ ! -d .tmp ] && mkdir .tmp
       printf "\n\t Downloading the latest Miniconda installation package from repo.anaconda.com\n\n"
-      wget --quiet -O .tmp/Miniconda3-latest-Linux-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+      [ ! -e .tmp/Miniconda3-latest-Linux-x86_64.sh ] && wget --quiet -O .tmp/Miniconda3-latest-Linux-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
       bash .tmp/Miniconda3-latest-Linux-x86_64.sh -b -p tools/miniconda/3/amd64
       ./tools/miniconda/3/amd64/bin/conda create --quiet --name navigator --file Ocean-Data-Map-Project/config/conda/navigator-spec-file.txt
       ./tools/miniconda/3/amd64/bin/conda create --quiet --name index-tool --file Ocean-Data-Map-Project/config/conda/index-tool-spec-file.txt
