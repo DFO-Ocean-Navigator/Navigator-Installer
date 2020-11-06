@@ -1,9 +1,0 @@
-Name: libecpg
-Description: PostgreSQL libecpg library
-Url: http://www.postgresql.org/
-Version: 11.3
-Requires: 
-Requires.private: libpq libpgtypes
-Cflags: -I/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator/include
-Libs: -L/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator/lib -lecpg
-Libs.private: -L/mnt/ramdisk/tools/miniconda/3/amd64/envs/navigator/lib -lm
