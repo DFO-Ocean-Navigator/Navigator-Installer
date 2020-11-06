@@ -26,6 +26,11 @@
 
 * source tools/conf/ocean-navigator-env.sh
 
+## pip install two packages not available in the various conda repos at this time.
+
+* pip install defopt 
+* pip install visvalingamwyatt
+
 ## Install Node version 12.18.4, use yarn to bring in bower
 
 * nvm install v12.18.4 ; yarn global add bower --prefix=$HOME/tools/bowner --global-folder $(npm prefix -g)
