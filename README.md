@@ -28,7 +28,6 @@
 
 ## pip install two packages not available in the various conda repos at this time.
 
-* pip install defopt 
 * pip install visvalingamwyatt
 
 ## Install Node version 12.18.4, use yarn to bring in bower
