@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-ssh-keyscan -4 -t rsa hank.research.cs.dal.ca >> ${HOME}/.ssh/known_hosts
+ssh-keygen -R hank.research.cs.dal.ca -f ${HOME}/.ssh/known_hosts
+ssh-keyscan -4 -t rsa hank.research.cs.dal.ca -f ${HOME}/.ssh/known_hosts
 
 sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 on-buildadm@hank.research.cs.dal.ca:/tank/data /data
