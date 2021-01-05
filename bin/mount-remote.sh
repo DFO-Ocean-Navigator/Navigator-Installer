@@ -2,4 +2,4 @@
 
 ssh-keyscan -4 -t rsa hank.research.cs.dal.ca >> ${HOME}/.ssh/known_hosts
 
-sshfs -o reconnect on-buildadm@hank.research.cs.dal.ca:/tank/data /data
+sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 on-buildadm@hank.research.cs.dal.ca:/tank/data /data
