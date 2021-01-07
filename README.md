@@ -1,4 +1,4 @@
-# Steps for deployment on a Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Debian 10, CentOS 6, and Centos 7.
+# Steps for deployment on a Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Debian 10, CentOS 6, Centos 7, and CentOS 8.
 
 ## Create standard Linux account. Adjust the variable STD_USER_ACCT accordingly.
 
