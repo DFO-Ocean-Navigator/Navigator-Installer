@@ -32,7 +32,7 @@
 
 ## Install Node version 12.20.1, use yarn to bring in bower
 
-* nvm install v12.20.1 ; yarn global add bower --prefix=$HOME/tools/bower --global-folder $(npm prefix -g)
+* nvm install v12.20.1 ; npm install -g bower
 
 ## Change your working directory to Ocean-Data-Map-Project/oceannavigator/frontend, and build the UI
 
