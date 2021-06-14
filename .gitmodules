@@ -1,7 +1,7 @@
 [submodule "Ocean-Data-Map-Project"]
 	path = Ocean-Data-Map-Project
 	url = https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git
-        branch = tags/v6.5.10
+        branch = tags/v6.5.12
 [submodule "tools/nvm"]
 	path = tools/nvm
 	url = https://github.com/nvm-sh/nvm.git

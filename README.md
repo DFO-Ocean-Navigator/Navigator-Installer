@@ -30,9 +30,9 @@
 
 * pip install visvalingamwyatt
 
-## Install Node version 12.20.1, use yarn to bring in bower
+## Install Node version 12.20.1, use npm to bring in yarn and bower.
 
-* nvm install v12.22.1 ; npm install -g bower
+* nvm install v12.22.1 ; npm install -g yarn ; npm install -g bower
 
 ## Change your working directory to Ocean-Data-Map-Project/oceannavigator/frontend, and build the UI
 
