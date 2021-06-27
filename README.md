@@ -30,7 +30,7 @@
 
 * pip install visvalingamwyatt
 
-## Install Node version 12.20.1, use npm to bring in yarn and bower.
+## Install Node version 12.22.1, use npm to bring in yarn and bower.
 
 * nvm install v12.22.1 ; npm install -g yarn ; npm install -g bower
 
