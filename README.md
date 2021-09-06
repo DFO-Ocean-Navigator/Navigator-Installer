@@ -1,4 +1,8 @@
-# Steps for deployment on a Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Debian 10, CentOS 6, Centos 7, and CentOS 8.
+# Steps to use when deploying the Ocean Navigator application on a Ubuntu, Debian, CentOS, Fedora, and /or Red Hat operating systems.
+
+## For those who wish to run a Red Hat based operating system the libnsl library is *required* by Miniconda to be able to run its various binaries and libraries.
+
+* dnf install libnsl -y
 
 ## Create standard Linux account. Adjust the variable STD_USER_ACCT accordingly.
 
@@ -51,7 +55,3 @@
 ## Change back to the Ocean-Data-Map-Project directory and launch the web services.
 
 * cd ${HOME}/Ocean-Data-Map-Project ; ./launch-web-service.sh
-
-# If you wish to use Centos 8 or Fedora 31 you will need to have your system's person install the libnsl library. This package is required by Miniconda to be able to run its various binaries and libraries. To install the libnsl package issue the following dnf install command;
-
-* dnf install libnsl -y
