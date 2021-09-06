@@ -1,4 +1,4 @@
-## Steps to use when deploying the Ocean Navigator application on a Ubuntu, Debian, CentOS, Fedora, and /or Red Hat operating systems.
+## Steps to use when deploying the Ocean Navigator application on a Ubuntu (18.04 & 20.04 LTS), Debian (10 & 11), CentOS (7 & 8), Fedora (33 & 34), and /or Red Hat (7 & 8) operating systems.
 
 ### For those who wish to run a Red Hat based operating system the libnsl library is *required* by Miniconda to be able to run its various binaries and libraries.
 
@@ -58,5 +58,7 @@
 
 ### Alternate Linux operating systems we have been able to successfully install and run the Ocean Navigator software on;
 
-- ArchLinux
-- openSUSE
+- ArchLinux [^1]
+- openSUSE both Leap 15.3 and Tumbleweed [^1]
+
+[^1]: Are based on rolling releases.
