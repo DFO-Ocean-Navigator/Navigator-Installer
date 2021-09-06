@@ -30,7 +30,7 @@
 
 * source tools/conf/ocean-navigator-env.sh
 
-## pip install two packages not available in the various conda repos at this time.
+## pip install a package which is not available in the various conda repos at this time.
 
 * pip install visvalingamwyatt
 
