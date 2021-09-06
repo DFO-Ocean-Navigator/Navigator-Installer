@@ -52,7 +52,7 @@
 - edit datasetconfig.json
 - edit oceannavigator.cfg
 
-## Change back to the Ocean-Data-Map-Project directory and launch the web services.
+## Change back to the Ocean-Data-Map-Project directory and launch the Gunicorn web services.
 
 - cd ${HOME}/Ocean-Data-Map-Project ; ./launch-web-service.sh
 
