@@ -58,7 +58,7 @@
 
 ### Alternate Linux operating systems we have been able to successfully install and run the Ocean Navigator software on;
 
-- ArchLinux [^1]
-- openSUSE both Leap 15.3 and Tumbleweed [^1]
+- ArchLinux [1]
+- openSUSE both Leap 15.3 and Tumbleweed [1]
 
-[^1]: Are based on rolling releases.
+[1]: Are based on rolling releases.
