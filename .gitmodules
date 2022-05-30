@@ -1,11 +1,11 @@
 [submodule "Ocean-Data-Map-Project"]
 	path = Ocean-Data-Map-Project
 	url = https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project.git
-        branch = tags/v6.5.14.1
+        branch = tags/v7.3
 [submodule "tools/nvm"]
 	path = tools/nvm
 	url = https://github.com/nvm-sh/nvm.git
-	branch = tags/v0.38.0
+	branch = tags/v0.39.1
 [submodule "tools/netcdf-timestamp-mapper"]
 	path = tools/netcdf-timestamp-mapper
 	url = https://github.com/DFO-Ocean-Navigator/netcdf-timestamp-mapper.git
